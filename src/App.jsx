@@ -1,12 +1,22 @@
-import React from 'react'
-import Home from './pages/Home.jsx'
+import { Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import Home from "./pages/Home";
 
-const App = () => {
+function App() {
   return (
-    <div>
-      <Home />
+    <div className="min-h-screen flex flex-col">
+      <Navbar />
+
+      <main className="flex-grow">
+        <Routes>
+          <Route path="/" element={<Home />} />
+        </Routes>
+      </main>
+
+      <Footer />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
