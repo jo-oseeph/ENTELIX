@@ -17,6 +17,7 @@ const HeroSection = () => {
       <div className="relative z-10 max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 w-full">
         <div className="max-w-3xl space-y-6 sm:space-y-8">
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-5xl xl:text-5xl font-bold text-white leading-tight tracking-tight">
+
             We Build The Future Of Digital Technology
           </h1>
           
