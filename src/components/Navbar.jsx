@@ -31,18 +31,19 @@ const Navbar = () => {
       <div className="mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <div className="flex items-center gap-3 group cursor-pointer">
+          {/* Shift logo left to reduce the left padding coming from the parent container (px-4 / sm:px-6 / lg:px-8) */}
+          <div className="flex items-center gap-1 group cursor-pointer -ml-4 sm:-ml-6 lg:-ml-8">
             <div className="relative">
               <img
                 src="/logo.jpg"
                 alt="Entelix Logo"
-                className="h-17 w-17 relative z-10"
+                className="h-16 w-16 relative z-10"
               />
             </div>
-             <span className="text-3xl font-bold text-blue-950">
+            <span className="text-3xl font-bold text-blue-950">
               ENTELIX
             </span>
-          </div>
+</div>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-1">
