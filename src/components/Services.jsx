@@ -94,7 +94,7 @@ const OurServices = () => {
               isVisible ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-10"
             }`}
           >
-            // What We Do //
+             What We Do 
           </p>
           <h2
             className={`text-3xl md:text-4xl lg:text-5xl font-bold text-blue-950 transition-all duration-700 ${
