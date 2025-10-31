@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 
-const AboutSection = () => {
-  const [isVisible, setIsVisible] = useState(false);
+const AboutIntro = () => {
+  const [isVisible, setIsVisible] = useState(true);
   const sectionRef = useRef(null);
 
   useEffect(() => {
@@ -93,7 +93,7 @@ const AboutSection = () => {
                   alt="Entelix Team"
                   className="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-700"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-blue-950/30 to-transparent"></div>
+                <div className="absolute inset-0 bg-linear-to-t from-blue-950/30 to-transparent"></div>
               </div>
 
               {/* Accent badge */}
@@ -109,4 +109,4 @@ const AboutSection = () => {
   );
 };
 
-export default AboutSection;
+export default AboutIntro;
