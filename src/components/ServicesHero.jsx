@@ -10,7 +10,7 @@ const ServicesHero = () => {
       />
       
       {/* Red Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-r from-red-600/90 via-red-500/85 to-red-600/90"></div>
+      <div className="absolute inset-0 bg-gradient-to-br from-blue-950/70 via-blue-950/60 to-red-600/40"></div>
       
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 w-full">

@@ -26,7 +26,7 @@ const ServiceCard = ({ service, index, isVisible }) => {
           </p>
 
           {/* Learn More Button */}
-          <button className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-purple-600 to-purple-500 text-white font-semibold text-sm rounded-lg hover:from-purple-700 hover:to-purple-600 transition-all duration-300 group/btn shadow-md hover:shadow-lg">
+          <button className="inline-flex items-center gap-2 px-6 py-3 bg-blue-950 text-white font-semibold text-sm rounded-lg hover:from-purple-700 hover:to-purple-600 transition-all duration-300 group/btn shadow-md hover:shadow-lg">
             Learn More
             <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
           </button>
