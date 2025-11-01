@@ -7,7 +7,7 @@ import Services from "./pages/Services";
 import Contact from "./pages/Contact";
 import NotFound from "./components/NotFound";
 import ErrorBoundary from "./components/ErrorBoundary";
-const AboutMain = lazy(() => import("./components/about/AboutMain"));
+const AboutMain = lazy(() => import("./components/about/AboutPage"));
 
 function App() {
   return (
