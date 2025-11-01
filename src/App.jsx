@@ -8,6 +8,7 @@ import Contact from "./pages/Contact";
 import NotFound from "./components/NotFound";
 import ErrorBoundary from "./components/ErrorBoundary";
 const AboutMain = lazy(() => import("./components/about/AboutPage"));
+import SoftwareDevelopment from "./pages/SoftwareDevelopment";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
               <Route path="/services" element={<Services />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="*" element={<NotFound />} />
+              <Route path="/software-development" element={<SoftwareDevelopment />} />
             </Routes>
           </Suspense>
         </ErrorBoundary>

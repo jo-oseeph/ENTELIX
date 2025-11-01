@@ -8,6 +8,8 @@ import {
   BarChart
 } from 'lucide-react';
 import ServiceCard from './ServicesCard';
+import { Link } from "react-router-dom";
+
 
 const ServicesSection = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -39,6 +41,7 @@ const ServicesSection = () => {
       icon: Code,
       title: 'Web Development',
       description: 'Custom websites and web applications built with modern technologies. Responsive, fast, and scalable solutions tailored to your business needs.',
+      path: '/software-development'
     },
     {
       icon: Cloud,
