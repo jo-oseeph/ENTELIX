@@ -53,6 +53,7 @@ const ServicesSection = () => {
       icon: Palette,
       title: 'Graphic Design',
       description: 'Creative and professional design services for your brand. From logos to marketing materials, we bring your vision to life.',
+      path: '/graphic-design'
     },
     {
       icon: Smartphone,
