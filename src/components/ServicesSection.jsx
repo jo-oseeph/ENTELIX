@@ -47,6 +47,7 @@ const ServicesSection = () => {
       icon: Cloud,
       title: 'Cloud Solutions',
       description: 'Scalable and secure cloud infrastructure solutions tailored to your business needs. Migrate, manage, and optimize your cloud environment.',
+     path: '/graphic-design'
     },
     {
       icon: Palette,
