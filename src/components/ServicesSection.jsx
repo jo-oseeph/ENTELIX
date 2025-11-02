@@ -47,17 +47,19 @@ const ServicesSection = () => {
       icon: Cloud,
       title: 'Cloud Solutions',
       description: 'Scalable and secure cloud infrastructure solutions tailored to your business needs. Migrate, manage, and optimize your cloud environment.',
-     path: '/graphic-design'
+    
     },
     {
       icon: Palette,
       title: 'Graphic Design',
       description: 'Creative and professional design services for your brand. From logos to marketing materials, we bring your vision to life.',
+      path: '/graphic-design'
     },
     {
       icon: Smartphone,
-      title: 'Mobile App Development',
+      title: 'Mobile Solutions',
       description: 'Native and cross-platform mobile applications for iOS and Android. User-friendly interfaces with seamless performance.',
+        path: '/mobile-solutions'
     },
     {
       icon: ShoppingCart,
