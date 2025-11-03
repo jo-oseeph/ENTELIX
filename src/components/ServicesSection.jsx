@@ -47,6 +47,7 @@ const ServicesSection = () => {
       icon: Cloud,
       title: 'Cloud Solutions',
       description: 'Scalable and secure cloud infrastructure solutions tailored to your business needs. Migrate, manage, and optimize your cloud environment.',
+       path: '/cloud-solutions'
     
     },
     {
@@ -60,11 +61,6 @@ const ServicesSection = () => {
       title: 'Mobile Solutions',
       description: 'Native and cross-platform mobile applications for iOS and Android. User-friendly interfaces with seamless performance.',
         path: '/mobile-solutions'
-    },
-    {
-      icon: ShoppingCart,
-      title: 'E-Commerce Solutions',
-      description: 'Complete online store solutions with payment integration, inventory management, and customer analytics for your business.',
     },
     {
       icon: BarChart,
