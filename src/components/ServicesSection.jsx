@@ -66,6 +66,7 @@ const ServicesSection = () => {
       icon: BarChart,
       title: 'Digital Marketing',
       description: 'Data-driven marketing strategies to grow your online presence. SEO, social media management, and content marketing services.',
+       path: '/digital-marketing'
     },
   ];
 

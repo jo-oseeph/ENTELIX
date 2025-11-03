@@ -12,6 +12,8 @@ import SoftwareDevelopment from "./pages/SoftwareDevelopment";
 import GraphicDesign from './pages/GraphicDesign';
 import MobileSolutions from "./pages/MobileSolutions";
 import CloudSolutions from "./pages/CloudSolutions";
+import DigitalMarketing from "./pages/DigitalMarketing";
+
 
 function App() {
   return (
@@ -31,6 +33,7 @@ function App() {
              <Route path="/graphic-design" element={<GraphicDesign />} /> 
              <Route path="/mobile-solutions" element={<MobileSolutions />} />
              <Route path="/cloud-solutions" element={<CloudSolutions />} />
+             <Route path="/digital-marketing" element={<DigitalMarketing />} />
             </Routes>
           </Suspense>
         </ErrorBoundary>
