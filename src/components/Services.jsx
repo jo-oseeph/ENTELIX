@@ -5,62 +5,68 @@ const serviceCategories = [
   {
     icon: Command,
     color: "bg-red-500",
-    title: "Enterprise Systems",
+    title: "Web & Software Development",
     description:
-      "Custom-built automation, management, and intelligence tools engineered to streamline operations and strengthen decision-making.",
+      "We create responsive websites and custom software solutions tailored to your business goals. Our builds are fast, secure, and scalable, designed to grow as you do.",
     services: [
-      "Process automation",
-      "Custom CRM & ERP",
-      "Data architecture & analytics",
+      // "Process automation",
+      // "Custom CRM & ERP",
+      // "Data architecture & analytics",
     ],
   },
   {
     icon: Sparkles,
     color: "bg-blue-600",
-    title: "Web Platforms",
+    title: "Brand & Visual Design",
     description:
-      "Scalable, secure web platforms built with React, Next.js, and Node—optimized for performance, maintainability, and growth.",
+      "Your brand deserves visuals that stand out. From logo design to full identity systems, we help businesses express who they are with clarity and style.",
     services: [
-      "E-commerce systems",
-      "Web portals & SaaS",
-      "API development & integrations",
+      // "E-commerce systems",
+      // "Web portals & SaaS",
+      // "API development & integrations",
     ],
   },
   {
     icon: Zap,
     color: "bg-green-500",
-    title: "Mobile Solutions",
+    title: "Cloud & Integration",
     description:
-      "Cross-platform apps designed for performance, native feel, and seamless synchronization across devices and services.",
+      "Enhance efficiency with reliable cloud infrastructure and system integrations. We ensure your data, tools, and platforms work seamlessly together.",
     services: [
-      "React Native apps",
-      "Enterprise mobility",
-      "IoT-enabled systems",
+      // "React Native apps",
+      // "Enterprise mobility",
+      // "IoT-enabled systems",
     ],
   },
-  {
-    icon: Star,
-    color: "bg-purple-600",
-    title: "Digital Branding",
-    description:
-      "Unified brand systems blending strategy, design, and usability to create lasting digital identities.",
-    services: ["Visual identity & logo", "UX/UI design systems", "Brand documentation"],
-  },
-  {
-    icon: Rocket,
-    color: "bg-yellow-500",
-    title: "Web Development",
-    description:
-      "We build fast, scalable websites and web apps with precision. Every line of code focuses on performance, security, and clean design.",
-    services: ["Responsive design", "Performance optimization", "Security implementation"],
-  },
+  // {
+  //   icon: Star,
+  //   color: "bg-purple-600",
+  //   title: "SEO & Digital Marketing",
+  //   description:
+  //     "Visibility fuels growth. We optimize your online presence through data-driven SEO strategies, targeted campaigns, and performance analytics that convert.",
+  //   services: [
+  //     // "Visual identity & logo", "UX/UI design systems", "Brand documentation"
+  //   ]
+  //     ,
+  // },
+  // {
+  //   icon: Rocket,
+  //   color: "bg-yellow-500",
+  //   title: "Web Development",
+  //   description:
+  //     "We build fast, scalable websites and web apps with precision. Every line of code focuses on performance, security, and clean design.",
+  //   services: ["Responsive design", "Performance optimization", "Security implementation"],
+  // },
   {
     icon: Command,
     color: "bg-pink-500",
     title: "SEO & Marketing",
     description:
       "We engineer visibility through technical SEO, content strategy, and analytics. The goal: reach your audience, rank higher, and convert effectively.",
-    services: ["Technical SEO audit", "Content strategy", "Analytics & reporting"],
+    services: [
+      // "Technical SEO audit", "Content strategy", "Analytics & reporting"
+    ]
+      ,
   },
 ];
 

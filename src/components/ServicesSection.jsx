@@ -39,8 +39,8 @@ const ServicesSection = () => {
   const services = [
     {
       icon: Code,
-      title: 'Web Development',
-      description: 'Custom websites and web applications built with modern technologies. Responsive, fast, and scalable solutions tailored to your business needs.',
+      title: 'Web & Software Development',
+      description: 'We create responsive websites and custom software solutions tailored to your business goals. Our builds are fast, secure, and scalable, designed to grow as you do.',
       path: '/software-development'
     },
     {
@@ -53,7 +53,7 @@ const ServicesSection = () => {
     {
       icon: Palette,
       title: 'Graphic Design',
-      description: 'Creative and professional design services for your brand. From logos to marketing materials, we bring your vision to life.',
+      description: 'Your brand deserves visuals that stand out. From logo design to full identity systems, we help businesses express who they are with clarity and style.',
       path: '/graphic-design'
     },
     {
@@ -64,8 +64,8 @@ const ServicesSection = () => {
     },
     {
       icon: BarChart,
-      title: 'Digital Marketing',
-      description: 'Data-driven marketing strategies to grow your online presence. SEO, social media management, and content marketing services.',
+      title: 'SEO & Digital Marketing',
+      description: 'Visibility fuels growth. We optimize your online presence through data-driven SEO strategies, targeted campaigns, and performance analytics that convert.',
        path: '/digital-marketing'
     },
   ];
