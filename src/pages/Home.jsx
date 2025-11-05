@@ -1,11 +1,10 @@
 import React from 'react'
-import Navbar from '../components/Navbar.jsx'
 import HeroSection from '../components/Hero.jsx'
 import AboutSection from '../components/About.jsx'
-import OurServices from '../components/Services.jsx'
+// import OurServices from '../components/Services.jsx'
 import PortfolioSection from '../components/Portfolio.jsx'
 import CTABanner from '../components/Banner.jsx'
-import Footer from '../components/Footer.jsx'
+import ServicesSection from '../components/ServicesSection'
 const Home = () => {
   return (
     <div>
@@ -13,7 +12,8 @@ const Home = () => {
       <HeroSection />
       <AboutSection />
       <PortfolioSection />
-      <OurServices />
+      <ServicesSection/>  
+      {/* <OurServices /> */} 
       <CTABanner />
 
     </div>
