@@ -3,7 +3,6 @@ import HeroSection from '../components/Hero.jsx'
 import AboutSection from '../components/About.jsx'
 // import OurServices from '../components/Services.jsx'
 import PortfolioSection from '../components/Portfolio.jsx'
-import CTABanner from '../components/Banner.jsx'
 import ServicesSection from '../components/ServicesSection'
 import AboutCTASection from '../components/about/AboutCTASection.jsx'
 const Home = () => {
@@ -14,7 +13,7 @@ const Home = () => {
       <AboutSection />
       <PortfolioSection />
       <ServicesSection/>  
-      {/* <OurServices /> */} 
+      {/* <OurServices />  */}
       {/* <CTABanner /> */}
       <AboutCTASection/>
 
