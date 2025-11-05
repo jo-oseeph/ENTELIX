@@ -19,7 +19,7 @@ class ErrorBoundary extends Component {
     if (this.state.hasError) {
       return (
         <div className="px-6 py-16 text-center">
-          <h2 className="text-2xl font-semibold text-red-600 mb-2">Something went wrong on the About page.</h2>
+          <h2 className="text-2xl font-semibold text-red-600 mb-2">Something went wrong{this.props.label ? ` in ${this.props.label}` : ''}.</h2>
           <p className="text-gray-600 text-sm">{String(this.state.error)}</p>
         </div>
       );

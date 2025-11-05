@@ -3,16 +3,17 @@ import { Suspense, lazy } from "react";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
-import Services from "./pages/Services";
-import Contact from "./pages/Contact";
+const Services = lazy(() => import("./pages/Services"));
+const Portfolio = lazy(() => import("./pages/Portfolio"));
+const Contact = lazy(() => import("./pages/Contact"));
 import NotFound from "./components/NotFound";
 import ErrorBoundary from "./components/ErrorBoundary";
 const AboutMain = lazy(() => import("./components/about/AboutPage"));
-import SoftwareDevelopment from "./pages/SoftwareDevelopment";
-import GraphicDesign from './pages/GraphicDesign';
-import MobileSolutions from "./pages/MobileSolutions";
-import CloudSolutions from "./pages/CloudSolutions";
-import DigitalMarketing from "./pages/DigitalMarketing";
+const SoftwareDevelopment = lazy(() => import("./pages/SoftwareDevelopment"));
+const GraphicDesign = lazy(() => import('./pages/GraphicDesign'));
+const MobileSolutions = lazy(() => import("./pages/MobileSolutions"));
+const CloudSolutions = lazy(() => import("./pages/CloudSolutions"));
+const DigitalMarketing = lazy(() => import("./pages/DigitalMarketing"));
 
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
               <Route path="/" element={<Home />} />
               <Route path="/about" element={<AboutMain />} /> 
               <Route path="/services" element={<Services />} />
+              <Route path="/portfolio" element={<Portfolio />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="*" element={<NotFound />} />
               <Route path="/software-development" element={<SoftwareDevelopment />} />
