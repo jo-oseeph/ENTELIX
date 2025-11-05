@@ -8,7 +8,7 @@ const Portfolio = lazy(() => import("./pages/Portfolio"));
 const Contact = lazy(() => import("./pages/Contact"));
 import NotFound from "./components/NotFound";
 import ErrorBoundary from "./components/ErrorBoundary";
-const AboutMain = lazy(() => import("./components/about/AboutPage"));
+const AboutMain = lazy(() => import("./pages/AboutPage"));
 const SoftwareDevelopment = lazy(() => import("./pages/SoftwareDevelopment"));
 const GraphicDesign = lazy(() => import('./pages/GraphicDesign'));
 const MobileSolutions = lazy(() => import("./pages/MobileSolutions"));

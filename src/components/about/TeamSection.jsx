@@ -2,19 +2,19 @@ import { useEffect, useRef, useState } from "react";
 
 const teamMembers = [
   {
-    name: "Joseph O.",
+    name: "Joseph S.",
     title: "Frontend Developer",
-    image: "/team1.jpg", // replace with your actual image paths
+    image: "/sejjo.jpeg", 
   },
   {
     name: "Onunga C.",
     title: "Backend Developer",
-    image: "/team2.jpg",
+    image: "/chris.jpeg",
   },
   {
-    name: "Faith N.",
+    name: "Bravin M.",
     title: "UI/UX Designer",
-    image: "/team3.jpg",
+    image: "/brav.jpeg",
   },
 ];
 

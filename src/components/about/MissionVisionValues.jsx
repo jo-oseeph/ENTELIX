@@ -33,7 +33,7 @@ const AboutMissionValues = () => {
     {
       icon: <Heart className="w-8 h-8 text-red-500 mb-4" />,
       title: "Our Core Values",
-      text: "Innovation, Integrity, and Collaboration — the principles that guide how we work and deliver value to our clients.",
+      text: "Innovation, Integrity, and Collaboration, the principles that guide how we work and deliver value to our clients.",
     },
   ];
 

@@ -1,9 +1,10 @@
-import AboutHero from "./AboutHero";
-import AboutIntro from "../About";
-import MissionVisionValues from "./MissionVisionValues";
-import TeamSection from "./TeamSection";
-import AboutCTA from "./AboutCTASection";
-import ErrorBoundary from "../ErrorBoundary";
+import AboutHero from "../components/about/AboutHero";
+import AboutIntro from "../components/About";
+import MissionVisionValues from "../components/about/MissionVisionValues";
+import TeamSection from "../components/about/TeamSection";
+import AboutCTA from "../components/about/AboutCTASection";
+import ErrorBoundary from "../components/ErrorBoundary";
+import WhyChooseUs from "../components/about/WhyChooseUs";
 
 const AboutPage = () => {
   return (
@@ -18,6 +19,7 @@ const AboutPage = () => {
         <ErrorBoundary label="MissionVisionValues">
           <MissionVisionValues />
         </ErrorBoundary>
+        <WhyChooseUs/>  
         <ErrorBoundary label="TeamSection">
           <TeamSection />
         </ErrorBoundary>
