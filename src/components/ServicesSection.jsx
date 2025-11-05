@@ -71,7 +71,7 @@ const ServicesSection = () => {
   ];
 
   return (
-    <section ref={sectionRef} className="py-20 md:py-28 bg-gray-50">
+    <section id="services"  ref={sectionRef} className="py-20 md:py-28 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
