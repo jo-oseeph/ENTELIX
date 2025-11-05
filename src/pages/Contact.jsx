@@ -1,10 +1,20 @@
-export default function Contact() {
+import React from "react";
+import HeroSection from "../components/contact/HeroSection";
+import ContactInfo from "../components/contact/ContactInfo";
+import ContactForm from "../components/contact/ContactForm";
+
+const Contact = () => {
   return (
-    <div className="pt-24 px-6">
-      <h1 className="text-3xl font-bold text-blue-950 mb-2">Contact</h1>
-      <p className="text-gray-700">This is a placeholder for Contact.</p>
-    </div>
+    <main>
+      <HeroSection />
+      <section className="py-16 bg-white">
+        <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-10">
+          <ContactInfo />
+          <ContactForm />
+        </div>
+      </section>
+    </main>
   );
-}
+};
 
-
+export default Contact;
