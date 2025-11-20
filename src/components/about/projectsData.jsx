@@ -21,7 +21,7 @@ const projectList = [
         title: "E-Cycle: E-Waste Management Platform",
         category: "Web Platform & Logistics",
         description: "A digital platform connecting e-waste producers with certified recyclers. Features include item listing, location matching, and impact tracking to promote responsible disposal.",
-        image: "/chris.jpeg", 
+        image: "img1.jpeg", 
         link: "https://waste-frontend-two.vercel.app/" 
     },
     {
