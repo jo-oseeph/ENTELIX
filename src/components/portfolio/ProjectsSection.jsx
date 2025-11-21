@@ -112,12 +112,12 @@ const ProjectCard = ({ project, index }) => {
         {/* Content */}
         <div className="p-8 flex flex-col flex-grow">
           <div className="mb-3">
-            <span className="inline-block px-3 py-1 text-xs font-medium text-blue-600 bg-blue-50 rounded-full">
+            <span className="inline-block px-3 py-1 text-xs font-medium text-red-500 bg-blue-50 rounded-full">
               {project.category}
             </span>
           </div>
 
-          <h3 className="text-2xl font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors duration-300">
+          <h3 className="text-2xl font-bold text-blue-950 mb-3 group-hover:text-blue-800 transition-colors duration-300">
             {project.title}
           </h3>
 
@@ -125,11 +125,11 @@ const ProjectCard = ({ project, index }) => {
             {project.description}
           </p>
 
-          <button
+        <button
             onClick={handleClick}
-            className="self-start px-6 py-3 bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-medium rounded-lg hover:from-blue-700 hover:to-indigo-700 transform hover:-translate-y-0.5 transition-all duration-300 shadow-md hover:shadow-lg"
+            className="self-start px-6 py-3 bg-transparent border-2 border-red-500 text-blue-600 font-medium rounded-full hover:bg-red-50 transform hover:-translate-y-0.5 transition-all duration-300 cursor-pointer"
           >
-            {hasLiveLink ? "View Demo →" : "Coming Soon"}
+            {hasLiveLink ? "View Demo" : "Coming Soon"}
           </button>
         </div>
       </div>
@@ -176,17 +176,18 @@ const ProjectsSection = () => {
           }`}
         >
           <div className="inline-block mb-4">
-            <span className="px-4 py-2 bg-gradient-to-r from-blue-100 to-indigo-100 text-blue-800 text-sm font-semibold rounded-full">
+            <span className="text-red-500 font-bold text-sm uppercase tracking-wider mb-3">
               Portfolio
             </span>
           </div>
-          <h2 className="text-5xl font-bold text-gray-900 mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-indigo-600">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-blue-950">
             Featured Projects
           </h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            <div className="mt-4 w-24 h-1 bg-red-500 mx-auto"></div>
+          <p className="text-xl text-gray-600 max-w-2xl mx-auto mb-6 mt-4">
             Innovative solutions spanning IoT, AI, sustainability, and digital platforms
           </p>
-          <div className="mt-6 w-24 h-1 bg-gradient-to-r from-blue-600 to-indigo-600 mx-auto rounded-full"></div>
+         
         </div>
 
         {/* Projects Grid */}
