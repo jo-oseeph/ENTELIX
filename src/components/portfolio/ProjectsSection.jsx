@@ -39,7 +39,7 @@ const projects = [
     title: "JengaSafi: Green Construction Monitor",
     category: "AI & Sustainability",
     description: "An AI-powered sustainability platform tracking real-time CO₂ emissions and recommending greener materials for Kenya's construction industry.",
-    image: "/hero-bg.jpg",
+    image: "/img6.png",
     link: "https://jengasafi-local.vercel.app/"
   },
   {
