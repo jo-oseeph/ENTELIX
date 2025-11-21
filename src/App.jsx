@@ -14,6 +14,7 @@ const GraphicDesign = lazy(() => import('./pages/GraphicDesign'));
 const MobileSolutions = lazy(() => import("./pages/MobileSolutions"));
 const CloudSolutions = lazy(() => import("./pages/CloudSolutions"));
 const DigitalMarketing = lazy(() => import("./pages/DigitalMarketing"));
+const FloatingWhatsApp = lazy(() => import("./components/FloatingWhatsApp"));
 
 
 function App() {
@@ -36,7 +37,9 @@ function App() {
              <Route path="/mobile-solutions" element={<MobileSolutions />} />
              <Route path="/cloud-solutions" element={<CloudSolutions />} />
              <Route path="/digital-marketing" element={<DigitalMarketing />} />
+           
             </Routes>
+            <FloatingWhatsApp />
           </Suspense>
         </ErrorBoundary>
       </main>
