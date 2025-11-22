@@ -50,11 +50,11 @@ export default function Footer() {
           <ul className="space-y-3 text-sm">
             <li className="flex items-center gap-2">
               <Phone className="text-[#E63946]" size={16} />
-              <span>+254 700 000 000</span>
+              <a href="tel:+254719238337" className="hover:text-[#E63946] transition-colors">+254 719238337</a>
             </li>
             <li className="flex items-center gap-2">
               <Mail className="text-[#E63946]" size={16} />
-              <span>contact@entelix.com</span>
+              <a href="mailto:contact@entelix.com" className="hover:text-[#E63946] transition-colors">contact@entelix.com</a>
             </li>
           </ul>
         </div>
