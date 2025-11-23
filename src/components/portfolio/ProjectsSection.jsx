@@ -28,11 +28,11 @@ const projects = [
   },
   {
     id: 4,
-    title: "AI Health Translator",
-    category: "AI & Healthcare",
-    description: "A specialized AI translator that bridges the language gap in healthcare, providing instant translation into local Kenyan languages.",
+    title: "Chris's Online Store",
+    category: "E-Commerce & Fashion",
+    description: "A modern men and women fashion and clothing e-commerce platform offering diverse collections from timeless classics to the latest trends. Features seamless shopping experience with quality pieces for every occasion.",
     image: "/img3.jpeg",
-    link: "project-health-translator.html"
+    link: "https://66631ddce57e8.site123.me/"
   },
   {
     id: 5,
@@ -44,11 +44,11 @@ const projects = [
   },
   {
     id: 6,
-    title: "Kazi Nyumbani: AI Property Valuation",
-    category: "Web Platform & AI",
-    description: "An AI-powered real estate platform using machine learning to predict property valuation and analyze neighborhood growth in Kenya.",
+    title: "Emali Adur Properties",
+    category: "Real Estate Platform",
+    description: "A comprehensive real estate platform for buying and renting properties in Kenya. Features intuitive property search tools, virtual tours, and detailed listings with location, price, and amenities filtering.",
     image: "/img5.jpeg",
-    link: "project-kazi-nyumbani.html"
+    link: "https://onungachristopher3.wixsite.com/emali-adur"
   }
 ];
 
@@ -185,7 +185,7 @@ const ProjectsSection = () => {
           </h2>
             <div className="mt-4 w-24 h-1 bg-red-500 mx-auto"></div>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto mb-6 mt-4">
-            Innovative solutions spanning IoT, AI, sustainability, and digital platforms
+            Innovative solutions spanning IoT, AI, e-commerce, real estate, sustainability, and digital platforms
           </p>
          
         </div>

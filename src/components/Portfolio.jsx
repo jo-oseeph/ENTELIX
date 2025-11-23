@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
+import { Link } from 'react-router-dom';
 import { ExternalLink, ArrowRight } from 'lucide-react';
 
 const PortfolioSection = () => {
@@ -28,28 +29,28 @@ const PortfolioSection = () => {
 
   const projects = [
     {
-      id: 1,
-      title: 'E-Commerce Platform',
-      description: 'A modern online shopping experience with seamless checkout and inventory management for retail businesses.',
-      image: 'img6.png',
-      link: 'https://example.com/project1',
-      category: 'Web Development',
-    },
-    {
       id: 2,
-      title: 'Healthcare Management System',
-      description: 'Comprehensive patient management solution with appointment scheduling and medical records integration.',
+      title: 'CYBEX: AI-Powered Cybersecurity',
+      description: 'A mission-driven startup empowering SMEs with smart, affordable, and effective cybersecurity solutions including real-time threat monitoring.',
       image: '/img2.png',
-      link: 'https://example.com/project2',
-      category: 'Mobile App',
+      link: 'https://cybexv2.vercel.app',
+      category: 'Cybersecurity & AI',
     },
     {
       id: 3,
-      title: 'Financial Dashboard',
-      description: 'Real-time analytics and reporting platform for financial institutions with advanced data visualization.',
+      title: 'E-Cycle: E-Waste Management Platform',
+      description: 'A digital platform connecting e-waste producers with certified recyclers. Features item listing, location matching, and impact tracking.',
       image: '/img1.jpeg',
-      link: 'https://example.com/project3',
-      category: 'Web Application',
+      link: 'https://waste-frontend-two.vercel.app/',
+      category: 'Web Platform & Logistics',
+    },
+    {
+      id: 5,
+      title: 'JengaSafi: Green Construction Monitor',
+      description: 'An AI-powered sustainability platform tracking real-time CO₂ emissions and recommending greener materials for Kenya\'s construction industry.',
+      image: '/img6.png',
+      link: 'https://jengasafi-local.vercel.app/',
+      category: 'AI & Sustainability',
     },
   ];
 
@@ -157,10 +158,13 @@ const PortfolioSection = () => {
             isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
           }`}
         >
-          <button className="group relative px-8 py-4 text-white font-bold text-sm uppercase tracking-wider overflow-hidden rounded-full transition-all duration-300 hover:scale-105 bg-red-500 hover:bg-red-600 inline-flex items-center gap-3 shadow-lg hover:shadow-2xl">
+          <Link 
+            to="/portfolio"
+            className="group relative px-8 py-4 text-white font-bold text-sm uppercase tracking-wider overflow-hidden rounded-full transition-all duration-300 hover:scale-105 bg-red-500 hover:bg-red-600 inline-flex items-center gap-3 shadow-lg hover:shadow-2xl"
+          >
             View All Projects
             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-          </button>
+          </Link>
         </div>
       </div>
     </section>
