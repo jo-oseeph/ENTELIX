@@ -7,7 +7,7 @@ const projects = [
     title: "Offline IoT Water Monitor",
     category: "IoT & Hardware",
     description: "A low-cost, real-time water quality monitoring system for rural households. Operates entirely offline using an ESP32 and local Wi-Fi dashboard.",
-    image: "/img4.jpeg",
+    image: "/iot.png",
     link: "project-hero.html"
   },
   {
@@ -15,7 +15,7 @@ const projects = [
     title: "CYBEX: AI-Powered Cybersecurity",
     category: "Cybersecurity & AI",
     description: "A mission-driven startup empowering SMEs with smart, affordable, and effective cybersecurity solutions including real-time threat monitoring.",
-    image: "/img2.png",
+    image: "/cybex1.png",
     link: "https://cybexv2.vercel.app"
   },
   {
@@ -23,7 +23,7 @@ const projects = [
     title: "E-Cycle: E-Waste Management Platform",
     category: "Web Platform & Logistics",
     description: "A digital platform connecting e-waste producers with certified recyclers. Features item listing, location matching, and impact tracking.",
-    image: "/img1.jpeg",
+    image: "/ewaste1.png",
     link: "https://waste-frontend-two.vercel.app/"
   },
   {
