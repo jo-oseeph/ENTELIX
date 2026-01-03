@@ -7,7 +7,7 @@ const projects = [
     title: "Offline IoT Water Monitor",
     category: "IoT & Hardware",
     description: "A low-cost, real-time water quality monitoring system for rural households. Operates entirely offline using an ESP32 and local Wi-Fi dashboard.",
-    image: "/img4.jpeg",
+    image: "/iot.png",
     link: "project-hero.html"
   },
   {
