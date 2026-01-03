@@ -4,18 +4,18 @@ import React, { useEffect, useRef, useState } from "react";
 const projects = [
   {
     id: 1,
-    title: "Electrify: AI-Powered Electronics Store",
-    category: "E-Commerce & Technology",
-    description: "An innovative online electronics store featuring an AI-powered 'Build My Setup' tool that creates personalized tech configurations, augmented reality viewing rooms for product visualization, and a comprehensive catalog of smartphones, laptops, smart home devices, audio gear, and wearables with fast delivery and extended warranty options.",
+    title: "Offline IoT Water Monitor",
+    category: "IoT & Hardware",
+    description: "A low-cost, real-time water quality monitoring system for rural households. Operates entirely offline using an ESP32 and local Wi-Fi dashboard.",
     image: "/img4.jpeg",
-    link: "https://electrify.lovable.app/"
+    link: "project-hero.html"
   },
   {
     id: 2,
     title: "CYBEX: AI-Powered Cybersecurity",
     category: "Cybersecurity & AI",
     description: "A mission-driven startup empowering SMEs with smart, affordable, and effective cybersecurity solutions including real-time threat monitoring.",
-    image: "/img2.png",
+    image: "/cybex1.png",
     link: "https://cybexv2.vercel.app"
   },
   {
@@ -23,7 +23,7 @@ const projects = [
     title: "E-Cycle: E-Waste Management Platform",
     category: "Web Platform & Logistics",
     description: "A digital platform connecting e-waste producers with certified recyclers. Features item listing, location matching, and impact tracking.",
-    image: "/img1.jpeg",
+    image: "/ewaste1.png",
     link: "https://waste-frontend-two.vercel.app/"
   },
   {
