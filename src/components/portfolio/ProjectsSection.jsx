@@ -31,7 +31,7 @@ const projects = [
     title: "Chris's Online Store",
     category: "E-Commerce & Fashion",
     description: "A modern men and women fashion and clothing e-commerce platform offering diverse collections from timeless classics to the latest trends. Features seamless shopping experience with quality pieces for every occasion.",
-    image: "/img3.jpeg",
+    image: "/store.png",
     link: "https://66631ddce57e8.site123.me/"
   },
   {
@@ -39,7 +39,7 @@ const projects = [
     title: "JengaSafi: Green Construction Monitor",
     category: "AI & Sustainability",
     description: "An AI-powered sustainability platform tracking real-time CO₂ emissions and recommending greener materials for Kenya's construction industry.",
-    image: "/img6.png",
+    image: "/jengasafi.png",
     link: "https://jengasafi-local.vercel.app/"
   },
   {
@@ -47,7 +47,7 @@ const projects = [
     title: "Emali Adur Properties",
     category: "Real Estate Platform",
     description: "A comprehensive real estate platform for buying and renting properties in Kenya. Features intuitive property search tools, virtual tours, and detailed listings with location, price, and amenities filtering.",
-    image: "/img5.jpeg",
+    image: "/realestate.png",
     link: "https://onungachristopher3.wixsite.com/emali-adur"
   }
 ];
