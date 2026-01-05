@@ -49,7 +49,15 @@ const projects = [
     description: "A comprehensive real estate platform for buying and renting properties in Kenya. Features intuitive property search tools, virtual tours, and detailed listings with location, price, and amenities filtering.",
     image: "/realestate.png",
     link: "https://onungachristopher3.wixsite.com/emali-adur"
-  }
+  },
+  {
+  id: 7,
+  title: "Electrify: Digital Products Marketplace",
+  category: "E-Commerce & Fintech",
+  description: "A full-featured digital products e-commerce platform with secure add-to-cart, checkout flow, and M-Pesa STK Push integration. Supports instant digital delivery after successful payment and transaction verification.",
+  image: "/electrify.png",
+  link: "https://electrify.lovable.app/"
+}
 ];
 
 // Individual Project Card Component
