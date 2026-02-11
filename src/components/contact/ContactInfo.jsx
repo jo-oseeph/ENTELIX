@@ -3,7 +3,7 @@ import { Mail, Phone, MessageCircle, MapPin } from "lucide-react";
 
 const ContactInfo = () => {
   return (
-    <div className="space-y-6">
+    <div className="space-y-3">
       <a href="mailto:contact@entelix.com" className="flex items-center gap-4 group cursor-pointer hover:bg-red-50 p-3 rounded-lg transition-all duration-300">
         <Mail className="text-blue-600 group-hover:text-red-500 transition-colors" size={24} />
         <div className="flex-1">

@@ -4,18 +4,18 @@ import React, { useEffect, useRef, useState } from "react";
 const projects = [
   {
     id: 1,
-    title: "Electrify: AI-Powered Electronics Store",
-    category: "E-Commerce & Technology",
-    description: "An innovative online electronics store featuring an AI-powered 'Build My Setup' tool that creates personalized tech configurations, augmented reality viewing rooms for product visualization, and a comprehensive catalog of smartphones, laptops, smart home devices, audio gear, and wearables with fast delivery and extended warranty options.",
-    image: "/img4.jpeg",
-    link: "https://electrify.lovable.app/"
+    title: "Offline IoT Water Monitor",
+    category: "IoT & Hardware",
+    description: "A low-cost, real-time water quality monitoring system for rural households. Operates entirely offline using an ESP32 and local Wi-Fi dashboard.",
+    image: "/iot.png",
+    link: "project-hero.html"
   },
   {
     id: 2,
     title: "CYBEX: AI-Powered Cybersecurity",
     category: "Cybersecurity & AI",
     description: "A mission-driven startup empowering SMEs with smart, affordable, and effective cybersecurity solutions including real-time threat monitoring.",
-    image: "/img2.png",
+    image: "/cybex1.png",
     link: "https://cybexv2.vercel.app"
   },
   {
@@ -23,7 +23,7 @@ const projects = [
     title: "E-Cycle: E-Waste Management Platform",
     category: "Web Platform & Logistics",
     description: "A digital platform connecting e-waste producers with certified recyclers. Features item listing, location matching, and impact tracking.",
-    image: "/img1.jpeg",
+    image: "/ewaste1.png",
     link: "https://waste-frontend-two.vercel.app/"
   },
   {
@@ -31,7 +31,7 @@ const projects = [
     title: "Chris's Online Store",
     category: "E-Commerce & Fashion",
     description: "A modern men and women fashion and clothing e-commerce platform offering diverse collections from timeless classics to the latest trends. Features seamless shopping experience with quality pieces for every occasion.",
-    image: "/img3.jpeg",
+    image: "/store.png",
     link: "https://66631ddce57e8.site123.me/"
   },
   {
@@ -39,7 +39,7 @@ const projects = [
     title: "JengaSafi: Green Construction Monitor",
     category: "AI & Sustainability",
     description: "An AI-powered sustainability platform tracking real-time CO₂ emissions and recommending greener materials for Kenya's construction industry.",
-    image: "/img6.png",
+    image: "/jengasafi.png",
     link: "https://jengasafi-local.vercel.app/"
   },
   {
@@ -47,9 +47,17 @@ const projects = [
     title: "Emali Adur Properties",
     category: "Real Estate Platform",
     description: "A comprehensive real estate platform for buying and renting properties in Kenya. Features intuitive property search tools, virtual tours, and detailed listings with location, price, and amenities filtering.",
-    image: "/img5.jpeg",
+    image: "/realestate.png",
     link: "https://onungachristopher3.wixsite.com/emali-adur"
-  }
+  },
+  {
+  id: 7,
+  title: "Electrify: Digital Products Marketplace",
+  category: "E-Commerce & Fintech",
+  description: "A full-featured digital products e-commerce platform with secure add-to-cart, checkout flow, and M-Pesa STK Push integration. Supports instant digital delivery after successful payment and transaction verification.",
+  image: "/electrify.png",
+  link: "https://electrify.lovable.app/"
+}
 ];
 
 // Individual Project Card Component
