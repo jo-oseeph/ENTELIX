@@ -2,7 +2,7 @@ import { ArrowRight } from "lucide-react";
 
 export default function CTABanner() {
   return (
-    <section className="w-full bg-gradient-to-r from-[#E63946] via-[#C71F37] to-[#0B2153] text-white py-20 px-6 relative overflow-hidden">
+    <section className="w-full bg-linear-to-r from-[#E63946] via-[#C71F37] to-[#0B2153] text-white py-20 px-6 relative overflow-hidden">
       {/* Subtle overlay for depth */}
       <div className="absolute inset-0 bg-black/10" />
 

@@ -8,10 +8,6 @@ const AboutMain = () => {
   return (
     <>
       <div className="pt-20">
-        <div className="px-6 py-4 text-center">
-          <h1 className="text-2xl font-bold text-blue-950">About Page</h1>
-        </div>
-
         <AboutHero />
         <AboutIntro />
         <MissionVisionValues />
