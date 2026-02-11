@@ -3,14 +3,6 @@ import React, { useEffect, useRef, useState } from "react";
 // Projects Data
 const projects = [
   {
-    id: 1,
-    title: "Offline IoT Water Monitor",
-    category: "IoT & Hardware",
-    description: "A low-cost, real-time water quality monitoring system for rural households. Operates entirely offline using an ESP32 and local Wi-Fi dashboard.",
-    image: "/iot.png",
-    link: "project-hero.html"
-  },
-  {
     id: 2,
     title: "CYBEX: AI-Powered Cybersecurity",
     category: "Cybersecurity & AI",
