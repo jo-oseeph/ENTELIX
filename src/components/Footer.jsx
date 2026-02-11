@@ -2,6 +2,8 @@ import { Link } from "react-router-dom";
 import { Mail, Phone, ChevronUp, Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
 
 export default function Footer() {
+  const currentYear = new Date().getFullYear();
+
   return (
     <footer className="bg-[#0B2153] text-gray-300 pt-16 pb-6 relative">
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-12">
@@ -63,7 +65,7 @@ export default function Footer() {
       {/* Bottom Bar */}
       <div className="border-t border-gray-700 mt-12 pt-6 px-6 flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
         <p>
-          © 2025 <span className="text-[#E63946]">Entelix Solutions</span>. All Rights Reserved.
+          © {currentYear} <span className="text-[#E63946]">Entelix Solutions</span>. All Rights Reserved.
         </p>
 
         <div className="flex gap-4 mt-4 md:mt-0">
