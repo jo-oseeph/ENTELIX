@@ -1,6 +1,6 @@
-import { useState, useEffect } from 'react';
-import { HashLink as Link } from 'react-router-hash-link';
-import { Menu, X, Home, Info, Briefcase, Mail } from 'lucide-react';
+import { useState, useEffect } from "react";
+import { HashLink as Link } from "react-router-hash-link";
+import { Menu, X } from "lucide-react";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,22 +10,22 @@ const Navbar = () => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 20);
     };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const navLinks = [
-    { name: 'Home', href: '/', icon: Home },
-    { name: 'About', href: '/about', icon: Info },
-    { name: 'Services', href: '/services', icon: Briefcase },
-    { name: 'Portfolio', href: '/portfolio', icon: Briefcase },
-    { name: 'Contact Us', href: '/contact', icon: Mail },
+    { name: "Home", href: "/" },
+    { name: "About", href: "/about" },
+    { name: "Services", href: "/services" },
+    { name: "Portfolio", href: "/portfolio" },
+    { name: "Contact Us", href: "/contact" },
   ];
 
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled ? 'bg-white shadow-lg shadow-red-500/10' : 'bg-white'
+        scrolled ? "bg-white shadow-lg shadow-red-500/10" : "bg-white"
       }`}
     >
       <div className="mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
@@ -45,15 +45,13 @@ const Navbar = () => {
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-1">
             {navLinks.map((link, idx) => {
-              const Icon = link.icon;
               return (
                 <Link
                   key={idx}
                   to={link.href}
                   className="group relative px-5 py-2.5 text-gray-700 hover:text-red-500 transition-all duration-300"
                 >
-                  <span className="relative z-10 flex items-center gap-2 text-sm font-medium">
-                    <Icon className="w-4 h-4 text-red-500 group-hover:scale-110 transition-transform" />
+                  <span className="relative z-10 text-xs font-medium uppercase tracking-wide">
                     {link.name}
                   </span>
                   <div className="absolute inset-0 bg-red-50 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity"></div>
@@ -75,21 +73,21 @@ const Navbar = () => {
         {/* Mobile Menu */}
         <div
           className={`md:hidden absolute top-full left-0 right-0 bg-white border-t border-red-100 transition-all duration-300 overflow-hidden shadow-xl ${
-            isOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'
+            isOpen ? "max-h-screen opacity-100" : "max-h-0 opacity-0"
           }`}
         >
           <div className="px-4 py-6 space-y-2">
             {navLinks.map((link, idx) => {
-              const Icon = link.icon;
               return (
                 <Link
                   key={idx}
                   to={link.href}
                   onClick={() => setIsOpen(false)}
-                  className="flex items-center gap-3 px-4 py-3 text-gray-700 hover:text-red-500 hover:bg-red-50 rounded-lg transition-all duration-300 group"
+                  className="block px-4 py-3 text-gray-700 hover:text-red-500 hover:bg-red-50 rounded-lg transition-all duration-300"
                 >
-                  <Icon className="w-5 h-5 text-red-500 group-hover:scale-110 transition-transform" />
-                  <span className="font-medium">{link.name}</span>
+                  <span className="font-medium uppercase tracking-wide text-sm">
+                    {link.name}
+                  </span>
                 </Link>
               );
             })}
