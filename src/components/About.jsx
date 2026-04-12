@@ -12,9 +12,10 @@ const AboutIntro = () => {
       { threshold: 0.1 }
     );
 
-    if (sectionRef.current) observer.observe(sectionRef.current);
+    const currentRef = sectionRef.current;
+    if (currentRef) observer.observe(currentRef);
     return () => {
-      if (sectionRef.current) observer.unobserve(sectionRef.current);
+      if (currentRef) observer.unobserve(currentRef);
     };
   }, []);
 
@@ -71,8 +72,7 @@ const AboutIntro = () => {
                   onClick={handleLearnMore}
                   className="group relative inline-flex items-center gap-2 px-8 py-4 text-white font-bold text-sm uppercase tracking-wider rounded-full bg-[#FF4D4D] hover:bg-[#E63946] transition-all duration-300 hover:scale-105 hover:shadow-xl active:scale-95 overflow-hidden"
                 >
-                  <span className="relative z-10">Learn More About Us</span>
-                  <span className="relative z-10 transform group-hover:translate-x-1 transition-transform duration-300">→</span>
+                  <span className="relative z-10">Learn More</span>
                   <div className="absolute inset-0 bg-gradient-to-r from-[#E63946] to-[#FF4D4D] opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </button>
               </div>
