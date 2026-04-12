@@ -1,21 +1,21 @@
 import { Routes, Route } from "react-router-dom";
-import { Suspense, lazy } from "react";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
+import PageTransition from "./components/PageTransition";
 import Home from "./pages/Home";
-const Services = lazy(() => import("./pages/Services"));
-const Portfolio = lazy(() => import("./pages/Portfolio"));
-const Contact = lazy(() => import("./pages/Contact"));
+import Services from "./pages/Services";
+import Portfolio from "./pages/Portfolio";
+import Contact from "./pages/Contact";
 import NotFound from "./components/NotFound";
 import ErrorBoundary from "./components/ErrorBoundary";
-const AboutMain = lazy(() => import("./pages/AboutPage"));
-const SoftwareDevelopment = lazy(() => import("./pages/SoftwareDevelopment"));
-const GraphicDesign = lazy(() => import("./pages/GraphicDesign"));
-const MobileSolutions = lazy(() => import("./pages/MobileSolutions"));
-const CloudSolutions = lazy(() => import("./pages/CloudSolutions"));
-const DigitalMarketing = lazy(() => import("./pages/DigitalMarketing"));
-// const FloatingWhatsApp = lazy(() => import("./components/FloatingWhatsApp"));
+import AboutMain from "./pages/AboutPage";
+import SoftwareDevelopment from "./pages/SoftwareDevelopment";
+import GraphicDesign from "./pages/GraphicDesign";
+import MobileSolutions from "./pages/MobileSolutions";
+import CloudSolutions from "./pages/CloudSolutions";
+import DigitalMarketing from "./pages/DigitalMarketing";
+// import FloatingWhatsApp from "./components/FloatingWhatsApp";
 
 function App() {
   return (
@@ -24,8 +24,8 @@ function App() {
 
       <main className="grow">
         <ErrorBoundary>
-          <Suspense fallback={<div className="px-6 py-10">Loading…</div>}>
-            <ScrollToTop />
+          <ScrollToTop />
+          <PageTransition>
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/about" element={<AboutMain />} />
@@ -42,8 +42,8 @@ function App() {
               <Route path="/cloud-solutions" element={<CloudSolutions />} />
               <Route path="/digital-marketing" element={<DigitalMarketing />} />
             </Routes>
-            {/* <FloatingWhatsApp /> */}
-          </Suspense>
+          </PageTransition>
+          {/* <FloatingWhatsApp /> */}
         </ErrorBoundary>
       </main>
 
