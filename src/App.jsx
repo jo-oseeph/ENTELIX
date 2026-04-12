@@ -39,7 +39,7 @@ function App() {
              <Route path="/digital-marketing" element={<DigitalMarketing />} />
            
             </Routes>
-            {/* <FloatingWhatsApp /> */}
+            {/* <FloatingWhatsApp /> */} 
           </Suspense>
         </ErrorBoundary>
       </main>

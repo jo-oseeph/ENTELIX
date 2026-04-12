@@ -98,12 +98,6 @@ const AboutIntro = () => {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-blue-950/30 to-transparent"></div>
               </div>
-
-              {/* Accent badge */}
-              <div className="absolute -bottom-8 -left-8 bg-red-500 text-white p-6 rounded-xl shadow-xl transform rotate-3 group-hover:rotate-0 transition-transform duration-300">
-                <p className="text-4xl font-bold">3+</p>
-                <p className="text-sm font-semibold">Years Experience</p>
-              </div>
             </div>
           </div>
         </div>
