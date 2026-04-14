@@ -19,27 +19,22 @@ const WhyChooseUs = () => {
   }, []);
 
   const features = [
-    {
-      title: 'Client-Centered Approach',
-      description: 'Every project begins with your goals, not our assumptions.',
-      delay: '0'
-    },
-    {
-      title: 'Skilled & Passionate Team',
-      description: 'A team that codes, designs, and innovates with intent.',
-      delay: '100'
-    },
-    {
-      title: 'End-to-End Solutions',
-      description: 'From concept to maintenance, we deliver complete digital experiences.',
-      delay: '200'
-    },
-    {
-      title: 'Results that Matter',
-      description: 'We focus on measurable growth, not just visual appeal.',
-      delay: '300'
-    }
-  ];
+  {
+    title: 'Client-Centered Approach',
+    description: 'Every project begins with your goals, not our assumptions.',
+    delay: '0'
+  },
+  {
+    title: 'Skilled & Passionate Team',
+    description: 'A team that codes, designs, and innovates with intent.',
+    delay: '100'
+  },
+  {
+    title: 'End-to-End Solutions',
+    description: 'From concept to maintenance, we deliver complete digital experiences.',
+    delay: '200'
+  }
+];
 
   return (
     <section
@@ -69,7 +64,7 @@ const WhyChooseUs = () => {
         </div>
 
         {/* Feature Cards */}
-        <div className="grid md:grid-cols-2 gap-6 lg:gap-8">
+       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
           {features.map((feature, index) => (
             <div
               key={index}

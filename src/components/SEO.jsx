@@ -1,11 +1,11 @@
 import { Helmet } from "react-helmet-async";
 
-const SEO = ({
+const SEO = ({ 
   title = "ENTELIX - Digital Solutions & Software Development Company",
   description = "Transform your business with ENTELIX's expert digital solutions. We specialize in web development, cloud solutions, mobile apps, graphic design, and digital marketing.",
   keywords = "software development, web development, mobile app development, cloud solutions, digital marketing, graphic design",
   image = "/og-image.jpg",
-  url = "https://entelix.com",
+  url = "https://entelix.com", 
 }) => {
   const siteTitle = "ENTELIX";
   const fullTitle = title.includes(siteTitle)
