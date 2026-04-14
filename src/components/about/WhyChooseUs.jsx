@@ -75,7 +75,7 @@ const WhyChooseUs = () => {
             >
               <div className="relative h-full bg-white rounded-2xl p-8 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border-2 border-transparent hover:border-red-500/20">
                 {/* Accent line */}
-                <div className="absolute top-0 left-0 w-1 h-0 bg-gradient-to-b from-red-500 to-transparent group-hover:h-full transition-all duration-500 rounded-tl-2xl"></div>
+               
                 
                 {/* Number badge */}
                 <div className="absolute -top-4 -right-4 w-12 h-12 bg-red-500 text-white rounded-full flex items-center justify-center font-bold text-lg shadow-lg group-hover:scale-110 transition-transform duration-300">
