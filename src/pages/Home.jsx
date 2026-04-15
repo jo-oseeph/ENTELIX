@@ -6,6 +6,7 @@ import AboutSection from "../components/About.jsx";
 import ServicesSection from "../components/ServicesSection";
 import AboutCTASection from "../components/about/AboutCTASection.jsx";
 // import StatsStrip from "../components/StatsStrip.jsx";
+import WhyChooseUs from "../components/about/WhyChooseUs";
 import SEO from "../components/SEO";
 
 const Home = () => {
@@ -24,6 +25,7 @@ const Home = () => {
       <ServicesSection />
       {/* <OurServices />  */}
       {/* <CTABanner /> */}
+      <WhyChooseUs />
       <AboutCTASection />
     </div>
   );

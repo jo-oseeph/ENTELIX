@@ -68,6 +68,9 @@ const ServicesSection = () => {
               isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-10'
             }`}
           >
+             <p className="text-red-500 font-bold text-sm uppercase tracking-wider mb-3">
+              SERVICES
+            </p>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-blue-950 mb-4">
               Our Services
             </h2>
