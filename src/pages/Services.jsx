@@ -1,5 +1,5 @@
 import ServicesHero from "../components/ServicesHero";
-import ServicesSection from "../components/ServicesSection";
+import ServicesSection from "../components/MajorServices";
 import SEO from "../components/SEO";
 
 const Services = () => {

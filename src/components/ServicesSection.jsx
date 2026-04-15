@@ -26,41 +26,42 @@ const ServicesSection = () => {
   }, []);
 
   const services = [
-  {
-    icon: Code,
-    title: 'Software Development',
-    description: 'We build custom software, web applications, eCommerce platforms, and mobile apps designed to solve real business problems and scale with growth. AI integrations are included to automate processes and enhance performance.',
-    path: '/software-development'
-  },
-  
-  {
-    icon: Palette,
-    title: 'Graphic Design',
-    description: 'We create clean, impactful visuals and brand identities that communicate clearly and position your business to stand out in competitive markets.',
-    path: '/graphic-design'
-  },
-  {
-    icon: BarChart,
-    title: 'SEO & Digital Marketing',
-    description: 'We grow your visibility and drive results through targeted SEO strategies, data-driven campaigns, and performance-focused marketing.',
-    path: '/digital-marketing'
-  },
-  {
-    icon: Users,
-    title: 'Consultation Services',
-    description: 'We provide expert guidance to help you plan, build, and optimize digital solutions, including AI strategy aligned with your business goals.',
-    path: '/consultation-services'
-  },
-  {
-    icon: Cloud,
-    title: 'Cloud Solutions',
-    description: 'We design and manage cloud infrastructure that improves performance, reduces costs, and ensures your systems are secure, scalable, and reliable.',
-    path: '/cloud-solutions'
-  },
-];
+    {
+      icon: Code,
+      title: 'Software Development',
+      description: 'We build custom software, web applications, eCommerce platforms, and mobile apps designed to solve real business problems and scale with growth. AI integrations are included to automate processes and enhance performance.',
+      path: '/software-development'
+    },
+    {
+      icon: Palette,
+      title: 'Graphic Design',
+      description: 'We create clean, impactful visuals and brand identities that communicate clearly and position your business to stand out in competitive markets.',
+      path: '/graphic-design'
+    },
+    {
+      icon: BarChart,
+      title: 'SEO & Digital Marketing',
+      description: 'We grow your visibility and drive results through targeted SEO strategies, data-driven campaigns, and performance-focused marketing.',
+      path: '/digital-marketing'
+    },
+    {
+      icon: Users,
+      title: 'Consultation Services',
+      description: 'We provide expert guidance to help you plan, build, and optimize digital solutions, including AI strategy aligned with your business goals.',
+      path: '/consultation-services'
+    },
+    {
+      icon: Cloud,
+      title: 'Cloud Solutions',
+      description: 'We design and manage cloud infrastructure that improves performance, reduces costs, and ensures your systems are secure, scalable, and reliable.',
+      path: '/cloud-solutions'
+    },
+  ];
+
   return (
     <section id="services" ref={sectionRef} className="py-20 md:py-28 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
         {/* Section Header */}
         <div className="text-center mb-16">
           <div
@@ -68,7 +69,7 @@ const ServicesSection = () => {
               isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-10'
             }`}
           >
-             <p className="text-red-500 font-bold text-sm uppercase tracking-wider mb-3">
+            <p className="text-red-500 font-bold text-sm uppercase tracking-wider mb-3">
               SERVICES
             </p>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-blue-950 mb-4">
@@ -80,9 +81,9 @@ const ServicesSection = () => {
           </div>
         </div>
 
-        {/* Services Grid */}
+        {/* Services Grid (ONLY 3) */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {services.map((service, index) => (
+          {services.slice(0, 3).map((service, index) => (
             <ServiceCard
               key={index}
               service={service}
@@ -91,6 +92,17 @@ const ServicesSection = () => {
             />
           ))}
         </div>
+
+        {/* View More Button */}
+        <div className="text-center mt-12">
+          <button
+            onClick={() => (window.location.href = '/services')}
+            className="inline-flex items-center px-8 py-4 bg-[#FF4D4D] text-white font-bold text-sm uppercase tracking-wider rounded-full hover:bg-[#E63946] transition-all duration-300 hover:scale-105 hover:shadow-lg"
+          >
+            View More
+          </button>
+        </div>
+
       </div>
     </section>
   );

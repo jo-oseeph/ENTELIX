@@ -85,9 +85,9 @@ const AboutIntro = () => {
               {/* Stats */}
               <div className="grid grid-cols-3 gap-4 pt-4">
                 {[
-                  { value: '5+', label: 'Years Experience' },
-                  { value: '500+', label: 'Projects' },
-                  { value: '200+', label: 'Clients' }
+                  { value: '3+', label: 'Years Experience' },
+                  { value: '20+', label: 'Projects' },
+                  { value: '100+', label: 'Clients' }
                 ].map((stat, index) => (
                   <div
                     key={index}
