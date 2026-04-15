@@ -26,74 +26,38 @@ const ServicesSection = () => {
   }, []);
 
   const services = [
-    {
-      icon: Code,
-      title: 'Software Development',
-      description: 'We design and build custom software systems that solve real business problems. From scalable web applications and eCommerce platforms to high-performance mobile apps, every solution is engineered for speed, security, and growth. We also integrate AI capabilities to automate workflows, enhance decision-making, and give your business a competitive edge.',
-      offerings: [
-        'Custom Software Development',
-        'Web Application Development',
-        'eCommerce Development',
-        'Mobile App Development',
-        'API Development & Integration',
-        'AI Integrations'
-      ],
-      path: '/software-development'
-    },
-    {
-      icon: Cloud,
-      title: 'Cloud Solutions',
-      description: 'We help businesses leverage cloud infrastructure to improve performance, reduce costs, and scale efficiently. From migration to optimization, we ensure your systems remain reliable, secure, and future-ready.',
-      offerings: [
-        'Cloud Migration',
-        'Infrastructure Setup',
-        'Cloud Optimization',
-        'DevOps & CI/CD',
-        'Security & Monitoring'
-      ],
-      path: '/cloud-solutions'
-    },
-    {
-      icon: Palette,
-      title: 'Graphic Design',
-      description: 'We create visual identities that communicate clearly and leave a lasting impression. Every design decision is intentional, aligned with your brand, and built to stand out in competitive markets.',
-      offerings: [
-        'Logo Design',
-        'Brand Identity Systems',
-        'Marketing Materials',
-        'Social Media Graphics',
-        'UI/UX Design'
-      ],
-      path: '/graphic-design'
-    },
-    {
-      icon: BarChart,
-      title: 'SEO & Digital Marketing',
-      description: 'We drive measurable growth by positioning your business where it matters most. Through strategic SEO, targeted campaigns, and performance tracking, we turn visibility into consistent results.',
-      offerings: [
-        'Search Engine Optimization (SEO)',
-        'Content Strategy',
-        'Paid Advertising (PPC)',
-        'Social Media Marketing',
-        'Analytics & Reporting'
-      ],
-      path: '/digital-marketing'
-    },
-    {
-      icon: Users,
-      title: 'Consultation Services',
-      description: 'We provide strategic guidance to help you make smarter technology decisions. Whether you are planning a new product or optimizing an existing system, we align your tech with your business goals.',
-      offerings: [
-        'Technical Consulting',
-        'Product Strategy',
-        'System Architecture Planning',
-        'Digital Transformation',
-        'AI Strategy & Advisory'
-      ],
-      path: '/consultation-services'
-    }
-  ];
-
+  {
+    icon: Code,
+    title: 'Software Development',
+    description: 'We build custom software, web applications, eCommerce platforms, and mobile apps designed to solve real business problems and scale with growth. AI integrations are included to automate processes and enhance performance.',
+    path: '/software-development'
+  },
+  
+  {
+    icon: Palette,
+    title: 'Graphic Design',
+    description: 'We create clean, impactful visuals and brand identities that communicate clearly and position your business to stand out in competitive markets.',
+    path: '/graphic-design'
+  },
+  {
+    icon: BarChart,
+    title: 'SEO & Digital Marketing',
+    description: 'We grow your visibility and drive results through targeted SEO strategies, data-driven campaigns, and performance-focused marketing.',
+    path: '/digital-marketing'
+  },
+  {
+    icon: Users,
+    title: 'Consultation Services',
+    description: 'We provide expert guidance to help you plan, build, and optimize digital solutions, including AI strategy aligned with your business goals.',
+    path: '/consultation-services'
+  },
+  {
+    icon: Cloud,
+    title: 'Cloud Solutions',
+    description: 'We design and manage cloud infrastructure that improves performance, reduces costs, and ensures your systems are secure, scalable, and reliable.',
+    path: '/cloud-solutions'
+  },
+];
   return (
     <section id="services" ref={sectionRef} className="py-20 md:py-28 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
