@@ -5,6 +5,7 @@ import AboutSection from "../components/About.jsx";
 // import PortfolioSection from "../components/Portfolio.jsx";
 import ServicesSection from "../components/ServicesSection";
 import AboutCTASection from "../components/about/AboutCTASection.jsx";
+// import StatsStrip from "../components/StatsStrip.jsx";
 import SEO from "../components/SEO";
 
 const Home = () => {
@@ -17,6 +18,7 @@ const Home = () => {
       />
 
       <HeroSection />
+   
       <AboutSection />
       {/* <PortfolioSection /> */}
       <ServicesSection />

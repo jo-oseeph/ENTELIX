@@ -55,11 +55,7 @@ const AboutIntro = () => {
           >
             <div className="space-y-6">
               <p className="text-gray-700 text-lg leading-relaxed">
-                <span className="font-bold text-blue-950">Entelix</span> is a software development company dedicated to helping startups and growing brands transform their ideas into digital solutions that drive measurable impact. We design and develop scalable websites, software systems, and cloud-based platforms that simplify business operations and create real value for{' '}
-                <span className="text-red-500 font-semibold">
-                   clients
-                </span>
-                .
+                <span className="font-bold text-blue-950">Entelix</span> is a software development company dedicated to helping startups and growing brands transform their ideas into digital solutions that drive measurable impact. We design and develop scalable websites, software systems, and cloud-based platforms that simplify business operations and create real value for clients.
               </p>
 
               <p className="text-gray-700 text-lg leading-relaxed">

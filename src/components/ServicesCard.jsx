@@ -96,4 +96,4 @@ const ServiceCard = ({ service, index, isVisible }) => {
   );
 };
 
-export default ServiceCard;
+export default ServiceCard; 
