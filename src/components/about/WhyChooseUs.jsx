@@ -25,13 +25,13 @@ const WhyChooseUs = () => {
     delay: '0'
   },
   {
-    title: 'Skilled & Passionate Team',
-    description: 'A team that codes, designs, and innovates with intent.',
+    title: 'Reliable & Secure',
+    description: 'We deliver dependable and secure software solutions you can trust.',
     delay: '100'
   },
   {
-    title: 'End-to-End Solutions',
-    description: 'From concept to maintenance, we deliver complete digital experiences.',
+    title: 'Expert Team',
+    description: 'Our developers bring years of experience and passion to every project.',
     delay: '200'
   }
 ];
