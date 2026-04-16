@@ -1,7 +1,7 @@
 import AboutHero from "../components/about/AboutHero";
 import AboutIntro from "../components/about/MajorAbout";
 import MissionVisionValues from "../components/about/MissionVisionValues";
-import TeamSection from "../components/about/TeamSection";
+// import TeamSection from "../components/about/TeamSection";
 import AboutCTA from "../components/about/AboutCTASection";
 import ErrorBoundary from "../components/ErrorBoundary";
 import WhyChooseUs from "../components/about/WhyChooseUs";
@@ -21,7 +21,7 @@ const AboutPage = () => {
         </ErrorBoundary>
         <WhyChooseUs/>  
         <ErrorBoundary label="TeamSection">
-          <TeamSection />
+          {/* <TeamSection /> */}
         </ErrorBoundary>
         <ErrorBoundary label="AboutCTA">
           <AboutCTA />

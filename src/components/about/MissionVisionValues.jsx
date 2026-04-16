@@ -61,7 +61,7 @@ const AboutMissionValues = () => {
 
         {/* Cards */}
         <div className="grid md:grid-cols-3 gap-6">
-          {pillars.map(({ icon: Icon, number, title, text }, index) => (
+          {pillars.map(({ icon, number, title, text }, index) => (
             <div
               key={index}
               className={`bg-white rounded-2xl p-8 border border-gray-200 border-t-[3px] border-t-red-500
@@ -72,7 +72,7 @@ const AboutMissionValues = () => {
             >
               {/* Icon */}
               <div className="w-12 h-12 bg-red-50 rounded-xl flex items-center justify-center mb-6">
-                <Icon className="w-5 h-5 text-red-500" strokeWidth={2} />
+                <icon className="w-5 h-5 text-red-500" strokeWidth={2} />
               </div>
 
               {/* Number */}
