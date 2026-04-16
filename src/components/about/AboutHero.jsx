@@ -26,11 +26,8 @@ const AboutHero = () => {
           }`}
         >
           <h1 className="text-white text-4xl md:text-6xl font-bold mb-4 leading-tight">
-            About Entelix
+            ABOUT US
           </h1>
-          <p className="text-gray-200 text-lg md:text-xl font-light max-w-xl mx-auto leading-relaxed">
-            Building Digital Solutions That Help Businesses Grow
-          </p>
         </div>
       </div>
     </section>

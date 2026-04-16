@@ -1,5 +1,5 @@
 import AboutHero from "../components/about/AboutHero";
-import AboutIntro from "../components/About";
+import AboutIntro from "../components/about/MajorAbout";
 import MissionVisionValues from "../components/about/MissionVisionValues";
 import TeamSection from "../components/about/TeamSection";
 import AboutCTA from "../components/about/AboutCTASection";
