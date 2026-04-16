@@ -2,6 +2,7 @@ import React from "react";
 import HeroSection from "../components/portfolio/HeroSection";
 import ProjectsSection from "../components/portfolio/ProjectsSection";
 import CTASection from "../components/portfolio/CTASection";
+import AboutCTASection from "../components/about/AboutCTASection.jsx";
 import ErrorBoundary from "../components/ErrorBoundary";
 
 const Portfolio = () => {
@@ -14,7 +15,7 @@ const Portfolio = () => {
         <ProjectsSection />
       </ErrorBoundary>
       <ErrorBoundary label="Portfolio:CTASection">
-        <CTASection />
+       <AboutCTASection />
       </ErrorBoundary>
     </div>
   );
