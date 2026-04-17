@@ -56,7 +56,7 @@ export default function Footer() {
             </li>
             <li className="flex items-center gap-2">
               <Mail className="text-[#E63946]" size={16} />
-              <a href="mailto:contact@entelix.com" className="hover:text-[#E63946] transition-colors">contact@entelix.com</a>
+              <a href="mailto:info@entelix.co.ke" className="hover:text-[#E63946] transition-colors">info@entelix.co.ke</a>
             </li>
           </ul>
         </div>
