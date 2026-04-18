@@ -14,7 +14,7 @@ import AboutMain from "./pages/AboutPage";
 import SoftwareDevelopment from "./pages/SoftwareDevelopment";
 import GraphicDesign from "./pages/GraphicDesign";
 import CloudSolutions from "./pages/CloudSolutions";
-import DigitalMarketing from "./pages/DigitalMarketing";
+import WebsiteManagement from "./pages/WebsiteManagement";
 // import FloatingWhatsApp from "./components/FloatingWhatsApp";
 
 function App() {
@@ -41,8 +41,8 @@ function App() {
                 <Route path="/graphic-design" element={<GraphicDesign />} />
                 <Route path="/cloud-solutions" element={<CloudSolutions />} />
                 <Route
-                  path="/digital-marketing"
-                  element={<DigitalMarketing />}
+                  path="/website-management"
+                  element={<WebsiteManagement />}
                 />
               </Routes>
             </PageTransition>
