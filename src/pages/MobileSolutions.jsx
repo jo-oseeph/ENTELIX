@@ -1,21 +1,28 @@
+import React from "react";
 import HeroSection from "../components/mobilesolutions/HeroSection";
-
-import CtaSection from "../components/mobilesolutions/CtaSection";
+import ServicesGrid from "../components/mobilesolutions/ServicesGrid";
+import ApproachSection from "../components/mobilesolutions/ApproachSection";
+import TechStack from "../components/mobilesolutions/TechStack";
+import PricingPlans from "../components/mobilesolutions/PricingPlans";
+import WhyChooseUs from "../components/mobilesolutions/WhyChooseUs";
 import SEO from "../components/SEO";
 
 const MobileSolutions = () => {
   return (
-    <div className="flex flex-col">
+    <>
       <SEO
-        title="Mobile App Development Kenya - iOS & Android Apps | ENTELIX"
-        description="Build powerful mobile applications with ENTELIX's expert mobile development services in Kenya. We create native iOS, Android apps, and cross-platform solutions for East African businesses."
-        keywords="mobile app development Kenya, iOS app development Nairobi, Android app development East Africa, mobile solutions Kenya, app development Nairobi, cross-platform apps Kenya"
+        title="Mobile App Development Kenya - iOS & Android Solutions | ENTELIX"
+        description="Develop powerful mobile applications with ENTELIX's expert team in Kenya. We create custom iOS and Android apps, cross-platform solutions, and mobile-first experiences for East African businesses."
+        keywords="mobile app development Kenya, iOS development Nairobi, Android app development Kenya, cross-platform mobile apps, mobile solutions East Africa, app development Nairobi"
         url="/mobile-solutions"
       />
       <HeroSection />
-      <CloudServices />
-      <CtaSection />
-    </div>
+      <ServicesGrid />
+      <ApproachSection />
+      <TechStack />
+      <PricingPlans />
+      <WhyChooseUs />
+    </>
   );
 };
 

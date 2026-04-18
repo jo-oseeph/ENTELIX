@@ -13,7 +13,6 @@ import ErrorBoundary from "./components/ErrorBoundary";
 import AboutMain from "./pages/AboutPage";
 import SoftwareDevelopment from "./pages/SoftwareDevelopment";
 import GraphicDesign from "./pages/GraphicDesign";
-import MobileSolutions from "./pages/MobileSolutions";
 import CloudSolutions from "./pages/CloudSolutions";
 import DigitalMarketing from "./pages/DigitalMarketing";
 // import FloatingWhatsApp from "./components/FloatingWhatsApp";
@@ -40,7 +39,6 @@ function App() {
                   element={<SoftwareDevelopment />}
                 />
                 <Route path="/graphic-design" element={<GraphicDesign />} />
-                <Route path="/mobile-solutions" element={<MobileSolutions />} />
                 <Route path="/cloud-solutions" element={<CloudSolutions />} />
                 <Route
                   path="/digital-marketing"

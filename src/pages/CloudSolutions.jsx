@@ -2,6 +2,7 @@ import HeroSection from "../components/cloudsolutions/HeroSection";
 import CloudServices from "../components/cloudsolutions/CloudServices";
 import CTASection from "../components/cloudsolutions/CTASection";
 import SEO from "../components/SEO";
+import AboutCTASection from "../components/about/AboutCTASection";
 
 const CloudSolutions = () => {
   return (
@@ -14,7 +15,7 @@ const CloudSolutions = () => {
       />
       <HeroSection />
       <CloudServices />
-      <CTASection />
+      <AboutCTASection />
     </div>
   );
 };

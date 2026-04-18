@@ -1,29 +1,28 @@
 import { useEffect, useRef, useState } from 'react';
-import { Palette, Brush, FileText, LayoutDashboard } from 'lucide-react';
+import { Cloud, Database, UploadCloud, ShieldCheck } from 'lucide-react';
 
 const services = [
   {
-      icon: Palette,
-      title: "Brand Identity Design",
-      description: "We design logos, color systems, and typography that express your brand’s essence with clarity and impact.",
-    },
-    {
-      icon: Brush,
-      title: "Digital Branding",
-      description: "From social media visuals to digital ads, we build a consistent and recognizable digital presence for your brand.",
-    },
-    {
-      icon: LayoutDashboard,
-      title: "UI/UX Design",
-      description: "Beautiful, intuitive, and conversion-driven designs that enhance user experience across web and mobile.",
-    },
-    {
-      icon: FileText,
-      title: "Print & Marketing Materials",
-      description: "Professional designs for brochures, flyers, posters, and business cards that make your brand memorable.",
-    },
+    icon: Cloud,
+    title: "Cloud Hosting",
+    description: "Reliable and scalable cloud hosting solutions designed to keep your applications fast, secure, and always available."
+  },
+  {
+    icon: Database,
+    title: "Cloud Storage",
+    description: "Secure and flexible storage systems that allow you to store, manage, and access your data efficiently at any scale."
+  },
+  {
+    icon: UploadCloud,
+    title: "Cloud Migration",
+    description: "Seamless migration of your applications and data to the cloud with minimal downtime and zero data loss."
+  },
+  {
+    icon: ShieldCheck,
+    title: "Cloud Security & Monitoring",
+    description: "Advanced security and real-time monitoring to protect your infrastructure, detect threats, and ensure system reliability."
+  }
 ];
-
 const CloudServices = () => {
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef(null);

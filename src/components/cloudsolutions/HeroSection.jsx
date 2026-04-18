@@ -1,39 +1,26 @@
-import { useEffect } from "react";
+import React from "react";
 
 const HeroSection = () => {
-  useEffect(() => {
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) entry.target.classList.add("animate-fadeInUp");
-      });
-    });
-    document.querySelectorAll(".fade-element").forEach((el) => observer.observe(el));
-  }, []);
-
   return (
     <section
-      className="relative bg-gradient-to-br from-[#0B2153]/90 via-[#0B2153]/80 to-[#E63946]/70 text-white py-32 px-6 flex items-center justify-center text-center"
+      id="hero"
+      className="relative flex items-center justify-center h-[80vh] bg-cover bg-center text-white"
       style={{
         backgroundImage: "url('/hero-bg.jpg')",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundBlendMode: "overlay",
       }}
     >
-      <div className="max-w-3xl mx-auto fade-element opacity-0 translate-y-10 transition-all duration-1000">
-        <p className="uppercase tracking-widest text-red-300 mb-4">// Cloud Solutions //</p>
-        <h1 className="text-4xl md:text-6xl font-bold mb-6">
-          Scale, Secure, and Simplify with Cloud Innovation
+      {/* Gradient overlay */}
+      <div className="absolute inset-0 bg-gradient-to-r from-[#0B2153]/90 via-[#0B2153]/80 to-[#a30000]/70"></div>
+
+      {/* Content */}
+      <div className="relative z-10 text-center px-6 md:px-12 max-w-3xl">
+        <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-4">
+          Cloud Solutions
         </h1>
-        <p className="text-lg text-gray-200 mb-8">
-          Empower your business with reliable, scalable, and cost-efficient cloud services that grow with you.
+
+        <p className="text-lg md:text-xl text-gray-200 mb-6">
+          Scalable, secure, and high-performance cloud infrastructure for modern businesses
         </p>
-        <a
-          href="#contact"
-          className="bg-red-600 hover:bg-red-700 text-white px-8 py-3 rounded-lg font-semibold transition duration-300 shadow-md hover:shadow-lg"
-        >
-          Get a Free Consultation
-        </a>
       </div>
     </section>
   );
