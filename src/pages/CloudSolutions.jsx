@@ -3,6 +3,7 @@ import CloudServices from "../components/cloudsolutions/CloudServices";
 import CTASection from "../components/cloudsolutions/CTASection";
 import SEO from "../components/SEO";
 import AboutCTASection from "../components/about/AboutCTASection";
+import PricingPlans from "../components/cloudsolutions/PricingPlans";
 
 const CloudSolutions = () => {
   return (
@@ -15,7 +16,9 @@ const CloudSolutions = () => {
       />
       <HeroSection />
       <CloudServices />
+      <PricingPlans />
       <AboutCTASection />
+   
     </div>
   );
 };

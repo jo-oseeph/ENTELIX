@@ -46,12 +46,6 @@ const ServicesSection = () => {
     path: '/website-management'
   },
   {
-    icon: Users,
-    title: 'Consultation Services',
-    description: 'We provide expert guidance to help you plan, build, and optimize digital solutions, including AI strategy aligned with your business goals.',
-    path: '/consultation-services'
-  },
-  {
     icon: Cloud,
     title: 'Cloud Solutions',
     description: 'We design and manage cloud infrastructure that improves performance, reduces costs, and ensures your systems are secure, scalable, and reliable.',

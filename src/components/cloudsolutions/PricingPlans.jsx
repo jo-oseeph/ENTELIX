@@ -6,13 +6,13 @@ const plans = [
   {
     tier: 'basic',
     badge: 'Basic',
-    label: 'Starter Plan',
-    price: 'KES 4,999',
+    label: 'Starter Cloud',
+    price: 'KES 9,999 /mo',
     features: [
-      'Basic website maintenance & updates',
-      'Security monitoring',
+      'Cloud hosting setup',
+      'Basic storage (up to 10GB)',
+      'SSL & basic security',
       'Monthly backups',
-      'Bug fixes (minor issues)',
       'Email support'
     ],
     cta: 'Get Started',
@@ -22,13 +22,13 @@ const plans = [
   {
     tier: 'standard',
     badge: 'Standard',
-    label: 'Growth Plan',
-    price: 'KES 9,999',
+    label: 'Growth Cloud',
+    price: 'KES 19,999 /mo',
     features: [
       'Everything in Basic',
-      'Regular content updates',
+      'Increased storage (up to 50GB)',
+      'Cloud database integration',
       'Performance optimization',
-      'Weekly backups',
       'Priority support'
     ],
     cta: 'Get Started',
@@ -38,14 +38,14 @@ const plans = [
   {
     tier: 'premium',
     badge: 'Premium',
-    label: 'Pro Plan',
-    price: 'KES 19,999',
+    label: 'Enterprise Cloud',
+    price: 'KES 49,999 /mo',
     tag: 'For serious businesses',
     features: [
       'Everything in Standard',
+      'Unlimited scalable resources',
       'Advanced security & monitoring',
-      'Daily backups',
-      'Speed & performance tuning',
+      'Automated daily backups',
       'Dedicated support'
     ],
     cta: 'Contact Us',
@@ -113,10 +113,10 @@ const PricingPlans = () => {
             Pricing Plans
           </p>
           <h2 className="text-3xl md:text-4xl font-bold text-blue-950 mb-4 leading-tight">
-            Our Website Management Plans
+            Our Cloud Solutions Packages
           </h2>
           <p className="text-gray-500 text-base leading-relaxed">
-            Choose the perfect plan to keep your website secure, updated, and performing at its best.
+            Flexible cloud plans designed to support your applications with security, scalability, and performance.
           </p>
         </div>
 
@@ -135,7 +135,6 @@ const PricingPlans = () => {
               `}
               style={{ transitionDelay: `${index * 120}ms` }}
             >
-              {/* Popular corner ribbon */}
               {popular && (
                 <div className="absolute top-0 right-0 w-20 h-20 overflow-hidden">
                   <div className="absolute top-3 -right-6 bg-red-500 text-white text-[10px] font-extrabold tracking-wide px-7 py-1.5 rotate-45">
@@ -144,29 +143,25 @@ const PricingPlans = () => {
                 </div>
               )}
 
-              {/* Badge */}
               <div className={`inline-flex items-center gap-1.5 text-[11px] font-bold tracking-wide uppercase px-3 py-1.5 rounded-full mb-5 ${badgeStyles[tier]}`}>
                 <Star className="w-3 h-3" fill="currentColor" />
                 {badge}
               </div>
 
-              {/* Plan label */}
               <p className={`text-xs font-semibold uppercase tracking-widest mb-1 ${featured ? 'text-slate-500' : 'text-gray-400'}`}>
                 {label}
               </p>
 
-              {/* Price */}
               <p className={`text-4xl font-extrabold leading-none mb-2 ${featured ? 'text-white' : 'text-blue-950'}`}>
                 {price}
               </p>
-              {/* Description */}
+
               <p className={`text-sm leading-relaxed mb-5 pb-5 border-b ${
                 featured ? 'text-slate-400 border-white/8' : 'text-gray-500 border-gray-100'
               }`}>
                 {description}
               </p>
 
-              {/* Features */}
               <ul className="flex flex-col gap-3 mb-6">
                 {features.map((feat, i) => (
                   <li key={i} className="flex items-start gap-2.5">
@@ -179,7 +174,7 @@ const PricingPlans = () => {
                   </li>
                 ))}
               </ul>
-              {/* CTA */}
+
               <Link
                 to="/contact"
                 className={`block w-full py-3.5 rounded-xl text-sm font-bold text-center transition-all duration-200 ${btnStyles[tier]}`}

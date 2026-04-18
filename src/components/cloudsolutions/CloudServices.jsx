@@ -52,10 +52,10 @@ const CloudServices = () => {
             What we do
           </p>
           <h2 className="text-3xl md:text-4xl font-bold text-blue-950 mb-4 leading-tight">
-            A full range of our graphic design services
+            Cloud Solution Services Tailored for Your Business
           </h2>
           <p className="text-gray-500 text-base leading-relaxed">
-            Designed to bring your ideas to life with precision, speed, and creative excellence.
+            We design and manage cloud infrastructure that improves performance, reduces costs, and ensures your systems are secure, scalable, and reliable.
           </p>
         </div>
 
