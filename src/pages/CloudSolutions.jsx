@@ -1,5 +1,5 @@
 import HeroSection from "../components/cloudsolutions/HeroSection";
-import ServicesSection from "../components/cloudsolutions/ServicesSection";
+import CloudServices from "../components/cloudsolutions/CloudServices";
 import CTASection from "../components/cloudsolutions/CTASection";
 import SEO from "../components/SEO";
 
@@ -13,7 +13,7 @@ const CloudSolutions = () => {
         url="/cloud-solutions"
       />
       <HeroSection />
-      <ServicesSection />
+      <CloudServices />
       <CTASection />
     </div>
   );

@@ -1,5 +1,5 @@
 import HeroSection from "../components/mobilesolutions/HeroSection";
-import ServicesSection from "../components/mobilesolutions/ServicesSection";
+
 import CtaSection from "../components/mobilesolutions/CtaSection";
 import SEO from "../components/SEO";
 
@@ -13,7 +13,7 @@ const MobileSolutions = () => {
         url="/mobile-solutions"
       />
       <HeroSection />
-      <ServicesSection />
+      <CloudServices />
       <CtaSection />
     </div>
   );

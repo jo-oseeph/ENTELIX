@@ -5,7 +5,7 @@ import ServicesOverview from "../components/graphicdesign/ServicesOverview";
 import PricingPlans from "../components/graphicdesign/PricingPlans";
 import SEO from "../components/SEO";
 import ServicesGrid from "../components/graphicdesign/ServicesOverview";
-import AboutCTA from "../components/about/AboutCTA";
+import AboutCTA from "../components/about/AboutCTASection";
 
 const GraphicDesign = () => {
   return (
