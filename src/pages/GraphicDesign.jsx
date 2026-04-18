@@ -1,11 +1,11 @@
 // src/pages/GraphicDesign.jsx
 import HeroSection from "../components/graphicdesign/HeroSection";
 import ServicesOverview from "../components/graphicdesign/ServicesOverview";
-import ApproachSection from "../components/graphicdesign/ApproachSection";
-import PortfolioPreview from "../components/graphicdesign/PortfolioPreview";
-import CTASection from "../components/graphicdesign/CTASection";
+// import PortfolioPreview from "../components/graphicdesign/PortfolioPreview";
+import PricingPlans from "../components/graphicdesign/PricingPlans";
 import SEO from "../components/SEO";
 import ServicesGrid from "../components/graphicdesign/ServicesOverview";
+import AboutCTA from "../components/about/AboutCTA";
 
 const GraphicDesign = () => {
   return (
@@ -18,9 +18,9 @@ const GraphicDesign = () => {
       />
       <HeroSection />
        <ServicesGrid />
-      <ApproachSection />
-      <PortfolioPreview />
-      <CTASection />
+       <PricingPlans />
+      {/* <PortfolioPreview /> */}
+     <AboutCTA />
     </div>
   );
 };
