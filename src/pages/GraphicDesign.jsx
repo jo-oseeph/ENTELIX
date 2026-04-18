@@ -5,6 +5,7 @@ import ApproachSection from "../components/graphicdesign/ApproachSection";
 import PortfolioPreview from "../components/graphicdesign/PortfolioPreview";
 import CTASection from "../components/graphicdesign/CTASection";
 import SEO from "../components/SEO";
+import ServicesGrid from "../components/graphicdesign/ServicesOverview";
 
 const GraphicDesign = () => {
   return (
@@ -16,7 +17,7 @@ const GraphicDesign = () => {
         url="/graphic-design"
       />
       <HeroSection />
-       <ServicesOverview />
+       <ServicesGrid />
       <ApproachSection />
       <PortfolioPreview />
       <CTASection />

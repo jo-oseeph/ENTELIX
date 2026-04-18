@@ -1,31 +1,26 @@
-// src/components/graphicdesign/HeroSection.jsx
+import React from "react";
+
 const HeroSection = () => {
   return (
     <section
-      className="relative h-[80vh] flex items-center justify-center text-center text-white"
+      id="hero"
+      className="relative flex items-center justify-center h-[80vh] bg-cover bg-center text-white"
       style={{
         backgroundImage: "url('/hero-bg.jpg')",
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
       }}
     >
-      {/* Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-r from-blue-950/90 to-red-700/80"></div>
+      {/* Gradient overlay */}
+      <div className="absolute inset-0 bg-gradient-to-r from-[#0B2153]/90 via-[#0B2153]/80 to-[#a30000]/70"></div>
 
       {/* Content */}
-      <div className="relative z-10 max-w-3xl px-6">
-        <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight animate-fadeInUp">
-          Creative Design Solutions that Build <span className="text-red-400">Lasting Brands</span>
+      <div className="relative z-10 text-center px-6 md:px-12 max-w-3xl">
+        <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-4">
+          Graphic Design Services
         </h1>
-        <p className="text-lg md:text-xl text-gray-200 max-w-2xl mx-auto mb-8 animate-fadeInUp delay-200">
-          We craft visual identities and digital assets that connect, inspire, and convert — turning ideas into powerful visual stories.
+
+        <p className="text-lg md:text-xl text-gray-200 mb-6">
+          Creative visual designs that elevate your brand
         </p>
-        <a
-          href="#services"
-          className="inline-block bg-red-600 hover:bg-red-700 text-white font-semibold px-8 py-3 rounded-lg shadow-md transition-transform duration-300 hover:-translate-y-1"
-        >
-          Explore Our Services
-        </a>
       </div>
     </section>
   );
