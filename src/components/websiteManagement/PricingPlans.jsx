@@ -7,7 +7,7 @@ const plans = [
     tier: 'basic',
     badge: 'Basic',
     label: 'Starter Plan',
-    price: 'KES 1,499 /mo',
+    price: 'KES 4,999',
     description: 'Essential maintenance to keep your website updated, secure, and running without issues.',
     features: [
       'Basic website maintenance & updates',
@@ -24,7 +24,7 @@ const plans = [
     tier: 'standard',
     badge: 'Standard',
     label: 'Growth Plan',
-    price: 'KES 2,999 /mo',
+    price: 'KES 9,999',
     description: 'Ongoing support and optimization for businesses that need consistent performance and updates.',
     features: [
       'Everything in Basic',
@@ -41,7 +41,7 @@ const plans = [
     tier: 'premium',
     badge: 'Premium',
     label: 'Pro Plan',
-    price: 'KES 4,999 /mo',
+    price: 'KES 19,999',
     tag: 'For serious businesses',
     description: 'Full website management with advanced support, monitoring, and continuous improvement.',
     features: [
