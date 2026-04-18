@@ -1,27 +1,27 @@
 import { useEffect, useRef, useState } from 'react';
-import { Globe, Smartphone, Layers, Cpu } from 'lucide-react';
+import { Palette, Brush, FileText, LayoutDashboard } from 'lucide-react';
 
 const services = [
   {
-    icon: Globe,
-    title: 'Web Development',
-    description: 'Modern, scalable, and high-performance web applications built to grow with your business.',
-  },
-  {
-    icon: Smartphone,
-    title: 'Mobile Apps',
-    description: 'Beautiful, functional apps for Android and iOS that drive business growth.',
-  },
-  {
-    icon: Layers,
-    title: 'Custom Software',
-    description: 'Tailored software solutions that fit your unique workflows and business needs like a glove.',
-  },
-  {
-    icon: Cpu,
-    title: 'API Integration',
-    description: 'Reliable backend systems and seamless API integrations that keep everything talking.',
-  },
+      icon: Palette,
+      title: "Brand Identity Design",
+      description: "We design logos, color systems, and typography that express your brand’s essence with clarity and impact.",
+    },
+    {
+      icon: Brush,
+      title: "Digital Branding",
+      description: "From social media visuals to digital ads, we build a consistent and recognizable digital presence for your brand.",
+    },
+    {
+      icon: LayoutDashboard,
+      title: "UI/UX Design",
+      description: "Beautiful, intuitive, and conversion-driven designs that enhance user experience across web and mobile.",
+    },
+    {
+      icon: FileText,
+      title: "Print & Marketing Materials",
+      description: "Professional designs for brochures, flyers, posters, and business cards that make your brand memorable.",
+    },
 ];
 
 const ServicesGrid = () => {
@@ -53,7 +53,7 @@ const ServicesGrid = () => {
             What we do
           </p>
           <h2 className="text-3xl md:text-4xl font-bold text-blue-950 mb-4 leading-tight">
-            A full range of digital services
+            A full range of our graphic design services
           </h2>
           <p className="text-gray-500 text-base leading-relaxed">
             Designed to bring your ideas to life with precision, speed, and creative excellence.
