@@ -8,7 +8,7 @@ const ContactInfo = () => {
         <Mail className="text-blue-600 group-hover:text-red-500 transition-colors" size={24} />
         <div className="flex-1">
           <h3 className="font-semibold text-blue-950 group-hover:text-red-500 transition-colors">Email</h3>
-          <p className="text-gray-600 group-hover:text-blue-950 transition-colors">contact@entelix.com</p>
+          <p className="text-gray-600 group-hover:text-blue-950 transition-colors">info@entelix.co.ke</p>
           <span className="text-xs text-gray-400 opacity-0 group-hover:opacity-100 transition-opacity">Click to email us →</span>
         </div>
       </a>
