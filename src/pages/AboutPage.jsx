@@ -5,10 +5,17 @@ import MissionVisionValues from "../components/about/MissionVisionValues";
 import AboutCTA from "../components/about/AboutCTASection";
 import ErrorBoundary from "../components/ErrorBoundary";
 import WhyChooseUs from "../components/about/WhyChooseUs";
+import SEO from "../components/SEO";
 
 const AboutPage = () => {
   return (
     <>
+      <SEO
+        title="About ENTELIX - Leading Digital Solutions Company in Kenya"
+        description="Learn about ENTELIX, Kenya's premier digital solutions and software development company. We deliver innovative web development, cloud solutions, mobile apps, and digital marketing services across East Africa."
+        keywords="about entelix Kenya, digital solutions company Nairobi, software development company East Africa, IT services Kenya, technology company Nairobi"
+        url="/about"
+      />
       <div className="pt-20">
         <ErrorBoundary label="AboutHero">
           <AboutHero />

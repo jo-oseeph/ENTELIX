@@ -13,7 +13,7 @@ const AboutMain = () => {
         <MissionVisionValues />
         <TeamSection />
         <AboutCTA />
-      </div>
+      </div> 
     </>
   );
 };

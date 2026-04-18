@@ -7,10 +7,10 @@ const Services = () => {
   return (
     <div>
       <SEO
-        title="Our Services - Web Development, Custom Software, Graphic Design, & Cloud Solutions"
-        description="Explore ENTELIX's comprehensive digital services including web development, cloud solutions, mobile app development, graphic design, and digital marketing. Transform your business with our expert solutions."
-        keywords="web development services, cloud solutions, mobile app development, software development services, digital marketing services, graphic design services"
-        url="https://entelix.com/services"
+        title="Our Services - Web Development, Custom Software, Graphic Design, & Cloud Solutions | ENTELIX Kenya"
+        description="Explore ENTELIX's comprehensive digital services in Kenya including web development, cloud solutions, mobile app development, graphic design, and digital marketing. Transform your business with our expert solutions."
+        keywords="web development services Kenya, cloud solutions Nairobi, mobile app development Kenya, software development services East Africa, digital marketing services Kenya, graphic design services Nairobi"
+        url="/services"
       />
       <ServicesHero />
       <ServicesSection />

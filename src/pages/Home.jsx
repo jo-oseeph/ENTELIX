@@ -13,9 +13,9 @@ const Home = () => {
   return (
     <div>
       <SEO
-        title="ENTELIX - Digital Solutions & Software Development Company"
-        description="Transform your business with ENTELIX's expert digital solutions. We specialize in web development, cloud solutions, mobile apps, graphic design, and digital marketing. Get innovative technology solutions that drive growth."
-        keywords="software development, web development, mobile app development, cloud solutions, digital marketing, graphic design, IT consulting, technology solutions"
+        title="ENTELIX - Leading Digital Solutions & Software Development Company in Kenya"
+        description="Transform your business with ENTELIX's expert digital solutions in Kenya. We specialize in web development, cloud solutions, mobile apps, graphic design, and digital marketing. Get innovative technology solutions that drive growth."
+        keywords="software development Kenya, web development Nairobi, mobile app development Kenya, cloud solutions East Africa, digital marketing Kenya, graphic design Nairobi, IT consulting Kenya, technology solutions Africa"
       />
 
       <HeroSection />
