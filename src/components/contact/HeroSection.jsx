@@ -1,32 +1,34 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 const HeroSection = () => {
-  const [fadeIn, setFadeIn] = useState(false);
+  const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    const t = setTimeout(() => setFadeIn(true), 150);
-    return () => clearTimeout(t);
+    setIsVisible(true);
   }, []);
 
   return (
-    <section
-      className="relative h-[55vh] flex items-center justify-center text-center overflow-hidden"
-      style={{
-        background:
-          "linear-gradient(to right, #05255Dcc, #E93930cc), url('/hero-bg.jpg') center/cover no-repeat",
-      }}
-    >
+    <section className="relative h-[65vh] min-h-[400px] flex items-center justify-center text-center overflow-hidden">
+      {/* Background image */}
       <div
-        className={`transition-all duration-1000 ${
-          fadeIn ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
-        }`}
-      >
-        <h1 className="text-white text-4xl md:text-6xl font-bold mb-4">
-          Contact <span className="text-red-400">Entelix</span>
-        </h1>
-        <p className="text-gray-200 text-lg max-w-2xl mx-auto">
-          Let’s talk about your goals and how we can help deliver real impact.
-        </p>
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: "url('/hero-bg.jpg')" }}
+      />
+
+      {/* Gradient overlay (from the main Hero) */}
+      <div className="absolute inset-0 bg-gradient-to-br from-blue-950/70 via-blue-950/60 to-red-600/40"></div>
+
+      {/* Hero content */}
+      <div className="relative z-10 px-6 sm:px-8 max-w-3xl mx-auto">
+        <div
+          className={`transition-all duration-1000 ease-out ${
+            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+          }`}
+        >
+          <h1 className="text-white text-4xl md:text-6xl font-bold mb-4 leading-tight">
+            CONTAC US
+          </h1>
+        </div>
       </div>
     </section>
   );
