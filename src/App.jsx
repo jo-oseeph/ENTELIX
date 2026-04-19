@@ -15,6 +15,8 @@ import SoftwareDevelopment from "./pages/SoftwareDevelopment";
 import GraphicDesign from "./pages/GraphicDesign";
 import CloudSolutions from "./pages/CloudSolutions";
 import WebsiteManagement from "./pages/WebsiteManagement";
+import Privacy from "./pages/Privacy";
+import Terms from "./pages/Terms";
 // import FloatingWhatsApp from "./components/FloatingWhatsApp";
 
 function App() {
@@ -44,6 +46,8 @@ function App() {
                   path="/website-management"
                   element={<WebsiteManagement />}
                 />
+                <Route path="/privacy" element={<Privacy />} />
+                <Route path="/terms" element={<Terms />} />
               </Routes>
             </PageTransition>
             {/* <FloatingWhatsApp /> */}

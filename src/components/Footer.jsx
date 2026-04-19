@@ -19,7 +19,6 @@ export default function Footer() {
           </div>
           <p className="text-sm leading-relaxed mb-6">
             Entelix is a creative software agency offering custom software solutions for web, app, and cloud solutions. 
-            We design, build, and scale digital experiences that drive impact.
           </p>
 
           {/* Social Links */}
@@ -65,7 +64,7 @@ export default function Footer() {
       {/* Bottom Bar */}
       <div className="border-t border-gray-700 mt-12 pt-6 px-6 flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
         <p>
-          © {currentYear} <span className="text-[#E63946]">Entelix Solutions</span>. All Rights Reserved.
+          © {currentYear} <span className="text-[#E63946]">Entelix </span>. All Rights Reserved.
         </p>
 
         <div className="flex gap-4 mt-4 md:mt-0">
@@ -83,4 +82,5 @@ export default function Footer() {
       </button>
     </footer>
   );
-}
+}  
+  
