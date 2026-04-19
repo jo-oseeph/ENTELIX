@@ -11,14 +11,14 @@ export default function Footer() {
         <div>
           <div className="flex items-center gap-2 mb-4">
             <img
-              src="/logo.jpg" // replace with your logo path
+              src="/logo.jpg" 
               alt="Entelix"
               className="w-10 h-10 object-contain"
             />
-            <h2 className="text-white font-semibold text-lg">Entelix Solutions</h2>
+            <h2 className="text-white font-semibold text-lg">Entelix</h2>
           </div>
           <p className="text-sm leading-relaxed mb-6">
-            Entelix is a creative software agency offering web, app, and AI-powered solutions. 
+            Entelix is a creative software agency offering custom software solutions for web, app, and cloud solutions. 
             We design, build, and scale digital experiences that drive impact.
           </p>
 
