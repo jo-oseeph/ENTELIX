@@ -2,7 +2,7 @@ import React from "react";
 import HeroSection from "../components/Hero.jsx";
 import AboutSection from "../components/About.jsx";
 // import OurServices from '../components/Services.jsx'
-// import PortfolioSection from "../components/Portfolio.jsx";
+import PortfolioSection from "../components/Portfolio.jsx";
 import ServicesSection from "../components/ServicesSection";
 import AboutCTASection from "../components/about/AboutCTASection.jsx";
 // import StatsStrip from "../components/StatsStrip.jsx";
@@ -21,7 +21,7 @@ const Home = () => {
       <HeroSection />
        <ServicesSection />
       <AboutSection />
-      {/* <PortfolioSection /> */}
+      <PortfolioSection />
 {/*      
       <OurServices />  */}
       {/* <CTABanner /> */}

@@ -28,34 +28,31 @@ const PortfolioSection = () => {
   }, []);
 
   const projects = [
-    {
-      id: 2,
-      title: 'CYBEX: AI-Powered Cybersecurity',
-      description: 'A mission-driven startup empowering SMEs with smart, affordable, and effective cybersecurity solutions including real-time threat monitoring.',
-      image: '/cybex1.png',
-      link: 'https://cybexv2.vercel.app',
-      category: 'Cybersecurity & AI',
-    },
-    {
-      id: 3,
-      title: 'E-Cycle: E-Waste Management Platform',
-      description: 'A digital platform connecting e-waste producers with certified recyclers. Features item listing, location matching, and impact tracking.',
-      image: '/ewaste1.png',
-      link: 'https://waste-frontend-two.vercel.app/',
-      category: 'Web Platform & Logistics',
-    },
-    {
-      id: 5,
-      title: 'JengaSafi: Green Construction Monitor',
-      description: 'An AI-powered sustainability platform tracking real-time CO₂ emissions and recommending greener materials for Kenya\'s construction industry.',
-      image: '/jengasafi.png',
-      link: 'https://jengasafi-local.vercel.app/',
-      category: 'AI & Sustainability',
-    },
-  ];
+  {
+    "id": 2,
+    "title": "Moilearn",
+    "description": "A student platform for Moi University enabling sharing of notes and past papers to support collaborative learning.",
+    "image": "./images/moilearn.png",
+    "link": "https://moilearn.vercel.app"
+  },
+  {
+    "id": 3,
+    "title": "Chris Online Store",
+    "description": "An e-commerce platform for men’s and women’s fashion with seamless browsing and purchasing.",
+    "image": "./images/store.png",
+    "link": "https://waste-frontend-two.vercel.app/"
+  },
+  {
+    "id": 5,
+    "title": "Serene Spa",
+    "description": "A spa service platform showcasing massage and body treatment services with easy booking.",
+    "image": "./images/spa.png",
+    "link": "https://serenespa.vercel.app/"
+  }
+]
 
   return (
-    <section ref={sectionRef} className="relative py-20 md:py-28 bg-gradient-to-br from-blue-950 via-blue-900 to-blue-950 overflow-hidden">
+    <section ref={sectionRef} className="relative py-20 md:py-28 bg-[#0B2153] overflow-hidden">
       {/* Decorative elements */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-red-500/10 rounded-full blur-3xl"></div>
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-blue-600/10 rounded-full blur-3xl"></div>
@@ -119,11 +116,6 @@ const PortfolioSection = () => {
                       View Project
                       <ExternalLink className="w-4 h-4" />
                     </a>
-                  </div>
-
-                  {/* Category Badge */}
-                  <div className="absolute top-4 left-4 bg-red-500 text-white px-3 py-1 rounded-full text-xs font-semibold">
-                    {project.category}
                   </div>
                 </div>
 
