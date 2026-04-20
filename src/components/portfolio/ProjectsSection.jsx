@@ -2,29 +2,26 @@ import React, { useEffect, useRef, useState } from "react";
 
 // Projects Data
 const projects = [
-  {
-    id: 2,
-    title: "CYBEX: AI-Powered Cybersecurity",
-    category: "Cybersecurity & AI",
-    description: "A mission-driven startup empowering SMEs with smart, affordable, and effective cybersecurity solutions including real-time threat monitoring.",
-    image: "/cybex1.png",
-    link: "https://cybexv2.vercel.app"
+   {
+    "id": 2,
+    "title": "Moilearn",
+    "description": "A student platform for Moi University enabling sharing of notes and past papers to support collaborative learning.",
+    "image": "./images/moilearn.png",
+    "link": "https://moilearn.vercel.app"
   },
   {
-    id: 3,
-    title: "E-Cycle: E-Waste Management Platform",
-    category: "Web Platform & Logistics",
-    description: "A digital platform connecting e-waste producers with certified recyclers. Features item listing, location matching, and impact tracking.",
-    image: "/ewaste1.png",
-    link: "https://waste-frontend-two.vercel.app/"
+    "id": 3,
+    "title": "Chris Online Store",
+    "description": "An e-commerce platform for men’s and women’s fashion with seamless browsing and purchasing.",
+    "image": "./images/store.png",
+    "link": "https://waste-frontend-two.vercel.app/"
   },
   {
-    id: 4,
-    title: "Chris's Online Store",
-    category: "E-Commerce & Fashion",
-    description: "A modern men and women fashion and clothing e-commerce platform offering diverse collections from timeless classics to the latest trends. Features seamless shopping experience with quality pieces for every occasion.",
-    image: "/store.png",
-    link: "https://66631ddce57e8.site123.me/"
+    "id": 5,
+    "title": "Serene Spa",
+    "description": "A spa service platform showcasing massage and body treatment services with easy booking.",
+    "image": "./images/spa.png",
+    "link": "https://serenespa.vercel.app/"
   },
   {
     id: 5,
