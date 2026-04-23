@@ -9,12 +9,12 @@ import SEO from "../components/SEO";
 const Portfolio = () => {
   return (
     <div>
-      <SEO
-        title="Our Portfolio - Successful Digital Projects & Case Studies | ENTELIX Kenya"
-        description="Explore ENTELIX's portfolio of successful digital projects in Kenya. See our web development, mobile apps, cloud solutions, and digital marketing case studies across East Africa."
-        keywords="portfolio entelix Kenya, digital projects Nairobi, web development case studies East Africa, mobile app portfolio Kenya, digital solutions showcase Nairobi"
-        url="/portfolio"
-      />
+     <SEO
+  title="Portfolio | Web & Software Projects by Entelix"
+  description="Explore projects by Entelix, showcasing modern websites and custom software systems built to streamline operations and improve efficiency."
+  keywords="Entelix portfolio, web development projects Kenya, software projects Kenya, business systems examples, custom software Nairobi"
+  url="/portfolio"
+/>
       <ErrorBoundary label="Portfolio:HeroSection">
         <HeroSection />
       </ErrorBoundary>

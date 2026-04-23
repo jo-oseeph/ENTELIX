@@ -10,12 +10,12 @@ import SEO from "../components/SEO";
 const AboutPage = () => {
   return (
     <>
-      <SEO
-        title="About ENTELIX - Leading Digital Solutions Company in Kenya"
-        description="Learn about ENTELIX, Kenya's premier digital solutions and software development company. We deliver innovative web development, cloud solutions, mobile apps, and digital marketing services across East Africa."
-        keywords="about entelix Kenya, digital solutions company Nairobi, software development company East Africa, IT services Kenya, technology company Nairobi"
-        url="/about"
-      />
+     <SEO
+  title="About Entelix | Web & Software Development Company in Kenya"
+  description="Learn about Entelix, a Kenyan company building modern websites and custom software systems to help businesses streamline operations and scale efficiently."
+  keywords="Entelix Kenya, web development Kenya, software development Kenya, business automation Kenya, custom software Nairobi"
+  url="/about"
+/>
       <div className="pt-20">
         <ErrorBoundary label="AboutHero">
           <AboutHero />

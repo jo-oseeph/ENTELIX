@@ -14,7 +14,7 @@ const Home = () => {
     <div>
       <SEO
         title="ENTELIX - Leading Digital Solutions & Software Development Company in Kenya"
-        description="Transform your business with ENTELIX's expert digital solutions in Kenya. We specialize in web development, cloud solutions, mobile apps, graphic design, and digital marketing. Get innovative technology solutions that drive growth."
+        description="We build modern websites and custom software systems that help businesses streamline operations, automate workflows, and improve efficiency."
         keywords="software development Kenya, web development Nairobi, mobile app development Kenya, cloud solutions East Africa, digital marketing Kenya, graphic design Nairobi, IT consulting Kenya, technology solutions Africa"
       />
 
@@ -22,9 +22,6 @@ const Home = () => {
        <ServicesSection />
       <AboutSection />
       <PortfolioSection />
-{/*      
-      <OurServices />  */}
-      {/* <CTABanner /> */}
       <WhyChooseUs />
       <AboutCTASection />
     </div>

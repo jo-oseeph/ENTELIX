@@ -6,12 +6,12 @@ import SEO from "../components/SEO";
 const Services = () => {
   return (
     <div>
-      <SEO
-        title="Our Services - Web Development, Custom Software, Graphic Design, Website Management & Cloud Solutions | ENTELIX Kenya"
-        description="Explore ENTELIX's comprehensive digital services in Kenya including web development, cloud solutions, mobile app development, graphic design, and website management. Transform your business with our expert solutions."
-        keywords="web development services Kenya, cloud solutions Nairobi, mobile app development Kenya, software development services East Africa, website management Kenya, graphic design services Nairobi"
-        url="/services"
-      />
+    <SEO
+  title="Services | Web & Software Development Company in Kenya"
+  description="Entelix offers website development, custom software systems, business automation, and supporting services including branding, cloud setup, and maintenance to help businesses operate efficiently."
+  keywords="web development Kenya, software development Kenya, business automation Nairobi, custom software Kenya, website design services, cloud solutions Kenya"
+  url="/services"
+/>
       <ServicesHero />
       <ServicesSection />
       <AboutCTASection />
