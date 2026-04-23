@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import { HashLink as Link } from "react-router-hash-link";
 import { Menu, X } from "lucide-react";
 import { motion } from "framer-motion";
@@ -6,6 +7,7 @@ import { motion } from "framer-motion";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -25,17 +27,21 @@ const Navbar = () => {
 
   const logoVariants = {
     hidden: { opacity: 0, x: -50 },
-    visible: { opacity: 1, x: 0, transition: { duration: 0.6 } }
+    visible: { opacity: 1, x: 0, transition: { duration: 0.6 } },
   };
 
   const navVariants = {
     hidden: { opacity: 0, y: -20 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.6, staggerChildren: 0.1 } }
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.6, staggerChildren: 0.1 },
+    },
   };
 
   const navItemVariants = {
     hidden: { opacity: 0, y: -10 },
-    visible: { opacity: 1, y: 0 }
+    visible: { opacity: 1, y: 0 },
   };
 
   return (
@@ -71,17 +77,32 @@ const Navbar = () => {
             animate="visible"
           >
             {navLinks.map((link, idx) => {
+              const isActive = location.pathname === link.href;
               return (
                 <motion.div key={idx} variants={navItemVariants}>
                   <Link
                     to={link.href}
-                    className="group relative px-5 py-2.5 text-gray-700 hover:text-red-500 transition-all duration-300"
+                    className={`group relative px-5 py-2.5 transition-all duration-300 ${
+                      isActive
+                        ? "text-red-500"
+                        : "text-gray-700 hover:text-red-500"
+                    }`}
                   >
                     <span className="relative z-10 text-xs font-medium uppercase tracking-wide">
                       {link.name}
                     </span>
-                    <div className="absolute inset-0 bg-red-50 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                    <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-0.5 bg-gradient-to-r from-red-500 to-red-400 group-hover:w-3/4 transition-all duration-300"></div>
+                    <div
+                      className={`absolute inset-0 bg-red-50 rounded-lg transition-opacity ${
+                        isActive
+                          ? "opacity-100"
+                          : "opacity-0 group-hover:opacity-100"
+                      }`}
+                    ></div>
+                    <div
+                      className={`absolute bottom-0 left-1/2 -translate-x-1/2 h-0.5 bg-gradient-to-r from-red-500 to-red-400 transition-all duration-300 ${
+                        isActive ? "w-3/4" : "w-0 group-hover:w-3/4"
+                      }`}
+                    ></div>
                   </Link>
                 </motion.div>
               );
@@ -104,7 +125,7 @@ const Navbar = () => {
           animate={{
             maxHeight: isOpen ? "500px" : "0px",
             opacity: isOpen ? 1 : 0,
-            transition: { duration: 0.3 }
+            transition: { duration: 0.3 },
           }}
         >
           <motion.div
@@ -114,14 +135,19 @@ const Navbar = () => {
             animate={isOpen ? "visible" : "hidden"}
           >
             {navLinks.map((link, idx) => {
+              const isActive = location.pathname === link.href;
               return (
                 <motion.div key={idx} variants={navItemVariants}>
                   <Link
                     to={link.href}
                     onClick={() => setIsOpen(false)}
-                    className="block px-4 py-3 text-gray-700 hover:text-red-500 hover:bg-red-50 rounded-lg transition-all duration-300"
+                    className={`block px-4 py-3 rounded-lg transition-all duration-300 ${
+                      isActive
+                        ? "bg-red-100 text-red-500 font-semibold"
+                        : "text-gray-700 hover:text-red-500 hover:bg-red-50"
+                    }`}
                   >
-                    <span className="font-medium uppercase tracking-wide text-sm">
+                    <span className="uppercase tracking-wide text-sm">
                       {link.name}
                     </span>
                   </Link>
