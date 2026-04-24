@@ -122,7 +122,7 @@ const HeroSection = () => {
             className="text-base sm:text-lg md:text-xl text-gray-200 max-w-2xl font-light leading-relaxed"
             variants={itemVariants}
           >
-            We transform businesses through innovative technology solutions.
+            We transform businesses through innovative digital solutions.
           </motion.p>
 
           <motion.div
