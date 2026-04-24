@@ -23,10 +23,59 @@ export default function Footer() {
 
           {/* Social Links */}
           <div className="flex gap-4 text-gray-300">
-            <a href="#" className="hover:text-[#E63946]"><Twitter size={18} /></a>
-            <a href="#" className="hover:text-[#E63946]"><Instagram size={18} /></a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+            <a href="https://twitter.com/entelixtech" className="hover:text-[#E63946]"><Twitter size={18} /></a>
+            <a href="https://www.instagram.com/entelixtech/" className="hover:text-[#E63946]"><Instagram size={18} /></a>
             <a href="#" className="hover:text-[#E63946]"><Linkedin size={18} /></a>
-            <a href="#" className="hover:text-[#E63946]"><Facebook size={18} /></a>
+            <a href="https://www.facebook.com/profile.php?id=61572147917054" className="hover:text-[#E63946]"><Facebook size={18} /></a>
           </div>
         </div>
 
