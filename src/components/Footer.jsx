@@ -1,5 +1,13 @@
 import { Link } from "react-router-dom";
-import { Mail, Phone, ChevronUp, Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
+import {
+  Mail,
+  Phone,
+  ChevronUp,
+  Facebook,
+  Twitter,
+  Instagram,
+} from "lucide-react";
+import { FaTiktok } from "react-icons/fa";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -11,71 +19,43 @@ export default function Footer() {
         <div>
           <div className="flex items-center gap-2 mb-4">
             <img
-              src="/logo.jpg" 
+              src="/logo.jpg"
               alt="Entelix"
               className="w-10 h-10 object-contain"
             />
             <h2 className="text-white font-semibold text-lg">Entelix</h2>
           </div>
           <p className="text-sm leading-relaxed mb-6">
-            Entelix is a creative software agency offering custom software solutions for web, app, and cloud solutions. 
+            Entelix is a creative software agency offering custom software
+            solutions for web, app, and cloud solutions.
           </p>
 
           {/* Social Links */}
           <div className="flex gap-4 text-gray-300">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            
-            <a href="https://twitter.com/entelixtech" className="hover:text-[#E63946]"><Twitter size={18} /></a>
-            <a href="https://www.instagram.com/entelixtech/" className="hover:text-[#E63946]"><Instagram size={18} /></a>
-            <a href="#" className="hover:text-[#E63946]"><Linkedin size={18} /></a>
-            <a href="https://www.facebook.com/profile.php?id=61572147917054" className="hover:text-[#E63946]"><Facebook size={18} /></a>
+            <a
+              href="https://twitter.com/entelixtech"
+              className="hover:text-[#E63946]"
+            >
+              <Twitter size={18} />
+            </a>
+            <a
+              href="https://www.instagram.com/entelixtech/"
+              className="hover:text-[#E63946]"
+            >
+              <Instagram size={18} />
+            </a>
+            <a
+              href="https://www.tiktok.com/@entelixtech"
+              className="hover:text-[#E63946]"
+            >
+              <FaTiktok size={18} />
+            </a>
+            <a
+              href="https://www.facebook.com/profile.php?id=61572147917054"
+              className="hover:text-[#E63946]"
+            >
+              <Facebook size={18} />
+            </a>
           </div>
         </div>
 
@@ -85,10 +65,26 @@ export default function Footer() {
             Quick Links
           </h3>
           <ul className="space-y-2 text-sm">
-            <li><Link to="/services" className="hover:text-[#E63946]">Services</Link></li>
-            <li><Link to="/portfolio" className="hover:text-[#E63946]">Portfolio</Link></li>
-            <li><Link to="/about" className="hover:text-[#E63946]">About Us</Link></li>
-            <li><Link to="/contact" className="hover:text-[#E63946]">Contact</Link></li>
+            <li>
+              <Link to="/services" className="hover:text-[#E63946]">
+                Services
+              </Link>
+            </li>
+            <li>
+              <Link to="/portfolio" className="hover:text-[#E63946]">
+                Portfolio
+              </Link>
+            </li>
+            <li>
+              <Link to="/about" className="hover:text-[#E63946]">
+                About Us
+              </Link>
+            </li>
+            <li>
+              <Link to="/contact" className="hover:text-[#E63946]">
+                Contact
+              </Link>
+            </li>
           </ul>
         </div>
 
@@ -100,11 +96,21 @@ export default function Footer() {
           <ul className="space-y-3 text-sm">
             <li className="flex items-center gap-2">
               <Phone className="text-[#E63946]" size={16} />
-              <a href="tel:+254719238337" className="hover:text-[#E63946] transition-colors">+254 719238337</a>
+              <a
+                href="tel:+254719238337"
+                className="hover:text-[#E63946] transition-colors"
+              >
+                +254 719238337
+              </a>
             </li>
             <li className="flex items-center gap-2">
               <Mail className="text-[#E63946]" size={16} />
-              <a href="mailto:info@entelix.co.ke" className="hover:text-[#E63946] transition-colors">info@entelix.co.ke</a>
+              <a
+                href="mailto:info@entelix.co.ke"
+                className="hover:text-[#E63946] transition-colors"
+              >
+                info@entelix.co.ke
+              </a>
             </li>
           </ul>
         </div>
@@ -113,12 +119,17 @@ export default function Footer() {
       {/* Bottom Bar */}
       <div className="border-t border-gray-700 mt-12 pt-6 px-6 flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
         <p>
-          © {currentYear} <span className="text-[#E63946]">Entelix </span>. All Rights Reserved.
+          © {currentYear} <span className="text-[#E63946]">Entelix </span>. All
+          Rights Reserved.
         </p>
 
         <div className="flex gap-4 mt-4 md:mt-0">
-          <Link to="/privacy" className="hover:text-[#E63946]">Privacy Policy</Link>
-          <Link to="/terms" className="hover:text-[#E63946]">Terms of Service</Link>
+          <Link to="/privacy" className="hover:text-[#E63946]">
+            Privacy Policy
+          </Link>
+          <Link to="/terms" className="hover:text-[#E63946]">
+            Terms of Service
+          </Link>
         </div>
       </div>
 
@@ -131,5 +142,4 @@ export default function Footer() {
       </button>
     </footer>
   );
-}  
-  
+}

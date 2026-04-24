@@ -142,7 +142,7 @@ const HeroSection = () => {
 
             <motion.button
               onClick={handleServicesClick}
-              className="group relative px-8 py-4 cursor-pointer text-white font-bold text-sm uppercase tracking-wider overflow-hidden rounded-full transition-all duration-300 hover:shadow-2xl bg-transparent hover:bg-[#FF4D4D] hover:text-white active:scale-95 border-2 border-white"
+              className="group relative px-8 py-4 cursor-pointer text-white font-bold text-sm uppercase tracking-wider overflow-hidden rounded-full transition-all duration-300 hover:shadow-2xl bg-transparent hover:bg-red-500 hover:text-white active:scale-95 border-2 border-white"
               variants={buttonVariants}
               whileHover="hover"
               whileTap="tap"
