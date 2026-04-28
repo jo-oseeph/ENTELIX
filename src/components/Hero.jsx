@@ -7,7 +7,7 @@ const HeroSection = () => {
   };
 
   const handleServicesClick = () => {
-    window.location.href = "/services";
+    window.location.href = "/portfolio";
   };
 
   const containerVariants = {
@@ -125,18 +125,18 @@ const HeroSection = () => {
           >
             <motion.button
               onClick={handleContactClick}
-              className="group relative px-8 cursor-pointer py-4 text-white font-bold text-sm uppercase tracking-wider overflow-hidden rounded-full transition-all duration-300 hover:shadow-2xl bg-red-500 hover:bg-[#E63946] active:scale-95"
+              className="group relative px-8 cursor-pointer py-4 text-white font-bold text-sm uppercase tracking-wider overflow-hidden rounded-sm transition-all duration-300 hover:shadow-2xl bg-red-500 hover:bg-[#E63946] active:scale-95"
               variants={buttonVariants}
               whileHover="hover"
               whileTap="tap"
             >
-              <span className="relative z-10">Let's Build Together</span>
+              <span className="relative z-10">Start Your Project</span>
               <div className="absolute inset-0 bg-red-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </motion.button>
 
             <motion.button
               onClick={handleServicesClick}
-              className="group relative px-8 py-4 cursor-pointer text-white font-bold text-sm uppercase tracking-wider overflow-hidden rounded-full transition-all duration-300 hover:shadow-2xl bg-transparent hover:bg-red-500  hover:text-white active:scale-95 border-2 border-white"
+              className="group relative px-8 py-4 cursor-pointer text-white font-bold text-sm uppercase tracking-wider overflow-hidden rounded-sm transition-all duration-300 hover:shadow-2xl bg-transparent hover:bg-red-500  hover:text-white active:scale-95 border-2 border-white"
               variants={buttonVariants}
               whileHover="hover"
               whileTap="tap"

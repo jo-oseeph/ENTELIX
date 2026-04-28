@@ -75,7 +75,8 @@ const ServicesSection = () => {
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-blue-950 mb-4">
               Our Services
             </h2>
-            <p className="text-gray-600 text-lg max-w-2xl mx-auto">
+              <div className="mt-4 w-24 h-1 bg-red-500 mx-auto"></div>
+            <p className="text-gray-600 text-lg max-w-2xl mx-auto mt-4">
               Comprehensive technology solutions to transform your business and drive innovation.
             </p>
           </div>
