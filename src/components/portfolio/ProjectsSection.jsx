@@ -1,10 +1,13 @@
+import { ArrowRight } from "lucide-react";
 import React, { useEffect, useRef, useState } from "react";
+  
 
 // Projects Data
 const projects = [
    {
     "id": 2,
     "title": "Moilearn",
+    "category": "Educational Platform",
     "description": "A student platform for Moi University enabling sharing of notes and past papers to support collaborative learning.",
     "image": "./images/moilearn.png",
     "link": "https://moilearn.vercel.app"
@@ -12,25 +15,28 @@ const projects = [
   {
     "id": 3,
     "title": "Chris Online Store",
+    "category": "E-commerce Platform",
     "description": "An e-commerce platform for men’s and women’s fashion with seamless browsing and purchasing.",
     "image": "./images/store.png",
     "link": "https://waste-frontend-two.vercel.app/"
   },
   {
     "id": 5,
+    "category": "Wellness & Self-Care",
     "title": "Serene Spa",
     "description": "A spa service platform showcasing massage and body treatment services with easy booking.",
     "image": "./images/spa.png",
     "link": "https://serenespa.vercel.app/"
   },
-  {
-    id: 5,
-    title: "JengaSafi: Green Construction Monitor",
-    category: "AI & Sustainability",
-    description: "An AI-powered sustainability platform tracking real-time CO₂ emissions and recommending greener materials for Kenya's construction industry.",
-    image: "/jengasafi.png",
-    link: "https://jengasafi-local.vercel.app/"
-  },
+ {
+  id: 6,
+  title: 'MoiHub',
+  category: 'Student Services Platform',
+  description:
+    'A centralized student platform designed to simplify access to essential services within Moi University. Connects students to rentals, food delivery, transport, and other daily needs through a single digital experience.',
+  image: './images/moihub.png',
+  link: 'https://moihub-silk.vercel.app/',
+},
   {
     id: 6,
     title: "Emali Adur Properties",
@@ -41,10 +47,10 @@ const projects = [
   },
   {
   id: 7,
-  title: "Electrify: Digital Products Marketplace",
-  category: "E-Commerce & Fintech",
+  title: "Electrify",
+  category: "E-commerce Platform",
   description: "A full-featured digital products e-commerce platform with secure add-to-cart, checkout flow, and M-Pesa STK Push integration. Supports instant digital delivery after successful payment and transaction verification.",
-  image: "/electrify.png",
+  image: "./images/electrify.png",
   link: "https://electrify.lovable.app/"
 }
 ];
@@ -114,7 +120,7 @@ const ProjectCard = ({ project, index }) => {
             </span>
           </div>
 
-          <h3 className="text-2xl font-bold text-blue-950 mb-3 group-hover:text-blue-800 transition-colors duration-300">
+          <h3 className="text-2xl font-bold text-[#0B2153]  mb-3 group-hover:text-blue-800 transition-colors duration-300">
             {project.title}
           </h3>
 
@@ -124,9 +130,10 @@ const ProjectCard = ({ project, index }) => {
 
         <button
             onClick={handleClick}
-            className="self-start px-6 py-3 bg-transparent border-2 border-red-500 text-blue-600 font-medium rounded-full hover:bg-red-50 transform hover:-translate-y-0.5 transition-all duration-300 cursor-pointer"
+            className="self-start px-6 py-3 bg-red-500 border-2 border-red-500 text-white font-medium rounded-md hover:bg-red-600 transform hover:-translate-y-0.5 transition-all duration-300 cursor-pointer"
           >
-            {hasLiveLink ? "View Demo" : "Coming Soon"}
+            {hasLiveLink ? "View Live" : "Coming Soon"}
+            <ArrowRight className="inline-block w-4 h-4 ml-2" />
           </button>
         </div>
       </div>

@@ -4,19 +4,16 @@ import { Target, Eye, Heart } from "lucide-react";
 const pillars = [
   {
     icon: Target,
-    number: "01",
     title: "Our Mission",
     text: "To empower businesses and communities through innovative digital solutions that drive growth, efficiency, and lasting impact.",
   },
   {
     icon: Eye,
-    number: "02",
     title: "Our Vision",
     text: "To be Africa's leading digital transformation partner, enabling a tech-driven future where organizations thrive with confidence.",
   },
   {
     icon: Heart,
-    number: "03",
     title: "Our Core Values",
     text: "Innovation, Integrity, and Collaboration, the principles that guide how we work and deliver value to our clients every day.",
   },
@@ -61,7 +58,7 @@ const AboutMissionValues = () => {
 
         {/* Cards */}
         <div className="grid md:grid-cols-3 gap-6">
-          {pillars.map(({ icon, number, title, text }, index) => (
+          {pillars.map(({ icon: Icon, title, text }, index) => (
             <div
               key={index}
               className={`bg-white rounded-2xl p-8 border border-gray-200 border-t-[3px] border-t-red-500
@@ -72,13 +69,8 @@ const AboutMissionValues = () => {
             >
               {/* Icon */}
               <div className="w-12 h-12 bg-red-50 rounded-xl flex items-center justify-center mb-6">
-                <icon className="w-5 h-5 text-red-500" strokeWidth={2} />
+                <Icon className="w-5 h-5 text-red-500" strokeWidth={2} />
               </div>
-
-              {/* Number */}
-              <p className="text-xs font-bold tracking-widest text-gray-300 uppercase mb-2">
-                {number}
-              </p>
 
               {/* Title */}
               <h3 className="text-lg font-bold text-blue-950 mb-3">{title}</h3>
