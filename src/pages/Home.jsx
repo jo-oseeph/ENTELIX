@@ -4,7 +4,7 @@ import AboutSection from "../components/About.jsx";
 import PortfolioSection from "../components/Portfolio.jsx";
 import ServicesSection from "../components/ServicesSection";
 import AboutCTASection from "../components/about/AboutCTASection.jsx";
-import WhyChooseUs from "../components/about/WhyChooseUs";
+// import WhyChooseUs from "../components/about/WhyChooseUs";
 import SEO from "../components/SEO";
 
 const Home = () => {
@@ -20,7 +20,7 @@ const Home = () => {
        <ServicesSection />
       <AboutSection />
       <PortfolioSection />
-      <WhyChooseUs />
+      {/* <WhyChooseUs /> */}
       <AboutCTASection />
     </div>
   );

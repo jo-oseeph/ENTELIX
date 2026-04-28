@@ -9,134 +9,137 @@ const PortfolioSection = () => {
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true);
-        }
+        if (entry.isIntersecting) setIsVisible(true);
       },
       { threshold: 0.1 }
     );
-
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current);
-    }
-
+    if (sectionRef.current) observer.observe(sectionRef.current);
     return () => {
-      if (sectionRef.current) {
-        observer.unobserve(sectionRef.current);
-      }
+      if (sectionRef.current) observer.unobserve(sectionRef.current);
     };
   }, []);
 
   const projects = [
-  {
-    "id": 2,
-    "title": "Moilearn",
-    "description": "A student platform for Moi University enabling sharing of notes and past papers to support collaborative learning.",
-    "image": "./images/moilearn.png",
-    "link": "https://moilearn.vercel.app"
-  },
-  {
-    "id": 3,
-    "title": "Chris Online Store",
-    "description": "An e-commerce platform for men’s and women’s fashion with seamless browsing and purchasing.",
-    "image": "./images/store.png",
-    "link": "https://waste-frontend-two.vercel.app/"
-  },
-  {
-    "id": 5,
-    "title": "Serene Spa",
-    "description": "A spa service platform showcasing massage and body treatment services with easy booking.",
-    "image": "./images/spa.png",
-    "link": "https://serenespa.vercel.app/"
-  }
-]
+    {
+      id: 2,
+      title: 'Moilearn',
+      description:
+        'A student platform for Moi University enabling sharing of notes and past papers to support collaborative learning.',
+      image: './images/moilearn.png',
+      link: 'https://moilearn.vercel.app',
+    },
+    {
+      id: 3,
+      title: 'Chris Online Store',
+      description:
+        "An e-commerce platform for men's and women's fashion with seamless browsing and purchasing of clothes.",
+      image: './images/store.png',
+      link: 'https://waste-frontend-two.vercel.app/',
+    },
+    {
+      id: 5,
+      title: 'Serene Spa',
+      description:
+        'A spa service platform showcasing massage and body treatment services with simplified booking process to enhance overall user experience .',
+      image: './images/spa.png',
+      link: 'https://serenespa.vercel.app/',
+    },
+  ];
 
   return (
-    <section ref={sectionRef} className="relative py-20 md:py-28 bg-[#0B2153] overflow-hidden">
-      {/* Decorative elements */}
-      <div className="absolute top-0 right-0 w-96 h-96 bg-red-500/10 rounded-full blur-3xl"></div>
-      <div className="absolute bottom-0 left-0 w-96 h-96 bg-blue-600/10 rounded-full blur-3xl"></div>
-      
-      {/* Animated dots pattern */}
-      <div className="absolute inset-0 opacity-5">
-        <div className="absolute top-20 left-20 w-2 h-2 bg-white rounded-full animate-pulse"></div>
-        <div className="absolute top-40 right-32 w-2 h-2 bg-red-400 rounded-full animate-pulse delay-300"></div>
-        <div className="absolute bottom-32 left-1/3 w-2 h-2 bg-white rounded-full animate-pulse delay-700"></div>
-        <div className="absolute bottom-20 right-20 w-2 h-2 bg-red-400 rounded-full animate-pulse delay-500"></div>
-      </div>
+    <section
+      ref={sectionRef}
+      className="relative py-20 md:py-28 overflow-hidden"
+      style={{ backgroundColor: '#0B2153' }}
+    >
+      {/* Subtle background texture */}
+      <div
+        className="absolute inset-0 pointer-events-none"
+        style={{
+          backgroundImage:
+            'radial-gradient(circle at 80% 10%, rgba(220,38,38,0.06) 0%, transparent 50%), radial-gradient(circle at 10% 90%, rgba(59,130,246,0.06) 0%, transparent 50%)',
+        }}
+      />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+
         {/* Section Header */}
-        <div className="text-center mb-16">
-          <div
-            className={`transition-all duration-700 ${
-              isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-10'
-            }`}
+        <div
+          className={`mb-16 text-center transition-all duration-700 ${
+            isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-6'
+          }`}
+        >
+          <p
+            className="text-xs font-bold uppercase tracking-[0.2em] mb-3"
+            style={{ color: '#ef4444' }}
           >
-            <p className="text-red-400 font-bold text-sm uppercase tracking-wider mb-3">
-              OUR PORTFOLIO
-            </p>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4">
-              Recent Work
-            </h2>
-            <p className="text-gray-300 text-lg max-w-2xl mx-auto">
-              Explore our latest projects showcasing innovation and excellence in digital solutions
-            </p>
-            <div className="mt-4 w-24 h-1 bg-red-500 mx-auto"></div>
-          </div>
+            Our Portfolio
+          </p>
+          <h2 className="text-3xl md:text-4xl lg:text-[2.75rem] font-bold text-white leading-tight">
+            Recent Work
+          </h2>
+          <div className="mt-3 w-12 h-[3px] rounded-full mx-auto" style={{ backgroundColor: '#ef4444' }} />
+          <p className="text-gray-400 text-sm max-w-lg mx-auto mt-4 leading-relaxed">
+            A selection of projects showcasing innovation and digital excellence.
+          </p>
         </div>
 
         {/* Portfolio Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {projects.map((project, index) => (
             <div
               key={project.id}
               className={`group transition-all duration-700 ${
-                isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20'
+                isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'
               }`}
-              style={{ transitionDelay: `${200 + index * 150}ms` }}
+              style={{
+                transitionDelay: `${200 + index * 120}ms`,
+              }}
             >
-              <div className="bg-white rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
-                {/* Image Container */}
-                <div className="relative h-64 overflow-hidden bg-gray-200">
+              <div
+                className="rounded-2xl overflow-hidden flex flex-col transition-transform duration-300 ease-out hover:-translate-y-2 hover:shadow-2xl"
+                style={{
+                  backgroundColor: 'rgba(255,255,255,0.04)',
+                  border: '1px solid rgba(255,255,255,0.08)',
+                  boxShadow: '0 4px 24px rgba(0,0,0,0.2)',
+                }}
+              >
+                {/* Screenshot — always fully visible */}
+                <div className="relative w-full overflow-hidden" style={{ height: '220px' }}>
                   <img
                     src={project.image}
                     alt={project.title}
-                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                    className="w-full h-full object-cover object-top transition-transform duration-500 ease-out group-hover:scale-105"
+                    loading="lazy"
                   />
-                  
-                  {/* Overlay on hover */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-blue-950/90 via-blue-950/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-6">
-                    <a
-                      href={project.link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center gap-2 text-white font-semibold text-sm bg-red-500 px-4 py-2 rounded-full hover:bg-red-600 transition-colors"
-                    >
-                      View Project
-                      <ExternalLink className="w-4 h-4" />
-                    </a>
-                  </div>
+                  {/* Subtle bottom fade into card */}
+                  <div
+                    className="absolute bottom-0 left-0 right-0 h-10"
+                    style={{
+                      background:
+                        'linear-gradient(to bottom, transparent, rgba(10,26,62,0.55))',
+                    }}
+                  />
                 </div>
 
-                {/* Content */}
-                <div className="p-6">
-                  <h3 className="text-xl font-bold text-blue-950 mb-3 group-hover:text-red-500 transition-colors">
+                {/* Card Content */}
+                <div className="p-6 flex flex-col flex-1">
+                  <h3 className="text-white font-bold text-lg mb-2 leading-snug">
                     {project.title}
                   </h3>
-                  <p className="text-gray-600 text-sm leading-relaxed mb-4">
+                  <p className="text-gray-400 text-sm leading-relaxed flex-1 mb-5">
                     {project.description}
                   </p>
 
-                  {/* View Button */}
                   <a
                     href={project.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 text-red-500 font-semibold text-sm hover:gap-3 transition-all group/btn"
+                    className="inline-flex items-center gap-2 text-sm font-semibold"
+                    style={{ color: '#ef4444' }}
                   >
-                    Learn More
-                    <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
+                    View Project
+                    <ExternalLink className="w-3.5 h-3.5" />
                   </a>
                 </div>
               </div>
@@ -144,18 +147,19 @@ const PortfolioSection = () => {
           ))}
         </div>
 
-        {/* View All Button */}
+        {/* View All CTA */}
         <div
-          className={`text-center mt-16 transition-all duration-700 delay-700 ${
-            isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+          className={`text-center mt-14 transition-all duration-700 delay-700 ${
+            isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
           }`}
         >
-          <Link 
+          <Link
             to="/portfolio"
-            className="group relative px-8 py-4 text-white font-bold text-sm uppercase tracking-wider overflow-hidden rounded-full transition-all duration-300 hover:scale-105 bg-red-500 hover:bg-red-600 inline-flex items-center gap-3 shadow-lg hover:shadow-2xl"
+            className="inline-flex items-center gap-2.5 px-8 py-3.5 rounded-full text-white text-sm font-bold uppercase tracking-wider"
+            style={{ backgroundColor: '#ef4444' }}
           >
             View All Projects
-            <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+            <ArrowRight className="w-4 h-4" />
           </Link>
         </div>
       </div>
