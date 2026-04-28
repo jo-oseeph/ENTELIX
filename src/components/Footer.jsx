@@ -14,14 +14,14 @@ export default function Footer() {
 
   return (
     <footer className="bg-[#0B2153] text-gray-300 pt-16 pb-6 relative">
-      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-12">
+      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8">
         {/* Brand + Description */}
         <div>
           <div className="flex items-center gap-2 mb-4">
             <img
-              src="/logo.jpg"
+              src="/logo1.png"
               alt="Entelix"
-              className="w-10 h-10 object-contain"
+              className="w-16 h-16 object-contain"
             />
             <h2 className="text-white font-semibold text-lg">Entelix</h2>
           </div>
@@ -83,6 +83,40 @@ export default function Footer() {
             <li>
               <Link to="/contact" className="hover:text-[#E63946]">
                 Contact
+              </Link>
+            </li>
+          </ul>
+        </div>
+
+        {/* Our Services */}
+        <div>
+          <h3 className="text-white font-semibold mb-4 relative inline-block after:content-[''] after:block after:w-12 after:h-[2px] after:bg-[#E63946] after:mt-1">
+            Our Services
+          </h3>
+          <ul className="space-y-2 text-sm">
+            <li>
+              <Link to="/software-development" className="hover:text-[#E63946]">
+                Software Development
+              </Link>
+            </li>
+            <li>
+              <Link to="/website-management" className="hover:text-[#E63946]">
+                Website Management
+              </Link>
+            </li>
+            <li>
+              <Link to="/cloud-solutions" className="hover:text-[#E63946]">
+                Cloud Solutions
+              </Link>
+            </li>
+            <li>
+              <Link to="/graphic-design" className="hover:text-[#E63946]">
+                Graphic Design
+              </Link>
+            </li>
+            <li>
+              <Link to="/digital-marketing" className="hover:text-[#E63946]">
+                Digital Marketing
               </Link>
             </li>
           </ul>
