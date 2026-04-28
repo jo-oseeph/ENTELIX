@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import { Code, Cloud, Palette, BarChart, Settings, Users } from 'lucide-react';
+import { Code, Cloud, Palette, BarChart, Settings, Users, ArrowRight } from 'lucide-react';
 import ServiceCard from './ServicesCard';
 
 const ServicesSection = () => {
@@ -96,12 +96,13 @@ const ServicesSection = () => {
 
         {/* View More Button */}
         <div className="text-center mt-12">
-          <button
-            onClick={() => (window.location.href = '/services')}
-            className="inline-flex items-center px-8 py-4 bg-[#FF4D4D] text-white font-bold text-sm uppercase tracking-wider rounded-full hover:bg-[#E63946] transition-all duration-300 hover:scale-105 hover:shadow-lg"
-          >
-            View More
-          </button>
+        <button
+  onClick={() => (window.location.href = '/services')}
+  className="inline-flex items-center gap-2 px-8 py-4 bg-[#E93930] text-white font-bold text-sm uppercase tracking-wider rounded-full hover:bg-[#E93930] transition-all duration-300 hover:scale-105 hover:shadow-lg"
+>
+  View More
+  <ArrowRight className="w-4 h-4 text-white" />
+</button>
         </div>
 
       </div>
