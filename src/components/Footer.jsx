@@ -114,11 +114,6 @@ export default function Footer() {
                 Graphic Design
               </Link>
             </li>
-            <li>
-              <Link to="/digital-marketing" className="hover:text-[#E63946]">
-                Digital Marketing
-              </Link>
-            </li>
           </ul>
         </div>
 
