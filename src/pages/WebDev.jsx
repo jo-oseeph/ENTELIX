@@ -1,5 +1,5 @@
 import React from 'react'
-import HeroSection from '../components/webdev/webdevHero'
+import HeroSection from '../components/webdev/WebDevHero'
 import WebDevServices from '../components/webdev/WebDevServices'
 
  const WebDevelopment = () => {
