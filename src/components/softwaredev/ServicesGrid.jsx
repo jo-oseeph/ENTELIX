@@ -1,91 +1,99 @@
-import { useEffect, useRef, useState } from 'react';
-import { Globe, Smartphone, Layers, Cpu } from 'lucide-react';
+import {
+  Layers,
+  Smartphone,
+  Cpu,
+  Database,
+  ArrowRight,
+} from 'lucide-react';
 
 const services = [
   {
-    icon: Globe,
-    title: 'Web Development',
-    description: 'Modern, scalable, and high-performance web applications built to grow with your business.',
+    icon: Layers,
+    title: 'Custom Software Systems',
+    description: 'Tailored software built to match your business workflows and operational needs.',
   },
   {
     icon: Smartphone,
-    title: 'Mobile Apps',
-    description: 'Beautiful, functional apps for Android and iOS that drive business growth.',
-  },
-  {
-    icon: Layers,
-    title: 'Custom Software',
-    description: 'Tailored software solutions that fit your unique workflows and business needs like a glove.',
+    title: 'Mobile Applications',
+    description: 'Scalable mobile apps designed for performance, usability, and real-world business impact.',
   },
   {
     icon: Cpu,
-    title: 'API Integration',
-    description: 'Reliable backend systems and seamless API integrations that keep everything talking.',
+    title: 'Automation & Integrations',
+    description: 'Streamline operations with automated workflows and seamless system integrations.',
+  },
+  {
+    icon: Database,
+    title: 'Backend & APIs',
+    description: 'Robust backend systems and APIs built for scalability, security, and performance.',
   },
 ];
 
-const ServicesGrid = () => {
-  const [isVisible, setIsVisible] = useState(false);
-  const sectionRef = useRef(null);
-
-  useEffect(() => {
-    const node = sectionRef.current;
-    if (!node) return;
-    const observer = new IntersectionObserver(
-      ([entry]) => { if (entry.isIntersecting) { setIsVisible(true); observer.disconnect(); } },
-      { threshold: 0.1 }
-    );
-    observer.observe(node);
-    return () => observer.disconnect();
-  }, []);
-
+const SoftwareDevServices = () => {
   return (
-    <section ref={sectionRef} className="py-20 bg-white">
+    <section className="py-24 bg-white" style={{ fontFamily: "'DM Sans', sans-serif" }}>
+      
       <div className="max-w-6xl mx-auto px-6 lg:px-8">
 
-        {/* Header */}
-        <div
-          className={`text-center max-w-xl mx-auto mb-14 transition-all duration-700 ${
-            isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
-          }`}
-        >
-          <p className="text-xs font-bold tracking-widest uppercase text-red-500 mb-3">
-            What we do
-          </p>
-          <h2 className="text-3xl md:text-4xl font-bold text-blue-950 mb-4 leading-tight">
-            A full range of digital services
+        {/* HERO */}
+        <div className="text-center max-w-2xl mx-auto mb-16">
+          <h2 className="text-3xl md:text-4xl font-bold text-[#0B2153] mb-4">
+            Scalable Software Development
           </h2>
-          <p className="text-gray-500 text-base leading-relaxed">
-            Designed to bring your ideas to life with precision, speed, and creative excellence.
+          <p className="text-gray-600 text-base md:text-lg leading-relaxed">
+            We build custom software systems designed to streamline operations, automate processes, and support long-term business growth.
           </p>
         </div>
 
-        {/* Grid */}
-        <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-5">
+        {/* SERVICES GRID */}
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {services.map(({ icon: Icon, title, description }, index) => (
             <div
               key={index}
-              className={`group relative bg-blue-950 rounded-[18px] p-8 border border-blue-900 overflow-hidden
-                transition-all duration-300 hover:-translate-y-1.5 hover:border-red-500
-                hover:shadow-[0_12px_32px_rgba(239,68,68,0.15)]
-                ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
-              style={{ transitionDelay: `${index * 100}ms` }}
+              className="p-6 rounded-2xl border transition-all duration-300 hover:shadow-lg"
+              style={{ borderColor: '#E5E7EB' }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.borderColor = '#E93930';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.borderColor = '#E5E7EB';
+              }}
             >
-              {/* Bottom bar reveal on hover */}
-              <span className="absolute bottom-0 left-0 w-full h-[3px] bg-red-500 scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-300" />
-
-              {/* Icon */}
-              <div className="w-12 h-12 rounded-[14px] bg-red-500/15 flex items-center justify-center mb-5 transition-colors duration-300 group-hover:bg-red-500">
-                <Icon className="w-5 h-5 text-red-400 transition-colors duration-300 group-hover:text-white" strokeWidth={2} />
+              {/* ICON */}
+              <div
+                className="w-12 h-12 flex items-center justify-center rounded-xl mb-4"
+                style={{ background: 'rgba(11,33,83,0.08)' }}
+              >
+                <Icon size={20} color="#E93930" />
               </div>
 
-              {/* Title */}
-              <h3 className="text-base font-bold text-white mb-2">{title}</h3>
+              {/* TITLE */}
+              <h3 className="font-semibold text-[#0B2153] text-lg mb-2">
+                {title}
+              </h3>
 
-              {/* Description */}
-              <p className="text-sm leading-relaxed text-slate-400">{description}</p>
+              {/* DESCRIPTION */}
+              <p className="text-sm text-gray-600 leading-relaxed">
+                {description}
+              </p>
             </div>
           ))}
+        </div>
+
+        {/* CTA */}
+        <div className="text-center mt-20">
+          <h3 className="text-xl md:text-2xl font-bold text-[#0B2153] mb-4">
+            Need a system that actually scales with your business?
+          </h3>
+
+          <a
+            href="/contact"
+            className="inline-flex items-center gap-2 px-8 py-3 rounded-xl text-sm font-semibold text-white transition-all duration-300 hover:opacity-90"
+            style={{ background: '#E93930' }}
+          >
+            Build Your Software System
+            <ArrowRight size={16} />
+          </a>
         </div>
 
       </div>
@@ -93,4 +101,4 @@ const ServicesGrid = () => {
   );
 };
 
-export default ServicesGrid;
+export default SoftwareDevServices;
