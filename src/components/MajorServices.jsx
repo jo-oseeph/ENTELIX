@@ -37,7 +37,7 @@ const ServicesSection = () => {
   icon: Layout,
   title: 'Branding & Design',
   description: 'We create clean, modern brand identities and visual systems that build trust and make your business stand out.',
-  path: '/branding-design'
+  path: '/graphic-design'
 },
   {
     icon: Settings,
