@@ -27,6 +27,12 @@ const ServicesSection = () => {
 
   const services = [
     {
+  icon: Code,
+  title: 'Web Development',
+  description: 'From landing pages to full web applications, we build fast, modern websites designed to perform, convert, and deliver seamless experiences on every device',
+  path: '/web-development'
+},
+    {
       icon: Code,
       title: 'Software Development',
       description: 'We build custom software, web applications, eCommerce platforms, and mobile apps designed to solve real business problems and scale with growth. AI integrations are included to automate processes and enhance performance.',

@@ -11,6 +11,7 @@ import Contact from "./pages/Contact";
 import NotFound from "./components/NotFound";
 import ErrorBoundary from "./components/ErrorBoundary";
 import AboutMain from "./pages/AboutPage";
+import WebDevelopment from "./pages/WebDev";
 import SoftwareDevelopment from "./pages/SoftwareDevelopment";
 import GraphicDesign from "./pages/GraphicDesign";
 import CloudSolutions from "./pages/CloudSolutions";
@@ -36,6 +37,7 @@ function App() {
                 <Route path="/portfolio" element={<Portfolio />} />
                 <Route path="/contact" element={<Contact />} />
                 <Route path="*" element={<NotFound />} />
+                <Route path="/web-development" element={<WebDevelopment />} />
                 <Route
                   path="/software-development"
                   element={<SoftwareDevelopment />}
