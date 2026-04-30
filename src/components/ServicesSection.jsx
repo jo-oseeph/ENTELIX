@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import { Code, Cloud, Palette, BarChart, Settings, Users, ArrowRight } from 'lucide-react';
+import { Code, Cloud, Layout, BarChart, Settings, Users, ArrowRight } from 'lucide-react';
 import ServiceCard from './ServicesCard';
 
 const ServicesSection = () => {
@@ -32,18 +32,12 @@ const ServicesSection = () => {
   description: 'From landing pages to full web applications, we build fast, modern websites designed to perform, convert, and deliver seamless experiences on every device',
   path: '/web-development'
 },
-   {
-  icon: Code,
-  title: 'Software Development',
-  description: 'We build scalable software systems that automate processes, improve efficiency, and support long-term business growth.',
-  path: '/software-development'
-}, 
     {
-      icon: Palette,
-      title: 'Graphic Design',
-      description: 'We create clean, impactful visuals and brand identities that communicate clearly and position your business to stand out in competitive markets.',
-      path: '/graphic-design'
-    },
+  icon: Layout,
+  title: 'Branding & Design',
+  description: 'We create clean, modern brand identities and visual systems that build trust and make your business stand out.',
+  path: '/branding-design'
+},
     {
     icon: Settings,
     title: 'Website Management',

@@ -1,10 +1,10 @@
 // src/pages/GraphicDesign.jsx
-import HeroSection from "../components/graphicdesign/HeroSection";
-import ServicesOverview from "../components/graphicdesign/ServicesOverview";
+import HeroSection from "../components/branding/HeroSection";
+import ServicesOverview from "../components/branding/ServicesOverview";
 // import PortfolioPreview from "../components/graphicdesign/PortfolioPreview";
-import PricingPlans from "../components/graphicdesign/PricingPlans";
+import PricingPlans from "../components/branding/PricingPlans";
 import SEO from "../components/SEO";
-import ServicesGrid from "../components/graphicdesign/ServicesOverview";
+import ServicesGrid from "../components/branding/ServicesOverview";
 import AboutCTA from "../components/about/AboutCTASection";
 
 const GraphicDesign = () => {
