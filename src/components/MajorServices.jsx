@@ -32,12 +32,6 @@ const ServicesSection = () => {
       description: 'From landing pages to full web applications, we build fast, modern websites designed to perform, convert, and deliver seamless experiences on every device',
       path: '/web-development'
     },
-    {
-    icon: Code,
-    title: 'Software Development',
-    description: 'We build custom software, web applications, eCommerce platforms, and mobile apps designed to solve real business problems and scale with growth. AI integrations are included to automate processes and enhance performance.',
-    path: '/software-development'
-  },
   
   {
     icon: Palette,
@@ -57,6 +51,12 @@ const ServicesSection = () => {
     description: 'We design and manage cloud infrastructure that improves performance, reduces costs, and ensures your systems are secure, scalable, and reliable.',
     path: '/cloud-solutions'
   },
+    {
+  icon: Code,
+  title: 'Software Development',
+  description: 'We build scalable software systems that automate processes, improve efficiency, and support long-term business growth.',
+  path: '/software-development'
+}
 ];
   return (
     <section id="services" ref={sectionRef} className="py-20 md:py-28 bg-gray-50">

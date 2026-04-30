@@ -1,8 +1,7 @@
 import React from "react";
 import HeroSection from "../components/softwaredev/HeroSection";
-import ApproachSection from '../components/softwaredev/ApproachSection';
 import ServicesGrid from '../components/softwaredev/ServicesGrid';
-import PricingPlans from "../components/softwaredev/PricingPlans.jsx";
+// import PricingPlans from "../components/softwaredev/PricingPlans.jsx";
 import SEO from "../components/SEO";
 
 const SoftwareDevelopment = () => {
@@ -16,8 +15,7 @@ const SoftwareDevelopment = () => {
       />
       <HeroSection />
       <ServicesGrid/>
-      <ApproachSection/>
-      <PricingPlans />
+      {/* <PricingPlans /> */}
 
       {/* You’ll add other sections here later like Overview, ServiceCards, Process, CTA, etc. */}
     </>
