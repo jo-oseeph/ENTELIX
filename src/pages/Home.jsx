@@ -4,7 +4,7 @@ import AboutSection from "../components/About.jsx";
 import PortfolioSection from "../components/Portfolio.jsx";
 import ServicesSection from "../components/ServicesSection";
 import AboutCTASection from "../components/about/AboutCTASection.jsx";
-// import ProcessSection from "../components/softwaredev/ApproachSection.jsx";
+import OurProcess from "../components/OurProcess.jsx";
 import SEO from "../components/SEO";
 
 const Home = () => {
@@ -20,7 +20,7 @@ const Home = () => {
        <ServicesSection />
       <AboutSection />
       <PortfolioSection />
-      {/* <ProcessSection /> */}
+      <OurProcess />
       <AboutCTASection />
     </div>
   );
