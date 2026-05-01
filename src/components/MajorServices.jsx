@@ -48,7 +48,7 @@ const ServicesSection = () => {
   {
     icon: Cloud,
     title: 'Cloud Solutions',
-    description: 'We design and manage cloud infrastructure that improves performance, reduces costs, and ensures your systems are secure, scalable, and reliable.',
+    description: 'Reliable hosting, deployment, and cloud infrastructure built for performance, scalability, and security.',
     path: '/cloud-solutions'
   },
     {
