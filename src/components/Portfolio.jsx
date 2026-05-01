@@ -21,26 +21,25 @@ const PortfolioSection = () => {
 
   const projects = [
     {
-      id: 2,
-      title: 'Moilearn',
-      description:
-        'A student platform for Moi University enabling sharing of notes and past papers to support collaborative learning.',
-      image: './images/moilearn.png',
-      link: 'https://moilearn.vercel.app',
-    },
+    id: 4,
+    title: "MoiHub",
+    category: "Student Services Platform",
+    description: "A centralized platform connecting students to rentals, food delivery, and essential campus services.",
+    image: "./images/moihub.png",
+    link: "https://moihub-silk.vercel.app/"
+  },
+    
     {
       id: 3,
       title: 'Chris Online Store',
-      description:
-        "An e-commerce platform for men's and women's fashion with seamless browsing and purchasing of clothes.",
+      description: "An online fashion store with seamless browsing and secure purchasing experience.",
       image: './images/store.png',
       link: 'https://waste-frontend-two.vercel.app/',
     },
     {
       id: 5,
       title: 'Serene Spa',
-      description:
-        'A spa service platform showcasing massage and body treatment services with simplified booking process to enhance overall user experience .',
+     description: "A modern spa website showcasing services with a simple and smooth booking experience.",
       image: './images/spa.png',
       link: 'https://serenespa.vercel.app/',
     },

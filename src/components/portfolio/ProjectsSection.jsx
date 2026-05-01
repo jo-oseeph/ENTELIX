@@ -4,55 +4,62 @@ import React, { useEffect, useRef, useState } from "react";
 
 // Projects Data
 const projects = [
-   {
-    "id": 2,
-    "title": "Moilearn",
-    "category": "Educational Platform",
-    "description": "A student platform for Moi University enabling sharing of notes and past papers to support collaborative learning.",
-    "image": "./images/moilearn.png",
-    "link": "https://moilearn.vercel.app"
+  {
+    id: 1,
+    title: "Moilearn",
+    category: "Educational Platform",
+    description: "A student platform for sharing notes and past papers to support collaborative learning.",
+    image: "./images/moilearn.png",
+    link: "https://moilearn.vercel.app"
   },
   {
-    "id": 3,
-    "title": "Chris Online Store",
-    "category": "E-commerce Platform",
-    "description": "An e-commerce platform for men’s and women’s fashion with seamless browsing and purchasing.",
-    "image": "./images/store.png",
-    "link": "https://waste-frontend-two.vercel.app/"
+    id: 2,
+    title: "Chris Online Store",
+    category: "E-commerce Platform",
+    description: "An online fashion store with seamless browsing and secure purchasing experience.",
+    image: "./images/store.png",
+    link: "https://waste-frontend-two.vercel.app/"
   },
   {
-    "id": 5,
-    "category": "Wellness & Self-Care",
-    "title": "Serene Spa",
-    "description": "A spa service platform showcasing massage and body treatment services with easy booking.",
-    "image": "./images/spa.png",
-    "link": "https://serenspa.vercel.app/"
+    id: 3,
+    title: "Serene Spa",
+    category: "Wellness Platform",
+    description: "A modern spa website showcasing services with a simple and smooth booking experience.",
+    image: "./images/spa.png",
+    link: "https://serenspa.vercel.app/"
   },
- {
-  id: 6,
-  title: 'MoiHub',
-  category: 'Student Services Platform',
-  description:
-    'A centralized student platform designed to simplify access to essential services within Moi University. Connects students to rentals, food delivery, transport, and other daily needs through a single digital experience.',
-  image: './images/moihub.png',
-  link: 'https://moihub-silk.vercel.app/',
-},
   {
-    id: 6,
+    id: 4,
+    title: "MoiHub",
+    category: "Student Services Platform",
+    description: "A centralized platform connecting students to rentals, food delivery, and essential campus services.",
+    image: "./images/moihub.png",
+    link: "https://moihub-silk.vercel.app/"
+  },
+  {
+    id: 5,
     title: "Emali Adur Properties",
     category: "Real Estate Platform",
-    description: "A comprehensive real estate platform for buying and renting properties in Kenya. Features intuitive property search tools, virtual tours, and detailed listings with location, price, and amenities filtering.",
+    description: "A real estate platform for browsing, buying, and renting properties with detailed listings.",
     image: "/realestate.png",
     link: "https://onungachristopher3.wixsite.com/emali-adur"
   },
   {
-  id: 7,
-  title: "Electrify",
-  category: "E-commerce Platform",
-  description: "A full-featured digital products e-commerce platform with secure add-to-cart, checkout flow, and M-Pesa STK Push integration. Supports instant digital delivery after successful payment and transaction verification.",
-  image: "./images/electrify.png",
-  link: "https://electrify.lovable.app/"
-}
+    id: 6,
+    title: "Electrify",
+    category: "E-commerce Platform",
+    description: "A digital products store with secure checkout and M-Pesa integration for instant delivery.",
+    image: "./images/electrify.png",
+    link: "https://electrify.lovable.app/"
+  },
+  {
+    id: 7,
+    title: "TUC Ticketing System",
+    category: "Support System",
+    description: "A ticketing system for Turkana University allowing users to report issues and admins to track and resolve them efficiently.",
+    image: "./images/tuc.png",
+    link: "https://helpdesk-system-smoky.vercel.app/login"
+  }
 ];
 
 // Individual Project Card Component
