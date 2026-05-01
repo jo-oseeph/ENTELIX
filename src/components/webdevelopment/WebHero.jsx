@@ -1,6 +1,6 @@
 import React from "react";
 
-const HeroSection = () => {
+const WebHero = () => {
   return (
     <section
       id="hero"
@@ -26,4 +26,4 @@ const HeroSection = () => {
   );
 };
 
-export default HeroSection;
+export default WebHero;

@@ -1,11 +1,11 @@
 import React from 'react'
-import HeroSection from '../components/webdev/WebDevHero'
-import WebDevServices from '../components/webdev/WebDevServices'
+import WebHero from "../components/webdevelopment/WebHero"
+import WebDevServices from '../components/webdevelopment/WebDevServices'
 
  const WebDevelopment = () => {
   return (
     <div>
-      <HeroSection />
+      <WebHero />
       <WebDevServices />
     </div>
   )
