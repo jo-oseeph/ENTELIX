@@ -26,7 +26,7 @@ const projects = [
     "title": "Serene Spa",
     "description": "A spa service platform showcasing massage and body treatment services with easy booking.",
     "image": "./images/spa.png",
-    "link": "https://serenespa.vercel.app/"
+    "link": "https://serenspa.vercel.app/"
   },
  {
   id: 6,
