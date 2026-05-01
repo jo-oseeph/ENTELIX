@@ -1,28 +1,24 @@
 import { useEffect, useRef, useState } from 'react';
-import { Cloud, Database, UploadCloud, ShieldCheck } from 'lucide-react';
+import { Cloud, Database, ShieldCheck } from 'lucide-react';
 
 const services = [
   {
     icon: Cloud,
-    title: "Cloud Hosting",
-    description: "Reliable and scalable cloud hosting solutions designed to keep your applications fast, secure, and always available."
+    title: "Cloud Hosting & Deployment",
+    description: "We host and deploy your applications on reliable cloud servers to ensure fast performance, stability, and uptime.",
   },
   {
     icon: Database,
-    title: "Cloud Storage",
-    description: "Secure and flexible storage systems that allow you to store, manage, and access your data efficiently at any scale."
-  },
-  {
-    icon: UploadCloud,
-    title: "Cloud Migration",
-    description: "Seamless migration of your applications and data to the cloud with minimal downtime and zero data loss."
+    title: "Infrastructure Setup",
+    description: "We configure scalable cloud environments that support your application's performance and future growth.",
   },
   {
     icon: ShieldCheck,
-    title: "Cloud Security & Monitoring",
-    description: "Advanced security and real-time monitoring to protect your infrastructure, detect threats, and ensure system reliability."
-  }
+    title: "Security & Monitoring",
+    description: "We protect your systems with continuous monitoring, updates, and security measures to keep everything running safely.",
+  },
 ];
+
 const CloudServices = () => {
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef(null);
@@ -52,23 +48,24 @@ const CloudServices = () => {
             What we do
           </p>
           <h2 className="text-3xl md:text-4xl font-bold text-blue-950 mb-4 leading-tight">
-            Cloud Solution Services Tailored for Your Business
+            Cloud Solution Services for You
           </h2>
           <p className="text-gray-500 text-base leading-relaxed">
             We design and manage cloud infrastructure that improves performance, reduces costs, and ensures your systems are secure, scalable, and reliable.
           </p>
         </div>
 
-        {/* Grid */}
-        <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-5">
+        {/* Cards — flex centered, max-width per card */}
+        <div className={`flex flex-wrap justify-center gap-5 transition-all duration-700 ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
           {services.map(({ icon: Icon, title, description }, index) => (
             <div
               key={index}
               className={`group relative bg-blue-950 rounded-[18px] p-8 border border-blue-900 overflow-hidden
                 transition-all duration-300 hover:-translate-y-1.5 hover:border-red-500
                 hover:shadow-[0_12px_32px_rgba(239,68,68,0.15)]
+                w-full sm:w-[calc(50%-10px)] lg:w-[calc(33.333%-14px)]
                 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
-              style={{ transitionDelay: `${index * 100}ms` }}
+              style={{ transitionDelay: `${index * 100}ms`, maxWidth: '340px' }}
             >
               {/* Bottom bar reveal on hover */}
               <span className="absolute bottom-0 left-0 w-full h-[3px] bg-red-500 scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-300" />
