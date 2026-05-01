@@ -50,7 +50,7 @@ const WebDevServices = () => {
         {/* HERO */}
         <div className="text-center max-w-2xl mx-auto mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-[#0B2153] mb-4">
-            High-Performance Web Development
+            Our Web Development Services
           </h2>
           <p className="text-gray-600 text-base md:text-lg leading-relaxed">
            We build fast, modern websites optimized for performance, SEO, to make your business ranked on google and  grow.
@@ -94,22 +94,6 @@ const WebDevServices = () => {
               </p>
             </div>
           ))}
-        </div>
-
-        {/* CTA */}
-        <div className="text-center mt-20">
-          <h3 className="text-xl md:text-2xl font-bold text-[#0B2153] mb-4">
-            Ready to build something that actually performs?
-          </h3>
-
-          <a
-            href="/contact"
-            className="inline-flex items-center gap-2 px-8 py-3 rounded-xl text-sm font-semibold text-white transition-all duration-300 hover:opacity-90"
-            style={{ background: '#E93930' }}
-          >
-            Start Your Web Project
-            <ArrowRight size={16} />
-          </a>
         </div>
 
       </div>
