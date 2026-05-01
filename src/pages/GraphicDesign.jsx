@@ -4,7 +4,7 @@ import BrandingServices from "../components/branding/ServicesOverview";
 // import PricingPlans from "../components/branding/PricingPlans";
 import SEO from "../components/SEO";
 import ServicesGrid from "../components/branding/ServicesOverview";
-import AboutCTA from "../components/about/AboutCTASection";
+import GraphicsCta from "../components/branding/GraphicsCta";
 
 const GraphicDesign = () => {
   return (
@@ -18,7 +18,7 @@ const GraphicDesign = () => {
       <HeroSection />
        <ServicesGrid />
        {/* <PricingPlans /> */}
-     <AboutCTA />
+     <GraphicsCta />
     </div>
   );
 };
