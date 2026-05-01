@@ -14,16 +14,16 @@ const HeroSection = () => {
 
       {/* Content */}
       <div className="relative z-10 text-center px-6 md:px-12 max-w-3xl flex flex-col items-center">
-        <h1 className="text-3xl md:text-6xl font-bold leading-tight mb-3 md:mb-4">
-          Graphic Design 
+        <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-3 md:mb-4">
+          Graphic Design
         </h1>
 
-        <p className="text-base md:text-xl text-gray-200 mb-4 md:mb-6">
+        <p className="text-lg md:text-xl text-gray-200 mb-4 md:mb-6">
           Creative visual designs that elevate your brand
         </p>
 
         {/* Breadcrumb */}
-        <nav className="flex items-center gap-2 text-xs md:text-sm text-white/50">
+        <nav className="flex items-center gap-2 text-sm md:text-sm text-white/50">
           <a href="/" className="hover:text-white transition-colors duration-200">Home</a>
           <span className="text-white/30">/</span>
           <a href="/services" className="hover:text-white transition-colors duration-200">Services</a>
