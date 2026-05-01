@@ -110,6 +110,11 @@ export default function Footer() {
               </Link>
             </li>
             <li>
+              <Link to="/graphic-design" className="hover:text-[#E93930] transition-colors">
+                Graphic Design
+              </Link>
+            </li>
+            <li>
               <Link to="/software-development" className="hover:text-[#E93930] transition-colors">
                 Software Development
               </Link>
@@ -124,11 +129,7 @@ export default function Footer() {
                 Cloud Solutions
               </Link>
             </li>
-            <li>
-              <Link to="/graphic-design" className="hover:text-[#E93930] transition-colors">
-                Graphic Design
-              </Link>
-            </li>
+            
           </ul>
         </div>
 
