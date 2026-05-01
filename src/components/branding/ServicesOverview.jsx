@@ -15,17 +15,17 @@ const services = [
   {
     icon: LayoutDashboard,
     title: 'UI/UX Design',
-    description: 'Clean, user-focused designs for websites and apps that improve usability and overall user experience.',
+    description: 'Clean, user-focused designs for websites and apps that improve usability and overall experience.',
   },
   {
     icon: Brush,
-    title: 'Marketing & Social Design',
-    description: 'Flyers, posters, and social media creatives designed to promote your brand and keep your visuals consistent.',
+    title: 'Social Media Graphics',
+    description: 'Engaging and consistent visuals designed to strengthen your presence across all social platforms.',
   },
   {
     icon: Layers,
-    title: 'Design Systems',
-    description: 'Structured visual guidelines that ensure your brand stays consistent across all platforms and materials.',
+    title: 'Print & Digital Materials',
+    description: 'Posters, flyers, business cards, and marketing assets designed to promote your brand professionally.',
   },
 ];
 const BrandingServices = () => {
@@ -37,7 +37,7 @@ const BrandingServices = () => {
         {/* HERO */}
         <div className="text-center max-w-2xl mx-auto mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-[#0B2153] mb-4">
-            Branding & Design Systems
+            Our Graphic Design Services
           </h2>
           <p className="text-gray-600 text-base md:text-lg leading-relaxed">
             We create clean, modern brand identities and design systems that make your business consistent, recognizable, and professional.

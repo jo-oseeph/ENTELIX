@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import { Code, Cloud, Layout, BarChart, Settings, Users, ArrowRight } from 'lucide-react';
+import { Code, Cloud, Paintbrush, BarChart, Settings, Users, ArrowRight } from 'lucide-react';
 import ServiceCard from './ServicesCard';
 
 const ServicesSection = () => {
@@ -32,11 +32,11 @@ const ServicesSection = () => {
   description: 'From landing pages to full web applications, we build fast, modern websites designed to perform, convert, and deliver seamless experiences on every device',
   path: '/web-development'
 },
-    {
-  icon: Layout,
-  title: 'Branding & Design',
-  description: 'We create clean, modern brand identities and visual systems that build trust and make your business stand out.',
-  path: '/branding-design'
+     {
+  icon: Paintbrush,
+  title: 'Graphic Design',
+  description: 'We create clean, modern brand identities and visuals that build trust and make your business stand out.',
+  path: '/graphic-design'
 },
     {
     icon: Settings,
