@@ -61,90 +61,69 @@ const HeroSection = () => {
 
       <motion.div
         className="absolute top-1/4 right-1/4 w-3 h-3 bg-red-400 rounded-full"
-        animate={{
-          y: [0, -10, 0],
-          opacity: [0.5, 1, 0.5],
-        }}
-        transition={{
-          duration: 3,
-          repeat: Infinity,
-          ease: "easeInOut",
-        }}
+        animate={{ y: [0, -10, 0], opacity: [0.5, 1, 0.5] }}
+        transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
       />
       <motion.div
         className="absolute top-1/3 right-1/3 w-2 h-2 bg-red-500 rounded-full"
-        animate={{
-          y: [0, -15, 0],
-          opacity: [0.3, 1, 0.3],
-        }}
-        transition={{
-          duration: 4,
-          repeat: Infinity,
-          ease: "easeInOut",
-          delay: 1,
-        }}
+        animate={{ y: [0, -15, 0], opacity: [0.3, 1, 0.3] }}
+        transition={{ duration: 4, repeat: Infinity, ease: "easeInOut", delay: 1 }}
       />
       <motion.div
         className="absolute bottom-1/3 right-1/4 w-4 h-4 bg-red-400/60 rounded-full"
-        animate={{
-          y: [0, -20, 0],
-          opacity: [0.2, 0.8, 0.2],
-        }}
-        transition={{
-          duration: 5,
-          repeat: Infinity,
-          ease: "easeInOut",
-          delay: 2,
-        }}
+        animate={{ y: [0, -20, 0], opacity: [0.2, 0.8, 0.2] }}
+        transition={{ duration: 5, repeat: Infinity, ease: "easeInOut", delay: 2 }}
       />
 
-      <div className="relative z-10 max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 w-full">
-        <motion.div
-          className="max-w-3xl space-y-6 sm:space-y-8"
-          variants={containerVariants}
-          initial="hidden"
-          animate="visible"
-        >
-          <motion.h1
-            className="text-4xl sm:text-5xl md:text-6xl lg:text-5xl xl:text-5xl font-bold text-white leading-tight tracking-tight"
-            variants={itemVariants}
-          >
-            Building Digital Solutions That Help Businesses Grow.
-          </motion.h1>
-
-          <motion.p
-            className="text-base sm:text-lg md:text-xl text-gray-200 max-w-2xl font-light leading-relaxed"
-            variants={itemVariants}
-          >
-            We transform businesses through innovative digital solutions.
-          </motion.p>
-
+      <div className="relative z-10 w-full h-full flex items-center">
+        <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 w-full pt-0 lg:pt-20">
           <motion.div
-            className="flex flex-col sm:flex-row gap-4 pt-4 md:pt-6"
+            className="max-w-3xl space-y-6 sm:space-y-8"
             variants={containerVariants}
+            initial="hidden"
+            animate="visible"
           >
-            <motion.button
-              onClick={handleContactClick}
-              className="group relative px-8 cursor-pointer py-4 text-white font-bold text-sm uppercase tracking-wider overflow-hidden rounded-sm transition-all duration-300 hover:shadow-2xl bg-red-500 hover:bg-[#E63946] active:scale-95"
-              variants={buttonVariants}
-              whileHover="hover"
-              whileTap="tap"
+            <motion.h1
+              className="text-4xl sm:text-5xl md:text-6xl lg:text-5xl xl:text-5xl font-bold text-white leading-tight tracking-tight"
+              variants={itemVariants}
             >
-              <span className="relative z-10">Start Your Project</span>
-              <div className="absolute inset-0 bg-red-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-            </motion.button>
+              Building Digital Solutions That Help Businesses Grow.
+            </motion.h1>
 
-            <motion.button
-              onClick={handleServicesClick}
-              className="group relative px-8 py-4 cursor-pointer text-white font-bold text-sm uppercase tracking-wider overflow-hidden rounded-sm transition-all duration-300 hover:shadow-2xl bg-transparent hover:bg-red-500  hover:text-white active:scale-95 border-2 border-white"
-              variants={buttonVariants}
-              whileHover="hover"
-              whileTap="tap"
+            <motion.p
+              className="text-base sm:text-lg md:text-xl text-gray-200 max-w-2xl font-light leading-relaxed"
+              variants={itemVariants}
             >
-              <span className="relative z-10">View Our Work</span>
-            </motion.button>
+              We transform businesses through innovative digital solutions.
+            </motion.p>
+
+            <motion.div
+              className="flex flex-col sm:flex-row gap-4 pt-4 md:pt-6"
+              variants={containerVariants}
+            >
+              <motion.button
+                onClick={handleContactClick}
+                className="group relative px-8 cursor-pointer py-4 text-white font-bold text-sm uppercase tracking-wider overflow-hidden rounded-sm transition-all duration-300 hover:shadow-2xl bg-red-500 hover:bg-[#E63946] active:scale-95"
+                variants={buttonVariants}
+                whileHover="hover"
+                whileTap="tap"
+              >
+                <span className="relative z-10">Start Your Project</span>
+                <div className="absolute inset-0 bg-red-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              </motion.button>
+
+              <motion.button
+                onClick={handleServicesClick}
+                className="group relative px-8 py-4 cursor-pointer text-white font-bold text-sm uppercase tracking-wider overflow-hidden rounded-sm transition-all duration-300 hover:shadow-2xl bg-transparent hover:bg-red-500 hover:text-white active:scale-95 border-2 border-white"
+                variants={buttonVariants}
+                whileHover="hover"
+                whileTap="tap"
+              >
+                <span className="relative z-10">View Our Work</span>
+              </motion.button>
+            </motion.div>
           </motion.div>
-        </motion.div>
+        </div>
       </div>
     </section>
   );
