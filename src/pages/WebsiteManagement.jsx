@@ -10,7 +10,7 @@ const WebsiteManagement = () => {
     <main className="min-h-screen">
       <SEO
         title="Website Management Kenya - Secure Maintenance, Updates & Monitoring | Entelix"
-        description="Keep your website secure, fast, and up-to-date with ongoing website management from ENTELIX Kenya. We handle maintenance, performance monitoring, content updates, and technical support for East African businesses."
+        description="Keep your website secure, fast, and up-to-date with ongoing website management from Entelix Kenya. We handle maintenance, performance monitoring, content updates, and technical support for East African businesses."
         keywords="website management Kenya, website maintenance Nairobi, site monitoring Kenya, website support East Africa, website updates Kenya, web performance monitoring"
         url="/website-management"
       />

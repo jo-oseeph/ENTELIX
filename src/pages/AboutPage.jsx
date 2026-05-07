@@ -11,7 +11,7 @@ const AboutPage = () => {
   return (
     <>
      <SEO
-  title="About Entelix | Web & Software Development Company in Kenya"
+  title="About Entelix | Web & Software Development Agency in Kenya"
   description="Learn about Entelix, a Kenyan company building modern websites and custom software systems to help businesses streamline operations and scale efficiently."
   keywords="Entelix Kenya, web development Kenya, software development Kenya, business automation Kenya, custom software Nairobi"
   url="/about"
