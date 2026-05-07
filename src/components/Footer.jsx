@@ -1,11 +1,5 @@
 import { Link } from "react-router-dom";
-import {
-  Mail,
-  Phone,
-  ChevronUp,
-  Facebook,
-  Instagram,
-} from "lucide-react";
+import { Mail, Phone, ChevronUp, Facebook, Instagram, MapPin } from "lucide-react";
 import { FaTiktok, FaWhatsapp } from "react-icons/fa";
 
 export default function Footer() {
@@ -16,7 +10,6 @@ export default function Footer() {
   return (
     <footer className="bg-[#0B2153] text-gray-300 pt-16 pb-6 relative">
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 md:gap-8">
-
         {/* Brand + Description */}
         <div>
           <div className="flex items-center gap-2 mb-4">
@@ -76,22 +69,34 @@ export default function Footer() {
           </h3>
           <ul className="space-y-3 text-sm">
             <li>
-              <Link to="/services" className="hover:text-[#E93930] transition-colors">
+              <Link
+                to="/services"
+                className="hover:text-[#E93930] transition-colors"
+              >
                 Services
               </Link>
             </li>
             <li>
-              <Link to="/portfolio" className="hover:text-[#E93930] transition-colors">
+              <Link
+                to="/portfolio"
+                className="hover:text-[#E93930] transition-colors"
+              >
                 Portfolio
               </Link>
             </li>
             <li>
-              <Link to="/about" className="hover:text-[#E93930] transition-colors">
+              <Link
+                to="/about"
+                className="hover:text-[#E93930] transition-colors"
+              >
                 About Us
               </Link>
             </li>
             <li>
-              <Link to="/contact" className="hover:text-[#E93930] transition-colors">
+              <Link
+                to="/contact"
+                className="hover:text-[#E93930] transition-colors"
+              >
                 Contact
               </Link>
             </li>
@@ -105,31 +110,45 @@ export default function Footer() {
           </h3>
           <ul className="space-y-3 text-sm">
             <li>
-              <Link to="/web-development" className="hover:text-[#E93930] transition-colors">
+              <Link
+                to="/web-development"
+                className="hover:text-[#E93930] transition-colors"
+              >
                 Web Development
               </Link>
             </li>
             <li>
-              <Link to="/graphic-design" className="hover:text-[#E93930] transition-colors">
+              <Link
+                to="/graphic-design"
+                className="hover:text-[#E93930] transition-colors"
+              >
                 Graphic Design
               </Link>
             </li>
             <li>
-              <Link to="/software-development" className="hover:text-[#E93930] transition-colors">
+              <Link
+                to="/software-development"
+                className="hover:text-[#E93930] transition-colors"
+              >
                 Software Development
               </Link>
             </li>
             <li>
-              <Link to="/website-management" className="hover:text-[#E93930] transition-colors">
+              <Link
+                to="/website-management"
+                className="hover:text-[#E93930] transition-colors"
+              >
                 Website Management
               </Link>
             </li>
             <li>
-              <Link to="/cloud-solutions" className="hover:text-[#E93930] transition-colors">
+              <Link
+                to="/cloud-solutions"
+                className="hover:text-[#E93930] transition-colors"
+              >
                 Cloud Solutions
               </Link>
             </li>
-            
           </ul>
         </div>
 
@@ -157,6 +176,13 @@ export default function Footer() {
                 info@entelix.co.ke
               </a>
             </li>
+            <li className="flex items-start gap-2">
+              <MapPin
+                className="text-[#E93930] flex-shrink-0 mt-0.5"
+                size={16}
+              />
+              <span>Nairobi, Kenya</span>
+            </li>
           </ul>
         </div>
       </div>
@@ -164,10 +190,14 @@ export default function Footer() {
       {/* Bottom Bar */}
       <div className="border-t border-gray-700 mt-12 pt-6 px-6 flex flex-col md:flex-row justify-between items-center text-sm text-gray-400 gap-4">
         <p>
-          © {currentYear} <span className="text-[#E93930]">Entelix</span>. All Rights Reserved.
+          © {currentYear} <span className="text-[#E93930]">Entelix</span>. All
+          Rights Reserved.
         </p>
         <div className="flex gap-6">
-          <Link to="/privacy" className="hover:text-[#E93930] transition-colors">
+          <Link
+            to="/privacy"
+            className="hover:text-[#E93930] transition-colors"
+          >
             Privacy Policy
           </Link>
           <Link to="/terms" className="hover:text-[#E93930] transition-colors">
