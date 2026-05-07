@@ -205,14 +205,6 @@ export default function Footer() {
           </Link>
         </div>
       </div>
-
-      {/* Back to Top Button */}
-      <button
-        onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-        className="fixed bottom-6 right-6 bg-[#E93930] text-white p-3 rounded-full shadow-md hover:bg-white hover:text-[#E93930] transition"
-      >
-        <ChevronUp size={20} />
-      </button>
     </footer>
   );
 }

@@ -18,7 +18,7 @@ const FloatingWhatsApp = () => {
     >
       <div className="relative">
         {/* Pulsing ring animation */}
-        <div className="absolute inset-0 bg-green-500 rounded-full animate-ping opacity-75"></div>
+        <div className="absolute inset-0 bg-green-500 rounded-full  opacity-50"></div>
         
         {/* Main button */}
         <div className="relative bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg hover:shadow-2xl transform hover:scale-110 transition-all duration-3000 cursor-pointer">

@@ -2,7 +2,6 @@ import { Routes, Route } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import ScrollToTop from "./components/ScrollToTop";
 import PageTransition from "./components/PageTransition";
 import Home from "./pages/Home";
 import Services from "./pages/Services";
@@ -18,7 +17,7 @@ import CloudSolutions from "./pages/CloudSolutions";
 import WebsiteManagement from "./pages/WebsiteManagement";
 import Privacy from "./pages/Privacy";
 import Terms from "./pages/Terms";
-// import FloatingWhatsApp from "./components/FloatingWhatsApp";
+import FloatingWhatsApp from "./components/FloatingWhatsApp";
 
 function App() {
   return (
@@ -28,7 +27,6 @@ function App() {
 
         <main className="grow">
           <ErrorBoundary>
-            <ScrollToTop />
             <PageTransition>
               <Routes>
                 <Route path="/" element={<Home />} />
@@ -52,7 +50,7 @@ function App() {
                 <Route path="/terms" element={<Terms />} />
               </Routes>
             </PageTransition>
-            {/* <FloatingWhatsApp /> */}
+            <FloatingWhatsApp />
           </ErrorBoundary>
         </main>
 
