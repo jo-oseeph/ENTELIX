@@ -53,21 +53,19 @@ const Navbar = () => {
       <div className="mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <motion.div
-            className="flex items-center gap-1 group cursor-pointer -ml-4 sm:-ml-6 lg:-ml-8"
-            variants={logoVariants}
-            initial="hidden"
-            animate="visible"
-          >
-            <div className="relative">
-              <img
-                src="/logo.jpg"
-                alt="Entelix Logo"
-                className="h-16 w-16 relative z-10"
-              />
-            </div>
-            <span className="text-3xl font-bold text-blue-950">ENTELIX</span>
-          </motion.div>
+         <motion.div
+  className="-ml-4 sm:-ml-6 lg:-ml-8"
+  variants={logoVariants}
+  initial="hidden"
+  animate="visible"
+>
+  <Link to="/" className="flex items-center gap-1 group cursor-pointer">
+    <div className="relative">
+      <img src="/logo.jpg" alt="Entelix Logo" className="h-12 w-12 relative z-10" />
+    </div>
+    <span className="text-2xl font-bold text-blue-950 tracking-widest">ENTELIX</span>
+  </Link>
+</motion.div>
 
           {/* Desktop Navigation */}
           <motion.div
