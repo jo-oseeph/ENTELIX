@@ -192,11 +192,11 @@ const ProjectsSection = () => {
             </span>
           </div>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-blue-950">
-            Featured Projects
+            Recent Projects
           </h2>
             <div className="mt-4 w-24 h-1 bg-red-500 mx-auto"></div>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto mb-6 mt-4">
-            Innovative solutions spanning IoT, AI, e-commerce, real estate, sustainability, and digital platforms
+            A showcase of our latest work, demonstrating our commitment to delivering innovative and impactful digital solutions for our clients.
           </p>
          
         </div>
