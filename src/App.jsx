@@ -18,6 +18,8 @@ import WebsiteManagement from "./pages/WebsiteManagement";
 import Privacy from "./pages/Privacy";
 import Terms from "./pages/Terms";
 import FloatingWhatsApp from "./components/FloatingWhatsApp";
+import ScrollToTop from "./components/ScrollToTop";
+
 
 function App() {
   return (
@@ -51,6 +53,7 @@ function App() {
               </Routes>
             </PageTransition>
             <FloatingWhatsApp />
+            <ScrollToTop />
           </ErrorBoundary>
         </main>
 

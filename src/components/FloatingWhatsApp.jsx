@@ -1,7 +1,7 @@
 import React from "react";
 
 const FloatingWhatsApp = () => {
-  const phoneNumber = "254719238337"; // 
+  const phoneNumber = "254719238337";
   const message = encodeURIComponent(
     "Hi! I'm interested in your services. Can we discuss my project?"
   );
@@ -13,15 +13,13 @@ const FloatingWhatsApp = () => {
       href={whatsappUrl}
       target="_blank"
       rel="noopener noreferrer"
-      className="fixed bottom-6 right-6 z-50 group"
+      className="fixed bottom-6 left-6 z-50 group"
       aria-label="Chat on WhatsApp"
     >
       <div className="relative">
-        {/* Pulsing ring animation */}
-        <div className="absolute inset-0 bg-green-500 rounded-full  opacity-50"></div>
-        
-        {/* Main button */}
-        <div className="relative bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg hover:shadow-2xl transform hover:scale-110 transition-all duration-3000 cursor-pointer">
+        <div className="absolute inset-0 bg-green-500 rounded-full opacity-50"></div>
+
+        <div className="relative bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg hover:shadow-2xl transform hover:scale-110 transition-all duration-300 cursor-pointer">
           <svg
             className="w-8 h-8"
             fill="currentColor"
@@ -33,10 +31,10 @@ const FloatingWhatsApp = () => {
         </div>
       </div>
 
-      {/* Tooltip */}
-      <div className="absolute bottom-full right-0 mb-2 px-3 py-2 bg-gray-900 text-white text-sm rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
+      {/* Tooltip — flipped to right since button is on left */}
+      <div className="absolute bottom-full left-0 mb-2 px-3 py-2 bg-gray-900 text-white text-sm rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
         Quick Chat
-        <div className="absolute top-full right-4 w-0 h-0 border-l-4 border-r-4 border-t-4 border-transparent border-t-gray-900"></div>
+        <div className="absolute top-full left-4 w-0 h-0 border-l-4 border-r-4 border-t-4 border-transparent border-t-gray-900"></div>
       </div>
     </a>
   );
