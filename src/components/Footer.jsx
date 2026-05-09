@@ -190,7 +190,7 @@ export default function Footer() {
       {/* Bottom Bar */}
       <div className="border-t border-gray-700 mt-12 pt-6 px-6 flex flex-col md:flex-row justify-between items-center text-sm text-gray-400 gap-4">
         <p>
-          © {currentYear} <span className="text-[#E93930]">Entelix</span>. All
+          © {currentYear} <span className="text-[#E93930]">Entelix Technologies</span>. All
           Rights Reserved.
         </p>
         <div className="flex gap-6">
