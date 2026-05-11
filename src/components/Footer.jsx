@@ -1,5 +1,12 @@
 import { Link } from "react-router-dom";
-import { Mail, Phone, ChevronUp, Facebook, Instagram, MapPin } from "lucide-react";
+import {
+  Mail,
+  Phone,
+  ChevronUp,
+  Facebook,
+  Instagram,
+  MapPin,
+} from "lucide-react";
 import { FaTiktok, FaWhatsapp } from "react-icons/fa";
 
 export default function Footer() {
@@ -21,8 +28,9 @@ export default function Footer() {
             <h2 className="text-white font-semibold text-lg">Entelix</h2>
           </div>
           <p className="text-sm leading-relaxed mb-6">
-            Entelix is a creative software agency offering custom software
-            solutions for web, app, and cloud solutions.
+            Entelix builds modern digital solutions designed to help
+            businesses grow, streamline operations, and build stronger digital
+            presence.
           </p>
 
           {/* Social Links */}
@@ -190,7 +198,7 @@ export default function Footer() {
       {/* Bottom Bar */}
       <div className="border-t border-gray-700 mt-12 pt-6 px-6 flex flex-col md:flex-row justify-between items-center text-sm text-gray-400 gap-4">
         <p>
-          © {currentYear} <span className="text-[#E93930]">Entelix Technologies</span>. All
+          © {currentYear} <span className="text-[#E93930]">Entelix</span>. All
           Rights Reserved.
         </p>
         <div className="flex gap-6">
