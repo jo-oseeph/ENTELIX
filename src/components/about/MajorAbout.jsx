@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState } from "react";
 
 const AboutIntro = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -9,7 +9,7 @@ const AboutIntro = () => {
       ([entry]) => {
         if (entry.isIntersecting) setIsVisible(true);
       },
-      { threshold: 0.1 }
+      { threshold: 0.1 },
     );
 
     const currentRef = sectionRef.current;
@@ -29,7 +29,9 @@ const AboutIntro = () => {
         <div className="text-center mb-16">
           <div
             className={`inline-block transition-all duration-700 ${
-              isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-10'
+              isVisible
+                ? "opacity-100 translate-y-0"
+                : "opacity-0 -translate-y-10"
             }`}
           >
             <p className="text-red-500 font-bold text-sm uppercase tracking-wider mb-3">
@@ -44,11 +46,12 @@ const AboutIntro = () => {
 
         {/* Main Grid */}
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
-          
           {/* Image LEFT */}
           <div
             className={`transition-all duration-700 delay-300 ${
-              isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-20'
+              isVisible
+                ? "opacity-100 translate-x-0"
+                : "opacity-0 -translate-x-20"
             }`}
           >
             <div className="relative group h-full">
@@ -69,30 +72,41 @@ const AboutIntro = () => {
           {/* Content RIGHT */}
           <div
             className={`transition-all duration-700 delay-200 ${
-              isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-20'
+              isVisible
+                ? "opacity-100 translate-x-0"
+                : "opacity-0 translate-x-20"
             }`}
           >
             <div className="space-y-6 flex flex-col justify-between h-full">
-              
               <p className="text-gray-700 text-lg leading-relaxed">
-                <span className="font-bold text-blue-950">Entelix</span> helps businesses build scalable web, software, and cloud solutions that streamline operations and drive measurable growth. We combine strategy, design, and engineering to deliver high-performing digital products, with AI integrations that improve efficiency and support businesses at every stage.
+                <span className="font-bold text-blue-950">Entelix</span> helps
+                businesses build scalable web, software, and cloud solutions
+                that streamline operations and drive measurable growth. We
+                combine strategy, design, and engineering to deliver
+                high-performing digital products, with AI integrations that
+                improve efficiency and support businesses at every stage.
               </p>
 
               {/* Stats */}
+              {/* Stats */}
+              {/* Stats */}
               <div className="grid grid-cols-3 gap-4 pt-4">
                 {[
-                  { value: '3+', label: 'Years Experience' },
-                  { value: '20+', label: 'Projects' },
-                  { value: '100+', label: 'Clients' }
+                  { value: "3+", label: "Years Experience" },
+                  { value: "20+", label: "Projects" },
+                  { value: "100+", label: "Clients" },
                 ].map((stat, index) => (
                   <div
                     key={index}
                     className="text-center bg-white rounded-xl py-4 shadow-sm hover:shadow-md transition-all duration-300"
                   >
-                    <h3 className="text-2xl md:text-3xl font-bold text-[#FF4D4D]">
+                    <h3
+                      className="text-2xl md:text-3xl font-bold"
+                      style={{ color: "#0B2153" }}
+                    >
                       {stat.value}
                     </h3>
-                    <p className="text-sm text-blue-950 font-medium mt-1">
+                    <p className="text-sm text-gray-500 font-medium mt-1">
                       {stat.label}
                     </p>
                   </div>
@@ -100,7 +114,6 @@ const AboutIntro = () => {
               </div>
             </div>
           </div>
-
         </div>
       </div>
     </section>
