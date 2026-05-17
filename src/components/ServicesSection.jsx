@@ -38,27 +38,13 @@ const ServicesSection = () => {
         'We create clean, modern brand identities and visuals that build trust and make your business stand out.',
       path: '/graphic-design',
     },
-    {
-      icon: Settings,
-      title: 'Website Management',
-      description:
-        'Ongoing support, maintenance, updates, and performance monitoring to keep your website secure, up-to-date, and running smoothly at all times.',
-      path: '/website-management',
-    },
-    {
-      icon: Users,
-      title: 'Consultation Services',
-      description:
-        'We provide expert guidance to help you plan, build, and optimize digital solutions, including AI strategy aligned with your business goals.',
-        path: '/consultation-services',
-    },
-    {
-      icon: Cloud,
-      title: 'Cloud Solutions',
-      description:
-        'We design and manage cloud infrastructure that improves performance, reduces costs, and ensures your systems are secure, scalable, and reliable.',
-      path: '/cloud-solutions',
-    },
+      {
+  icon: Code,
+  title: 'Software Development',
+  description: 'We build scalable software systems that automate processes, improve efficiency, and support long-term business growth.',
+  path: '/software-development'
+}
+    
   ];
 
   const displayedServices = services.slice(0, 3);
@@ -106,10 +92,10 @@ const ServicesSection = () => {
             return (
               <div
                 key={index}
-                className={`bg-white rounded-2xl p-7 flex flex-col gap-4 border border-gray-100 shadow-md hover:shadow-xl transition-all duration-700 hover:-translate-y-1 ${
+                className={`bg-white rounded-2xl p-7 flex flex-col gap-4 border border-gray-100 border-t-4 shadow-md hover:shadow-xl transition-all duration-700 hover:-translate-y-1 ${
                   isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
                 }`}
-                style={{ transitionDelay: `${index * 120}ms` }}
+                style={{ transitionDelay: `${index * 120}ms`, borderTopColor: '#0B2153' }}
               >
                 {/* Icon box */}
                 <div
