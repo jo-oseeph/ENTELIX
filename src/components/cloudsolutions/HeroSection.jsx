@@ -6,7 +6,7 @@ const HeroSection = () => {
       id="hero"
       className="relative flex items-center justify-center h-[55vh] md:h-[80vh] bg-cover bg-center text-white"
       style={{
-        backgroundImage: "url('/hero-bg.jpg')",
+        backgroundImage: "url('/hero5.jpg')",
       }}
     >
       {/* Gradient overlay */}
