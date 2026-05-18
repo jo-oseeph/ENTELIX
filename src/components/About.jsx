@@ -61,7 +61,7 @@ const AboutIntro = () => {
 
               <div className="relative overflow-hidden rounded-2xl shadow-2xl h-full">
                 <img
-                  src="/hero-bg.jpg"
+                  src="/hero1.jpg"
                   alt="Entelix Team"
                   className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
                 />
