@@ -54,7 +54,7 @@ const HeroSection = () => {
     <section className="relative h-screen min-h-[500px] sm:min-h-[600px] md:min-h-screen flex items-center overflow-hidden">
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: "url('/hero-bg.jpg')" }}
+        style={{ backgroundImage: "url('/hero5.jpg')" }}
       />
 
       <div className="absolute inset-0 bg-gradient-to-br from-blue-950/70 via-blue-950/60 to-red-600/40"></div>
