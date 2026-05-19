@@ -79,12 +79,11 @@ const AboutIntro = () => {
           >
             <div className="space-y-6 flex flex-col justify-between h-full">
               <p className="text-gray-700 text-lg leading-relaxed">
-                <span className="font-bold text-blue-950">Entelix</span> helps
-                businesses build scalable web, software, and cloud solutions
-                that streamline operations and drive measurable growth. We
-                combine strategy, design, and engineering to deliver
-                high-performing digital products, with AI integrations that
-                improve efficiency and support businesses at every stage.
+                At Entelix, we build modern websites and digital systems
+                designed to solve real business challenges, improve efficiency,
+                and support growth. We focus on creating practical solutions
+                that help businesses operate better and achieve measurable
+                results
               </p>
 
               {/* Stats */}
