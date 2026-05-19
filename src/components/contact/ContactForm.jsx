@@ -47,7 +47,11 @@ const ContactForm = () => {
         {/* FormSubmit config */}
         <input type="hidden" name="_captcha" value="false" />
         <input type="hidden" name="_template" value="table" />
-        <input type="hidden" name="_subject" value="New Contact Form Submission - ENTELIX" />
+        <input
+          type="hidden"
+          name="_subject"
+          value="New Contact Form Submission - ENTELIX"
+        />
 
         {/* Name */}
         <input

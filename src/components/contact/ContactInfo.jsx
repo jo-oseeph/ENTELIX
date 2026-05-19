@@ -17,30 +17,68 @@ const WhatsAppIcon = ({ size = 24, className = "" }) => (
 const ContactInfo = () => {
   return (
     <div className="space-y-3">
-      <a href="mailto:contact@entelix.com" className="flex items-center gap-4 group cursor-pointer hover:bg-red-50 p-3 rounded-lg transition-all duration-300">
-        <Mail className="text-blue-950 group-hover:text-red-500 transition-colors" size={24} />
+      <a
+        href="mailto:contact@entelix.com"
+        className="flex items-center gap-4 group cursor-pointer hover:bg-red-50 p-3 rounded-lg transition-all duration-300"
+      >
+        <Mail
+          className="text-blue-950 group-hover:text-red-500 transition-colors"
+          size={24}
+        />
         <div className="flex-1">
-          <h3 className="font-semibold text-blue-950 group-hover:text-red-500 transition-colors">Email</h3>
-          <p className="text-gray-600 group-hover:text-blue-950 transition-colors">info@entelix.co.ke</p>
-          <span className="text-xs text-gray-400 opacity-0 group-hover:opacity-100 transition-opacity">Click to email us →</span>
+          <h3 className="font-semibold text-blue-950 group-hover:text-red-500 transition-colors">
+            Email
+          </h3>
+          <p className="text-gray-600 group-hover:text-blue-950 transition-colors">
+            info@entelix.co.ke
+          </p>
+          <span className="text-xs text-gray-400 opacity-0 group-hover:opacity-100 transition-opacity">
+            Click to email us →
+          </span>
         </div>
       </a>
 
-      <a href="tel:+254719238337" className="flex items-center gap-4 group cursor-pointer hover:bg-red-50 p-3 rounded-lg transition-all duration-300">
-        <Phone className="text-blue-950 group-hover:text-red-500 transition-colors" size={24} />
+      <a
+        href="tel:+254719238337"
+        className="flex items-center gap-4 group cursor-pointer hover:bg-red-50 p-3 rounded-lg transition-all duration-300"
+      >
+        <Phone
+          className="text-blue-950 group-hover:text-red-500 transition-colors"
+          size={24}
+        />
         <div className="flex-1">
-          <h3 className="font-semibold text-blue-950 group-hover:text-red-500 transition-colors">Phone</h3>
-          <p className="text-gray-600 group-hover:text-[#0B2153] transition-colors">+254 719238337</p>
-          <span className="text-xs text-gray-400 opacity-0 group-hover:opacity-100 transition-opacity">Click to call now →</span>
+          <h3 className="font-semibold text-blue-950 group-hover:text-red-500 transition-colors">
+            Phone
+          </h3>
+          <p className="text-gray-600 group-hover:text-[#0B2153] transition-colors">
+            +254 719238337
+          </p>
+          <span className="text-xs text-gray-400 opacity-0 group-hover:opacity-100 transition-opacity">
+            Click to call now →
+          </span>
         </div>
       </a>
 
-      <a href="https://wa.me/254719238337" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 group cursor-pointer hover:bg-red-50 p-3 rounded-lg transition-all duration-300">
-        <WhatsAppIcon size={24} className="text-blue-950 group-hover:text-red-500 transition-colors" />
+      <a
+        href="https://wa.me/254719238337"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="flex items-center gap-4 group cursor-pointer hover:bg-red-50 p-3 rounded-lg transition-all duration-300"
+      >
+        <WhatsAppIcon
+          size={24}
+          className="text-blue-950 group-hover:text-red-500 transition-colors"
+        />
         <div className="flex-1">
-          <h3 className="font-semibold text-blue-950 group-hover:text-red-500 transition-colors">WhatsApp</h3>
-          <p className="text-gray-600 group-hover:text-blue-950 transition-colors">+254 719238337</p>
-          <span className="text-xs text-gray-400 opacity-0 group-hover:opacity-100 transition-opacity">Click to WhatsApp us →</span>
+          <h3 className="font-semibold text-blue-950 group-hover:text-red-500 transition-colors">
+            WhatsApp
+          </h3>
+          <p className="text-gray-600 group-hover:text-blue-950 transition-colors">
+            +254 719238337
+          </p>
+          <span className="text-xs text-gray-400 opacity-0 group-hover:opacity-100 transition-opacity">
+            Click to WhatsApp us →
+          </span>
         </div>
       </a>
 
