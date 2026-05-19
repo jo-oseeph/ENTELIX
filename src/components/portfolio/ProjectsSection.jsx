@@ -1,8 +1,6 @@
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, ExternalLink } from "lucide-react";
 import React, { useEffect, useRef, useState } from "react";
-  
 
-// Projects Data
 const projects = [
   {
     id: 1,
@@ -62,7 +60,6 @@ const projects = [
   }
 ];
 
-// Individual Project Card Component
 const ProjectCard = ({ project, index }) => {
   const [isVisible, setIsVisible] = useState(false);
   const cardRef = useRef(null);
@@ -78,27 +75,11 @@ const ProjectCard = ({ project, index }) => {
       },
       { threshold: 0.1 }
     );
-
-    if (cardRef.current) {
-      observer.observe(cardRef.current);
-    }
-
-    return () => {
-      if (cardRef.current) {
-        observer.unobserve(cardRef.current);
-      }
-    };
+    if (cardRef.current) observer.observe(cardRef.current);
+    return () => { if (cardRef.current) observer.unobserve(cardRef.current); };
   }, [index]);
 
   const hasLiveLink = Boolean(project.link && project.link.startsWith("http"));
-
-  const handleClick = () => {
-    if (hasLiveLink) {
-      window.open(project.link, "_blank");
-    } else {
-      alert("Coming soon");
-    }
-  };
 
   return (
     <div
@@ -107,106 +88,113 @@ const ProjectCard = ({ project, index }) => {
         isVisible ? "translate-y-0 opacity-100" : "translate-y-12 opacity-0"
       }`}
     >
-      <div className="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 border border-gray-100 h-full flex flex-col">
-        {/* Image Container */}
-        <div className="relative overflow-hidden bg-gradient-to-br from-gray-50 to-gray-100 p-6">
-          <div className="aspect-video rounded-xl overflow-hidden bg-white shadow-md">
+      <div className="group bg-white rounded-2xl overflow-hidden border border-gray-100 border-t-4 shadow-md hover:shadow-xl transition-all duration-500 h-full flex flex-col"
+        style={{ borderTopColor: '#0B2153' }}
+      >
+        {/* Image */}
+        <div className="relative overflow-hidden">
+          <div className="aspect-video overflow-hidden">
             <img
               src={project.image}
               alt={project.title}
               className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
             />
           </div>
-        </div>
-
-        {/* Content */}
-        <div className="p-8 flex flex-col flex-grow">
-          <div className="mb-3">
-            <span className="inline-block px-3 py-1 text-xs font-medium text-red-500 bg-blue-50 rounded-full">
+          {/* Category badge overlaid on image bottom */}
+          <div className="absolute bottom-3 left-3">
+            <span
+              className="inline-block px-3 py-1 text-xs font-semibold text-white rounded-full tracking-wide"
+              style={{ backgroundColor: '#0B2153' }}
+            >
               {project.category}
             </span>
           </div>
+        </div>
 
-          <h3 className="text-2xl font-bold text-[#0B2153]  mb-3 group-hover:text-blue-800 transition-colors duration-300">
+        {/* Content */}
+        <div className="p-6 flex flex-col flex-grow">
+          <h3
+            className="text-xl font-bold mb-2 transition-colors duration-300 group-hover:text-[#E93930]"
+            style={{ color: '#0B2153' }}
+          >
             {project.title}
           </h3>
 
-          <p className="text-gray-600 leading-relaxed mb-6 flex-grow">
+          <p className="text-gray-500 text-sm leading-relaxed mb-6 flex-grow">
             {project.description}
           </p>
 
-        <button
-            onClick={handleClick}
-            className="self-start px-6 py-3 bg-red-500 border-2 border-red-500 text-white font-medium rounded-md hover:bg-red-600 transform hover:-translate-y-0.5 transition-all duration-300 cursor-pointer"
+          {/* Ghost / outline CTA — no background */}
+          <a
+            href={hasLiveLink ? project.link : undefined}
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={!hasLiveLink ? (e) => { e.preventDefault(); alert("Coming soon"); } : undefined}
+            className="inline-flex items-center gap-2 text-sm font-semibold transition-all duration-300 group/btn w-fit"
+            style={{ color: '#E93930' }}
+            onMouseEnter={e => (e.currentTarget.style.color = '#0B2153')}
+            onMouseLeave={e => (e.currentTarget.style.color = '#E93930')}
           >
+            <ExternalLink className="w-4 h-4" />
             {hasLiveLink ? "View Live" : "Coming Soon"}
-            <ArrowRight className="inline-block w-4 h-4 ml-2" />
-          </button>
+            <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover/btn:translate-x-1" />
+          </a>
         </div>
       </div>
     </div>
   );
 };
 
-// Main Projects Section Component
 const ProjectsSection = () => {
   const [headerVisible, setHeaderVisible] = useState(false);
   const headerRef = useRef(null);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setHeaderVisible(true);
-          }
-        });
-      },
+      (entries) => { entries.forEach((entry) => { if (entry.isIntersecting) setHeaderVisible(true); }); },
       { threshold: 0.1 }
     );
-
-    if (headerRef.current) {
-      observer.observe(headerRef.current);
-    }
-
-    return () => {
-      if (headerRef.current) {
-        observer.unobserve(headerRef.current);
-      }
-    };
+    if (headerRef.current) observer.observe(headerRef.current);
+    return () => { if (headerRef.current) observer.unobserve(headerRef.current); };
   }, []);
 
   return (
-    <section className="min-h-screen bg-gradient-to-b from-gray-50 via-white to-gray-50 py-20 px-4 sm:px-6 lg:px-8">
+    <section className="bg-white py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
-        {/* Header */}
+
+        {/* Header — left-aligned like the ServicesSection pattern */}
         <div
           ref={headerRef}
-          className={`text-center mb-16 transform transition-all duration-1000 ${
+          className={`mb-14 transform transition-all duration-1000 ${
             headerVisible ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"
           }`}
         >
-          <div className="inline-block mb-4">
-            <span className="text-red-500 font-bold text-sm uppercase tracking-wider mb-3">
+          <div className="flex items-center gap-2 mb-3">
+            <span className="block w-8 h-[3px] rounded-full" style={{ backgroundColor: '#E93930' }} />
+            <p className="text-sm font-bold uppercase tracking-widest" style={{ color: '#E93930' }}>
               Portfolio
-            </span>
+            </p>
           </div>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-blue-950">
-            Recent Projects
-          </h2>
-            <div className="mt-4 w-24 h-1 bg-red-500 mx-auto"></div>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto mb-6 mt-4">
-            A showcase of our latest work, demonstrating our commitment to delivering innovative and impactful digital solutions for our clients.
-          </p>
-         
+          <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4">
+            <div>
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight" style={{ color: '#0B2153' }}>
+                Recent Projects
+              </h2>
+              <div className="mt-3 w-16 h-[3px] rounded-full" style={{ backgroundColor: '#E93930' }} />
+            </div>
+            <p className="text-gray-500 text-base max-w-lg md:text-right leading-relaxed">
+              A showcase of our latest work — innovative, impactful digital solutions built for real results.
+            </p>
+          </div>
         </div>
 
-        {/* Projects Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {/* Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
           {projects.map((project, index) => (
             <ProjectCard key={project.id} project={project} index={index} />
           ))}
         </div>
+
       </div>
     </section>
   );
