@@ -183,7 +183,7 @@ const ProjectsSection = () => {
               <div className="mt-3 w-16 h-[3px] rounded-full" style={{ backgroundColor: '#E93930' }} />
             </div>
             <p className="text-gray-500 text-base max-w-lg md:text-right leading-relaxed">
-              A showcase of our latest work — innovative, impactful digital solutions built for real results.
+              A showcase of our latest,innovative and impactful digital solutions built for real results.
             </p>
           </div>
         </div>
