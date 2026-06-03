@@ -7,13 +7,13 @@ const plans = [
     tier: 'basic',
     badge: 'Basic',
     label: 'Starter Package',
-    price: 'KES 1,499',
+    price: 'KES 1,999',
     features: [
       'Basic logo design',
       '1 logo concept',
       '2 revision rounds',
-      'Basic brand color selection',
       'High-resolution PNG  file',
+      'Standard delivery (5-7 business days)',
    
     ],
     cta: 'Get Started',

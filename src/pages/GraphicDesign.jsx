@@ -1,7 +1,7 @@
 // src/pages/GraphicDesign.jsx
 import HeroSection from "../components/branding/HeroSection";
 import BrandingServices from "../components/branding/ServicesOverview";
-// import PricingPlans from "../components/branding/PricingPlans";
+import PricingPlans from "../components/branding/PricingPlans";
 import SEO from "../components/SEO";
 import ServicesGrid from "../components/branding/ServicesOverview";
 import GraphicsCta from "../components/branding/GraphicsCta";
@@ -17,7 +17,7 @@ const GraphicDesign = () => {
       />
       <HeroSection />
        <ServicesGrid />
-       {/* <PricingPlans /> */}
+       <PricingPlans />
      <GraphicsCta />
     </div>
   );
