@@ -16,7 +16,7 @@ const WhatsAppIcon = ({ size = 24, className = "" }) => (
 
 const ContactInfo = () => {
   return (
-    <div className="space-y-3">
+    <div className="space-y-3 mt-8">
       <a
         href="mailto:contact@entelix.com"
         className="flex items-center gap-4 group cursor-pointer hover:bg-red-50 p-3 rounded-lg transition-all duration-300"
