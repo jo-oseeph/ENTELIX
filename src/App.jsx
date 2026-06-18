@@ -18,8 +18,8 @@ import WebsiteManagement from "./pages/WebsiteManagement";
 import Privacy from "./pages/Privacy";
 import Terms from "./pages/Terms";
 import FloatingWhatsApp from "./components/FloatingWhatsApp";
-import ScrollToTop from "./components/ScrollToTop";
-// import BackToTop from "./components/BackToTop";
+// import ScrollToTop from "./components/ScrollToTop";
+import BackToTop from "./components/BackToTop";
 
 
 function App() {
@@ -27,7 +27,7 @@ function App() {
     <HelmetProvider>
       <div className="min-h-screen flex flex-col">
         <Navbar />
-          {/* <BackToTop /> */}
+          <BackToTop />
 
         <main className="grow">
           <ErrorBoundary>
@@ -55,7 +55,7 @@ function App() {
               </Routes>
             </PageTransition>
             <FloatingWhatsApp />
-            <ScrollToTop />
+            {/* <ScrollToTop /> */}
           </ErrorBoundary>
         </main>
 
