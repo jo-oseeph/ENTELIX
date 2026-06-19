@@ -21,7 +21,7 @@ const FloatingWhatsApp = () => {
 
         <div className="relative bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg hover:shadow-2xl transform hover:scale-110 transition-all duration-300 cursor-pointer">
           <svg
-            className="w-8 h-8"
+            className="w-5 h-5"
             fill="currentColor"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
