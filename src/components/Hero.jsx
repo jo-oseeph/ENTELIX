@@ -50,7 +50,7 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="relative min-h-[92vh] sm:min-h-[95vh] md:min-h-screen lg:min-h-screen flex items-center overflow-hidden py-20 sm:py-24">
+    <section className="relative min-h-[72vh] sm:min-h-[82vh] md:min-h-screen lg:min-h-screen flex items-center overflow-hidden py-14 sm:py-20">
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: "url('/hero5.jpg')" }}
@@ -87,13 +87,13 @@ const HeroSection = () => {
       <div className="relative z-10 w-full flex items-center mt-[50px]">
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 w-full">
           <motion.div
-            className="max-w-3xl space-y-6 sm:space-y-8"
+            className="max-w-3xl mx-auto text-center lg:mx-0 lg:text-left space-y-6 sm:space-y-8"
             variants={containerVariants}
             initial="hidden"
             animate="visible"
           >
             <motion.h1
-              className="text-4xl sm:text-5xl md:text-6xl lg:text-6xl xl:text-6xl font-bold text-white leading-tight tracking-tight"
+              className="text-5xl sm:text-6xl md:text-6xl lg:text-6xl xl:text-6xl font-bold text-white leading-tight tracking-tight"
               variants={itemVariants}
             >
               We Build High-Performance <br /> Digital Solutions
@@ -110,7 +110,7 @@ const HeroSection = () => {
             </motion.p>
 
             <motion.div
-              className="flex flex-col sm:flex-row gap-4 pt-4 md:pt-6"
+              className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4 md:pt-6"
               variants={containerVariants}
             >
               <motion.button
