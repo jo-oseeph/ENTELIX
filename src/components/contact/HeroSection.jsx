@@ -1,5 +1,11 @@
 import { useEffect, useState } from "react";
 
+// Entelix brand tokens
+const NAVY = "#0B2153";
+const RED = "#E93930";
+const IVORY = "#F4F5F7";
+const SLATE = "#8C96B8";
+
 const HeroSection = () => {
   const [isVisible, setIsVisible] = useState(false);
 
@@ -8,33 +14,32 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <section className="relative h-[55vh] md:h-[65vh] min-h-[340px] flex items-center justify-center text-center overflow-hidden">
-      {/* Background image */}
-      <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: "url('/hero5.jpg')" }}
-      />
-
-      {/* Gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-to-br from-blue-950/70 via-blue-950/60 to-red-600/40"></div>
-
-      {/* Hero content */}
-      <div className="relative z-10 px-6 sm:px-8 max-w-3xl mx-auto flex flex-col items-center">
+    <section
+      className="relative py-24 md:py-32 flex items-center justify-center text-center border-b"
+      style={{ backgroundColor: NAVY, borderColor: "rgba(244,245,247,0.06)" }}
+    >
+      <div className="relative z-10 px-6 sm:px-8 max-w-xl mx-auto flex flex-col items-center">
         <div
-          className={`transition-all duration-1000 ease-out flex flex-col items-center ${
-            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+          className={`transition-all duration-700 ease-out flex flex-col items-center ${
+            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
           }`}
         >
-          <h1 className="text-white text-4xl md:text-6xl font-bold mb-4 leading-tight">
-            CONTACT US
+
+          {/* Heading */}
+          <h1
+            className="text-4xl md:text-5xl font-bold mb-5 leading-[1.15] tracking-tight"
+            style={{ fontFamily: "'Space Grotesk', sans-serif", color: IVORY }}
+          >
+            Ready to build something solid?
           </h1>
 
-          {/* Breadcrumb */}
-          <nav className="flex items-center gap-2 text-sm text-white/50">
-            <a href="/" className="hover:text-white transition-colors duration-200">Home</a>
-            <span className="text-white/30">/</span>
-            <span className="text-[#E93930] font-medium">Contact Us</span>
-          </nav>
+          {/* Supporting copy */}
+          <p
+            className="text-base md:text-lg font-light leading-relaxed max-w-sm lg:max-w-none lg:whitespace-nowrap"
+            style={{ color: SLATE }}
+          >
+            Lets discuss how we can bring your idea to life.
+          </p>
         </div>
       </div>
     </section>
