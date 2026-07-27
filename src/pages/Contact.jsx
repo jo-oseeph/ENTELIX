@@ -1,5 +1,5 @@
 import React from "react";
-import HeroSection from "../components/contact/HeroSection";
+import CHeroSection from "../components/contact/HeroSection";
 import ContactSection from "../components/contact/ContactSection";
 import SEO from "../components/SEO";
 
@@ -12,9 +12,8 @@ const Contact = () => {
         keywords="contact Entelix, web development Kenya, software development Kenya, business automation Nairobi, custom software contact"
         url="/contact"
       />
-      <HeroSection />
-      
-          <ContactSection />
+      <CHeroSection />
+      <ContactSection />
         
       
     </main>
