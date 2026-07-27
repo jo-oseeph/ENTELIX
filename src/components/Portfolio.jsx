@@ -103,7 +103,7 @@ const PortfolioSection = () => {
                   boxShadow: '0 4px 24px rgba(0,0,0,0.2)',
                 }}
               >
-                {/* Screenshot — always fully visible */}
+              
                 <div className="relative w-full overflow-hidden" style={{ height: '220px' }}>
                   <img
                     src={project.image}
@@ -111,7 +111,7 @@ const PortfolioSection = () => {
                     className="w-full h-full object-cover object-top transition-transform duration-500 ease-out group-hover:scale-105"
                     loading="lazy"
                   />
-                  {/* Subtle bottom fade into card */}
+                
                   <div
                     className="absolute bottom-0 left-0 right-0 h-10"
                     style={{

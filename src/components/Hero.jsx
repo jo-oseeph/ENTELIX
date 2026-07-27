@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 
 const HeroSection = () => {
-
   const handleContactClick = () => {
     window.location.href = "/contact";
   };
@@ -51,7 +50,7 @@ const HeroSection = () => {
   };
 
   return (
-   <section className="relative h-[85vh] sm:h-[90vh] md:h-[92vh] lg:h-screen flex items-center overflow-hidden">
+    <section className="relative h-[85vh] sm:h-[90vh] md:h-[92vh] lg:h-screen flex items-center overflow-hidden">
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: "url('/hero5.jpg')" }}
@@ -67,12 +66,22 @@ const HeroSection = () => {
       <motion.div
         className="absolute top-1/3 right-1/3 w-2 h-2 bg-red-500 rounded-full"
         animate={{ y: [0, -15, 0], opacity: [0.3, 1, 0.3] }}
-        transition={{ duration: 4, repeat: Infinity, ease: "easeInOut", delay: 1 }}
+        transition={{
+          duration: 4,
+          repeat: Infinity,
+          ease: "easeInOut",
+          delay: 1,
+        }}
       />
       <motion.div
         className="absolute bottom-1/3 right-1/4 w-4 h-4 bg-red-400/60 rounded-full"
         animate={{ y: [0, -20, 0], opacity: [0.2, 0.8, 0.2] }}
-        transition={{ duration: 5, repeat: Infinity, ease: "easeInOut", delay: 2 }}
+        transition={{
+          duration: 5,
+          repeat: Infinity,
+          ease: "easeInOut",
+          delay: 2,
+        }}
       />
 
       <div className="relative z-10 w-full h-full flex items-center">
@@ -84,17 +93,20 @@ const HeroSection = () => {
             animate="visible"
           >
             <motion.h1
-              className="text-4xl sm:text-5xl md:text-6xl lg:text-5xl xl:text-5xl font-bold text-white leading-tight tracking-tight"
+              className="text-4xl sm:text-5xl md:text-6xl lg:text-6xl xl:text-6xl font-bold text-white leading-tight tracking-tight"
               variants={itemVariants}
             >
-              Building Digital Solutions That Help Businesses Grow.
+              We Build High-Performance <br /> Digital Solutions
             </motion.h1>
 
             <motion.p
               className="text-base sm:text-lg md:text-xl text-gray-200 max-w-2xl font-light leading-relaxed"
               variants={itemVariants}
             >
-              We transform businesses through innovative digital solutions.
+              From professional websites to custom software, we create technology that is reliable,
+              efficient, and built around real business needs. Every project is
+              crafted to help organizations operate with greater confidence and
+              clarity.
             </motion.p>
 
             <motion.div
