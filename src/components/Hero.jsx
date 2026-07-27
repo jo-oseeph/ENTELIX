@@ -50,7 +50,7 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="relative h-[85vh] sm:h-[90vh] md:h-[92vh] lg:h-screen flex items-center overflow-hidden">
+    <section className="relative min-h-[92vh] sm:min-h-[95vh] md:min-h-screen lg:min-h-screen flex items-center overflow-hidden py-20 sm:py-24">
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: "url('/hero5.jpg')" }}
@@ -84,8 +84,8 @@ const HeroSection = () => {
         }}
       />
 
-      <div className="relative z-10 w-full h-full flex items-center">
-        <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 w-full pt-0 lg:pt-20">
+      <div className="relative z-10 w-full flex items-center mt-[50px]">
+        <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 w-full">
           <motion.div
             className="max-w-3xl space-y-6 sm:space-y-8"
             variants={containerVariants}
