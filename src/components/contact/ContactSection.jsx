@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./ContactSection.css";
 
-const RECEIVING_EMAIL = "you@entelix.co";
+const RECEIVING_EMAIL = "";
 
 const PROJECT_TYPES = [
   "Website",
@@ -20,12 +20,6 @@ const BUDGETS = [
 ];
 
 const TIMELINES = ["ASAP", "1–2 Months", "2–4 Months", "Flexible"];
-
-// const DECISION_ROLES = [
-//   "I make the final call",
-//   "I influence the decision",
-//   "Just researching for now",
-// ];
 
 const initialForm = {
   fullName: "",
@@ -145,7 +139,7 @@ const ContactSection = () => {
                 <div className="info-card">
                   <p className="info-label">Email</p>
 
-                  <p className="info-value">hello@entelix.co</p>
+                  <p className="info-value">info@entelix.co.ke</p>
                 </div>
 
                 <a
