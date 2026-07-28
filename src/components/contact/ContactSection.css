@@ -7,8 +7,6 @@
   --page-bg: #ffffff;
 }
 
-/* Whole section is plain white now — no navy at the section level
-   at all. Every navy surface below belongs to an individual card. */
 .contact-section {
   background: var(--page-bg);
   padding: 96px 24px;
@@ -19,9 +17,6 @@
   margin: 0 auto;
 }
 
-/* This used to be one big navy card wrapping both columns — now it's
-   just a plain layout wrapper. Each column below carries its own
-   navy card independently. */
 .contact-card {
   background: transparent;
   padding: 0;
@@ -34,32 +29,29 @@
   align-items: start;
 }
 
-/* Both direct children of .contact-layout (the info column and the
-   form column) become their own standalone navy cards. */
-.contact-layout > div {
-  background: var(--navy-card);
-  border: 1px solid rgba(244, 245, 247, 0.08);
-  border-radius: 24px;
-  padding: 40px;
-  box-shadow: 0 24px 60px -20px rgba(11, 33, 83, 0.25);
+/* Info column (first child) sits directly on the white page — no
+   navy card wrapper, just the plain title/description and the icon
+   cards below. */
+.contact-layout > div:first-child {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  padding: 0;
 }
 
-.contact-tag {
-  display: inline-block;
-  padding: 8px 16px;
-  border-radius: 999px;
-  background: rgba(233, 57, 48, 0.15);
-  color: var(--red);
-  font-size: 12px;
-  font-weight: 600;
-  letter-spacing: 1px;
-  margin-bottom: 22px;
+/* Form column keeps its navy card treatment */
+.contact-layout > div:last-child {
+  background: var(--navy-card);
+  border: 1px solid rgba(11, 33, 83, 0.08);
+  border-radius: 24px;
+  padding: 40px;
+  box-shadow: 0 24px 60px -20px rgba(11, 33, 83, 0.18);
 }
 
 .contact-title,
 .form-title {
-  color: var(--ivory);
-  font-size: 34px;
+  color: var(--navy);
+  font-size: 32px;
   font-weight: 700;
   margin-bottom: 14px;
   font-family: "Space Grotesk", sans-serif;
@@ -68,9 +60,16 @@
 
 .form-title {
   font-size: 26px;
+  color: var(--ivory);
 }
 
-.contact-description,
+.contact-description {
+  color: #5b6478;
+  line-height: 1.7;
+  font-size: 15px;
+  margin-bottom: 32px;
+}
+
 .form-description {
   color: var(--slate);
   line-height: 1.7;
@@ -78,52 +77,64 @@
   margin-bottom: 32px;
 }
 
-/* Info cards — stacked in a single column, each a compact row inside
-   the navy info panel (label left, value right). */
+/* Info cards — light, centered, icon-led cards on the white page,
+   brand red for the icon/accent instead of navy blocks. */
 .info-grid {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 16px;
 }
 
 .info-card {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 16px;
-  padding: 16px 18px;
-  border-radius: 14px;
-  background: rgba(244, 245, 247, 0.05);
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  gap: 14px;
+  padding: 22px 24px;
+  border-radius: 16px;
+  background: var(--navy-card);
   border: 1px solid rgba(244, 245, 247, 0.08);
-  border-left: 2px solid var(--red);
-  transition: background 0.25s ease, transform 0.25s ease;
+  text-decoration: none;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
 }
 
 .info-card:hover {
-  background: rgba(244, 245, 247, 0.09);
-  transform: translateX(2px);
+  transform: translateY(-3px);
+  background: #15265a;
+  box-shadow: 0 16px 30px -12px rgba(11, 33, 83, 0.35);
+}
+
+.info-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.info-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(233, 57, 48, 0.15);
+  color: var(--red);
+  flex-shrink: 0;
 }
 
 .info-label {
-  color: var(--red);
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-size: 11px;
-  font-weight: 600;
-  white-space: nowrap;
+  color: var(--ivory);
+  font-weight: 700;
+  font-size: 15px;
 }
 
 .info-value {
-  color: var(--ivory);
-  font-weight: 500;
+  color: var(--slate);
   font-size: 14px;
-  text-align: right;
-  line-height: 1.4;
 }
 
-/* Form fields — sit inside the form panel's own navy card.
-   Labels now live inside the fields as placeholder text, so
-   .form-group no longer wraps a separate label element. */
+/* Form fields — inside the navy form card */
 .contact-form {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -141,7 +152,7 @@
 
 .form-control {
   width: 100%;
-  padding: 13px 14px;
+  padding: 12px 14px;
   border-radius: 8px;
   border: 1px solid rgba(244, 245, 247, 0.14);
   background: rgba(244, 245, 247, 0.07);
@@ -152,23 +163,12 @@
 }
 
 .form-control::placeholder {
-  color: rgba(244, 245, 247, 0.45);
+  color: rgba(244, 245, 247, 0.4);
 }
 
 .form-control:focus {
   border-color: var(--red);
   box-shadow: 0 0 0 3px rgba(233, 57, 48, 0.15);
-}
-
-/* Selects don't support ::placeholder — the hidden first option
-   plays that role instead. Dim its text like a placeholder until
-   a real option is chosen (invalid = still on the placeholder). */
-select.form-control:required:invalid {
-  color: rgba(244, 245, 247, 0.45);
-}
-
-select.form-control option {
-  color: var(--navy);
 }
 
 textarea.form-control {
@@ -218,13 +218,13 @@ textarea.form-control {
 }
 
 @media (max-width: 992px) {
-  .contact-layout > div {
+  .contact-layout > div:last-child {
     padding: 30px 24px;
   }
 
   .contact-layout {
     grid-template-columns: 1fr;
-    gap: 24px;
+    gap: 32px;
   }
 
   .contact-form {
