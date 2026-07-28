@@ -100,7 +100,7 @@ const AboutHero = () => {
               >
                 Get Started
                 <motion.span initial={{ x: 0 }} whileHover={{ x: 3 }}>
-                  →
+                  
                 </motion.span>
               </motion.button>
 
