@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
+import { Puzzle, Zap, MessagesSquare, Headphones } from 'lucide-react';
 
 const WhyChooseUs = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -19,33 +20,45 @@ const WhyChooseUs = () => {
   }, []);
 
   const features = [
-  {
-    title: 'Client-Centered Approach',
-    description: 'Every project begins with your goals, not our assumptions.',
-    delay: '0'
-  },
-  {
-    title: 'Reliable & Secure',
-    description: 'We deliver dependable and secure software solutions you can trust.',
-    delay: '100'
-  },
-  {
-    title: 'Expert Team',
-    description: 'Our developers bring years of experience and passion to every project.',
-    delay: '200'
-  }
-];
+    {
+      icon: Puzzle,
+      title: 'Built Around Your Needs',
+      description:
+        'Solutions are tailored to your goals, workflows, and users instead of forcing your business into a generic system.',
+      delay: '0',
+    },
+    {
+      icon: Zap,
+      title: 'Reliable & Scalable',
+      description:
+        'Your software is built to perform reliably today while giving your business room to grow tomorrow.',
+      delay: '100',
+    },
+    {
+      icon: MessagesSquare,
+      title: 'Clear Communication',
+      description:
+        'You stay informed throughout the project with clear updates, timelines, and decisions at every stage.',
+      delay: '200',
+    },
+    {
+      icon: Headphones,
+      title: 'Long-Term Support',
+      description:
+        "Our relationship doesn't end at launch. You get continued support to keep your solution running, secure, and effective.",
+      delay: '300',
+    },
+  ];
 
   return (
     <section
       ref={sectionRef}
-      className="py-20 md:py-28 bg-blue-950 relative overflow-hidden"
+      className="py-20 md:py-28 relative overflow-hidden"
+      style={{
+        background: 'linear-gradient(160deg, #f3f7f6 0%, #eef3f2 45%, #e9efee 100%)',
+      }}
     >
-      {/* Background accents */}
-      <div className="absolute top-0 right-0 w-96 h-96 bg-red-500/5 rounded-full blur-3xl"></div>
-      <div className="absolute bottom-0 left-0 w-96 h-96 bg-blue-500/5 rounded-full blur-3xl"></div>
-
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Header */}
         <div className="text-center mb-16">
           <div
@@ -53,57 +66,64 @@ const WhyChooseUs = () => {
               isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-10'
             }`}
           >
-            <p className="text-red-500 font-bold text-sm uppercase tracking-wider mb-3">
-              WHY CHOOSE US
-            </p>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white">
-              What Sets Us Apart
+            <div className="flex items-center justify-center gap-2 mb-4">
+              <span className="block w-8 h-[3px] rounded-full" style={{ backgroundColor: '#E93930' }} />
+              <p className="text-xs font-bold uppercase tracking-[0.25em]" style={{ color: '#E93930' }}>
+                Why Choose Us
+              </p>
+              <span className="block w-8 h-[3px] rounded-full" style={{ backgroundColor: '#E93930' }} />
+            </div>
+            <h2 className="text-3xl md:text-4xl lg:text-[2.75rem] font-bold leading-tight max-w-2xl mx-auto" style={{ color: '#0B2153' }}>
+             Built With Purpose
             </h2>
-            <div className="mt-4 w-24 h-1 bg-red-500 mx-auto"></div>
           </div>
         </div>
 
         {/* Feature Cards */}
-       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
-          {features.map((feature, index) => (
-            <div
-              key={index}
-              className={`group transition-all duration-700 ${
-                isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-              }`}
-              style={{ transitionDelay: `${feature.delay}ms` }}
-            >
-              <div className="relative h-full bg-white rounded-2xl p-8 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border-2 border-transparent hover:border-red-500/20">
-                {/* Accent line */}
-               
-                
-                {/* Number badge */}
-                <div className="absolute -top-4 -right-4 w-12 h-12 bg-red-500 text-white rounded-full flex items-center justify-center font-bold text-lg shadow-lg group-hover:scale-110 transition-transform duration-300">
-                  {index + 1}
-                </div>
+        <div className="grid md:grid-cols-2 gap-5 lg:gap-6">
+          {features.map((feature, index) => {
+            const Icon = feature.icon;
+            return (
+              <div
+                key={index}
+                className={`transition-all duration-700 ${
+                  isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+                }`}
+                style={{ transitionDelay: `${feature.delay}ms` }}
+              >
+                <div
+                  className="group flex items-start gap-5 h-full bg-white/70 backdrop-blur-sm rounded-2xl p-7 border border-slate-200/70 transition-all duration-500 hover:-translate-y-1.5"
+                  style={{ boxShadow: '0 2px 10px rgba(11,33,83,0.05)' }}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.boxShadow = '0 16px 32px rgba(11,33,83,0.12)';
+                    e.currentTarget.style.borderColor = 'rgba(233,57,48,0.35)';
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.boxShadow = '0 2px 10px rgba(11,33,83,0.05)';
+                    e.currentTarget.style.borderColor = 'rgba(226,232,240,0.7)';
+                  }}
+                >
+                  {/* Icon box */}
+                  <div
+                    className="w-14 h-14 rounded-xl flex items-center justify-center flex-shrink-0 transition-transform duration-500 group-hover:scale-105"
+                    style={{ backgroundColor: '#0B2153' }}
+                  >
+                    <Icon className="w-6 h-6 text-white" strokeWidth={1.75} />
+                  </div>
 
-                <div className="space-y-4">
-                  <h3 className="text-2xl font-bold text-blue-950 group-hover:text-red-500 transition-colors duration-300">
-                    {feature.title}
-                  </h3>
-                  <p className="text-gray-600 text-lg leading-relaxed">
-                    {feature.description}
-                  </p>
+                  {/* Content */}
+                  <div>
+                    <h3 className="text-lg md:text-xl font-bold mb-2 leading-snug" style={{ color: '#0B2153' }}>
+                      {feature.title}
+                    </h3>
+                    <p className="text-gray-500 text-sm md:text-base leading-relaxed">
+                      {feature.description}
+                    </p>
+                  </div>
                 </div>
-
-                {/* Bottom accent */}
-                <div className="absolute bottom-0 right-0 w-20 h-20 bg-red-500/5 rounded-tl-full group-hover:w-32 group-hover:h-32 transition-all duration-500"></div>
               </div>
-            </div>
-          ))}
-        </div>
-
-        {/* Bottom CTA Text */}
-        <div
-          className={`text-center mt-16 transition-all duration-700 delay-500 ${
-            isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-          }`}
-        >
+            );
+          })}
         </div>
       </div>
     </section>

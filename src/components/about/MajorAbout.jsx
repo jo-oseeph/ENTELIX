@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import { Target, Eye } from "lucide-react";
 
 const AboutIntro = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -20,97 +21,128 @@ const AboutIntro = () => {
   }, []);
 
   return (
-    <section
-      ref={sectionRef}
-      className="py-20 md:py-28 bg-gray-50 overflow-hidden"
-    >
+    <section ref={sectionRef} className="py-20 md:py-28 bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
-        <div className="text-center mb-16">
-          <div
-            className={`inline-block transition-all duration-700 ${
-              isVisible
-                ? "opacity-100 translate-y-0"
-                : "opacity-0 -translate-y-10"
-            }`}
-          >
-            <p className="text-red-500 font-bold text-sm uppercase tracking-wider mb-3">
-              ABOUT US
+        <div
+          className={`text-center max-w-2xl mx-auto mb-16 md:mb-20 transition-all duration-700 ${
+            isVisible ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-8"
+          }`}
+        >
+          <div className="flex items-center justify-center gap-2 mb-4">
+            <span className="block w-8 h-[3px] rounded-full" style={{ backgroundColor: "#E93930" }} />
+            <p className="text-xs font-bold uppercase tracking-[0.25em]" style={{ color: "#E93930" }}>
+              About Entelix
             </p>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-blue-950">
-              Digital Solutions Experts
-            </h2>
-            <div className="mt-4 w-24 h-1 bg-red-500 mx-auto"></div>
+            <span className="block w-8 h-[3px] rounded-full" style={{ backgroundColor: "#E93930" }} />
           </div>
+          <h2 className="text-3xl md:text-4xl lg:text-[2.75rem] font-bold leading-tight" style={{ color: "#0B2153" }}>
+            The Story Behind Us
+          </h2>
         </div>
 
         {/* Main Grid */}
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
-          {/* Image LEFT */}
+        <div className="grid lg:grid-cols-2 gap-14 lg:gap-20 items-start">
+          {/* Left — story text */}
           <div
-            className={`transition-all duration-700 delay-300 ${
-              isVisible
-                ? "opacity-100 translate-x-0"
-                : "opacity-0 -translate-x-20"
+            className={`space-y-12 transition-all duration-700 delay-150 ${
+              isVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-12"
             }`}
           >
-            <div className="relative group h-full">
-              <div className="absolute -top-6 -right-6 w-full h-full bg-red-500/10 rounded-2xl -z-10"></div>
-              <div className="absolute -bottom-6 -left-6 w-full h-full bg-blue-950/10 rounded-2xl -z-10"></div>
+            <div>
+              <p
+                className="text-xs font-bold uppercase tracking-[0.2em] mb-2"
+                style={{ color: "#E93930" }}
+              >
+                Overview
+              </p>
+              <h3 className="text-xl md:text-2xl font-bold mb-4" style={{ color: "#0B2153" }}>
+                Who We Are
+              </h3>
+              <p className="text-gray-600 text-base md:text-lg leading-relaxed">
+                ENTELIX is a software development company focused on building
+                practical digital solutions for modern businesses. We design
+                and develop web applications, mobile apps, and custom software
+                that help organizations solve operational challenges, improve
+                efficiency, and deliver better experiences to their customers.
+              </p>
+            </div>
 
-              <div className="relative overflow-hidden rounded-2xl shadow-2xl h-full">
-                <img
-                  src="/hero1.jpg"
-                  alt="Entelix Team"
-                  className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-blue-950/30 to-transparent"></div>
-              </div>
+            <div>
+              <p
+                className="text-xs font-bold uppercase tracking-[0.2em] mb-2"
+                style={{ color: "#E93930" }}
+              >
+                Our Origin
+              </p>
+              <h3 className="text-xl md:text-2xl font-bold mb-4" style={{ color: "#0B2153" }}>
+                Why We Exist
+              </h3>
+              <p className="text-gray-600 text-base md:text-lg leading-relaxed">
+                ENTELIX was founded to bridge the gap between business needs
+                and technology. Too many businesses struggle with systems that
+                are expensive, inflexible, or poorly suited to how they
+                operate. We started ENTELIX to build technology around the
+                business, creating reliable and scalable solutions that solve
+                real problems and support long-term growth.
+              </p>
             </div>
           </div>
 
-          {/* Content RIGHT */}
+          {/* Right — Mission & Vision cards */}
           <div
-            className={`transition-all duration-700 delay-200 ${
-              isVisible
-                ? "opacity-100 translate-x-0"
-                : "opacity-0 translate-x-20"
+            className={`space-y-6 transition-all duration-700 delay-300 ${
+              isVisible ? "opacity-100 translate-x-0" : "opacity-0 translate-x-12"
             }`}
           >
-            <div className="space-y-6 flex flex-col justify-between h-full">
-              <p className="text-gray-700 text-lg leading-relaxed">
-                At Entelix, we build modern websites and digital systems
-                designed to solve real business challenges, improve efficiency,
-                and support growth. We focus on creating practical solutions
-                that help businesses operate better and achieve measurable
-                results
-              </p>
-
-              {/* Stats */}
-              {/* Stats */}
-              {/* Stats */}
-              <div className="grid grid-cols-3 gap-4 pt-4">
-                {[
-                  { value: "3+", label: "Years Experience" },
-                  { value: "20+", label: "Projects" },
-                  { value: "100+", label: "Clients" },
-                ].map((stat, index) => (
-                  <div
-                    key={index}
-                    className="text-center bg-white rounded-xl py-4 shadow-sm hover:shadow-md transition-all duration-300"
-                  >
-                    <h3
-                      className="text-2xl md:text-3xl font-bold"
-                      style={{ color: "#0B2153" }}
-                    >
-                      {stat.value}
-                    </h3>
-                    <p className="text-sm text-gray-500 font-medium mt-1">
-                      {stat.label}
-                    </p>
-                  </div>
-                ))}
+            {/* Mission card — light background */}
+            <div
+              className="rounded-2xl p-8 md:p-10 border border-slate-200/70"
+              style={{
+                background: "linear-gradient(160deg, #f3f7f6 0%, #eef3f2 45%, #e9efee 100%)",
+              }}
+            >
+              <div
+                className="w-12 h-12 rounded-xl flex items-center justify-center mb-5"
+                style={{ backgroundColor: "#0B2153" }}
+              >
+                <Target className="w-5 h-5 text-white" strokeWidth={1.75} />
               </div>
+              <p
+                className="text-xs font-bold uppercase tracking-[0.2em] mb-3"
+                style={{ color: "#E93930" }}
+              >
+                Our Mission
+              </p>
+              <p className="text-base md:text-lg font-normal leading-relaxed" style={{ color: "#0B2153" }}>
+                To build practical, reliable software that helps businesses
+                operate better and grow with confidence.
+              </p>
+            </div>
+
+            {/* Vision card — bluish/navy background */}
+            <div
+              className="rounded-2xl p-8 md:p-10"
+              style={{
+                background: "linear-gradient(160deg, #0B2153 0%, #12336e 55%, #0B2153 100%)",
+              }}
+            >
+              <div
+                className="w-12 h-12 rounded-xl flex items-center justify-center mb-5"
+                style={{ backgroundColor: "rgba(255,255,255,0.1)" }}
+              >
+                <Eye className="w-5 h-5 text-white" strokeWidth={1.75} />
+              </div>
+              <p
+                className="text-xs font-bold uppercase tracking-[0.2em] mb-3"
+                style={{ color: "rgba(255,255,255,0.6)" }}
+              >
+                Our Vision
+              </p>
+               <p className="text-white text-base md:text-lg font-normal leading-relaxed">
+                To be the technology partner businesses turn to for solutions
+                that actually fit the way they work.
+              </p>
             </div>
           </div>
         </div>

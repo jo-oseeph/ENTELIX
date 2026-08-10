@@ -1,6 +1,5 @@
 import AboutHero from "../components/about/AboutHero";
 import AboutIntro from "../components/about/MajorAbout";
-import MissionVisionValues from "../components/about/MissionVisionValues";
 // import TeamSection from "../components/about/TeamSection";
 import AboutCTA from "../components/about/AboutCTASection";
 import ErrorBoundary from "../components/ErrorBoundary";
@@ -22,9 +21,6 @@ const AboutPage = () => {
         </ErrorBoundary>
         <ErrorBoundary label="AboutIntro">
           <AboutIntro />
-        </ErrorBoundary>
-        <ErrorBoundary label="MissionVisionValues">
-          <MissionVisionValues />
         </ErrorBoundary>
         <WhyChooseUs/>  
         <ErrorBoundary label="TeamSection">

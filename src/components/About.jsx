@@ -25,101 +25,85 @@ const AboutIntro = () => {
   };
 
   return (
-    <section ref={sectionRef} className="py-16  bg-white overflow-hidden">
+    <section ref={sectionRef} className="py-20 md:py-28 bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
+        <div className="grid lg:grid-cols-2 gap-14 lg:gap-20 items-center">
+          {/* Image LEFT — flush, no padding, no decoration */}
           <div
-            className={`inline-block transition-all duration-700 ${
-              isVisible
-                ? "opacity-100 translate-y-0"
-                : "opacity-0 -translate-y-10"
+            className={`transition-all duration-700 delay-200 ${
+              isVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-16"
             }`}
           >
-            <p className="text-red-500 font-bold text-sm uppercase tracking-wider mb-3">
-              ABOUT US
-            </p>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-blue-950">
-              Digital Solutions Experts
-            </h2>
-            <div className="mt-4 w-24 h-1 bg-red-500 mx-auto"></div>
-          </div>
-        </div>
-
-        {/* Main Grid */}
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
-          {/* Image LEFT */}
-          <div
-            className={`transition-all duration-700 delay-300 ${
-              isVisible
-                ? "opacity-100 translate-x-0"
-                : "opacity-0 -translate-x-20"
-            }`}
-          >
-            <div className="relative group h-full">
-              <div className="absolute -top-6 -right-6 w-full h-full bg-red-500/10 rounded-2xl -z-10"></div>
-              <div className="absolute -bottom-6 -left-6 w-full h-full bg-blue-950/10 rounded-2xl -z-10"></div>
-
-              <div className="relative overflow-hidden rounded-2xl shadow-2xl h-full">
-                <img
+            <div className="rounded-2xl overflow-hidden shadow-xl">
+              
+                 <img
                   src="/hero1.jpg"
                   alt="Entelix Team"
-                  className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-blue-950/30 to-transparent"></div>
-              </div>
+                className="w-full h-[400px] md:h-[420px] object-cover"
+              />
             </div>
           </div>
 
-          {/* Content RIGHT */}
+          {/* Content RIGHT — title + copy together */}
           <div
-            className={`transition-all duration-700 delay-200 ${
-              isVisible
-                ? "opacity-100 translate-x-0"
-                : "opacity-0 translate-x-20"
+            className={`transition-all duration-700 delay-300 ${
+              isVisible ? "opacity-100 translate-x-0" : "opacity-0 translate-x-16"
             }`}
           >
-            <div className="space-y-6 flex flex-col justify-between h-full">
-              <p className="text-gray-700 text-lg leading-relaxed">
-                At Entelix, we build modern websites and digital systems
-                designed to solve real business challenges, improve efficiency,
-                and support growth. We focus on creating practical solutions
-                that help businesses operate better and achieve measurable
-                results
+            <div className="space-y-6">
+              <p
+                className="text-sm font-bold uppercase tracking-[0.2em]"
+                style={{ color: "#E93930" }}
+              >
+                — Who We Are —
               </p>
 
-              {/* Stats */}
-              <div className="grid grid-cols-3 gap-4 pt-4">
+              <h2 className="text-3xl md:text-4xl lg:text-[2.5rem] font-bold leading-tight" style={{ color: "#0B2153" }}>
+                Technology With Purpose
+              </h2>
+
+              <p className="text-gray-600 text-base md:text-lg leading-relaxed">
+                Entelix designs and builds digital systems for businesses across
+                Kenya and beyond — from lean startups to established
+                enterprises. We work closely with every client to understand
+                the problem first, then build software shaped around how the
+                business actually runs. That focus on fit over flash is what
+                sets our work apart.
+              </p>
+
+              {/* Optional stats — light touch, not a focal point */}
+              <div className="flex items-center gap-8 flex-wrap pt-1">
                 {[
                   { value: "3+", label: "Years Experience" },
                   { value: "20+", label: "Projects" },
                   { value: "100+", label: "Clients" },
                 ].map((stat, index) => (
-                  <div
-                    key={index}
-                    className="text-center bg-white rounded-xl py-4 shadow-sm hover:shadow-md transition-all duration-300"
-                  >
-                    <h3
-                      className="text-2xl md:text-3xl font-bold"
-                      style={{ color: "#0B2153" }}
-                    >
+                  <div key={index} className="flex items-baseline gap-2">
+                    <span className="text-lg font-bold" style={{ color: "#0B2153" }}>
                       {stat.value}
-                    </h3>
-                    <p className="text-sm text-gray-500 font-medium mt-1">
-                      {stat.label}
-                    </p>
+                    </span>
+                    <span className="text-sm text-gray-500">{stat.label}</span>
                   </div>
                 ))}
               </div>
 
-              {/* Button */}
-              <div className="pt-4">
+              {/* Button — outlined, matches Services section style */}
+              <div className="pt-2">
                 <button
                   onClick={handleLearnMore}
-                  className="group relative inline-flex items-center gap-2 px-8 py-4 text-white font-bold text-sm uppercase tracking-wider rounded-full bg-[#FF4D4D] hover:bg-[#E63946] transition-all duration-300 hover:scale-105 hover:shadow-xl active:scale-95 overflow-hidden"
+                  className="inline-flex items-center gap-2 px-7 py-3 rounded-lg font-semibold text-sm border transition-all duration-300"
+                  style={{ borderColor: "#0B2153", color: "#0B2153", backgroundColor: "transparent" }}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.backgroundColor = "#0B2153";
+                    e.currentTarget.style.color = "#ffffff";
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.backgroundColor = "transparent";
+                    e.currentTarget.style.color = "#0B2153";
+                  }}
                 >
-                  <span className="relative z-10">Learn More</span>
-                  <ArrowRight className="w-4 h-4 relative z-10 group-hover:translate-x-1 transition-transform" />
-                  <div className="absolute inset-0 bg-[#E93930] opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                  Learn More
+                  <ArrowRight className="w-4 h-4" />
                 </button>
               </div>
             </div>
