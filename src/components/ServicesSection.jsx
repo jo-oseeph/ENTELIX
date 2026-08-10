@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import { Code, Cloud, Paintbrush, Settings, Users, ArrowRight } from 'lucide-react';
+import { Code, Smartphone, Cpu, ArrowRight } from 'lucide-react';
 
 const ServicesSection = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -32,74 +32,80 @@ const ServicesSection = () => {
       path: '/web-development',
     },
     {
-      icon: Paintbrush,
-      title: 'Graphic Design',
+      icon: Smartphone,
+      title: 'Mobile App Development',
       description:
-        'We create clean, modern brand identities and visuals that build trust and make your business stand out.',
-      path: '/graphic-design',
+        'We design and build native and cross-platform mobile apps that are fast, intuitive, and built to scale with your business.',
+      path: '/mobile-app-development',
     },
-      {
-  icon: Code,
-  title: 'Software Development',
-  description: 'We build scalable software systems that automate processes, improve efficiency, and support long-term business growth.',
-  path: '/software-development'
-}
-    
+    {
+      icon: Cpu,
+      title: 'Custom Software',
+      description:
+        'We build tailored software systems that automate processes, improve efficiency, and support long-term business growth.',
+      path: '/custom-software',
+    },
   ];
 
-  const displayedServices = services.slice(0, 3);
-
   return (
-    <section id="services" ref={sectionRef} className="py-20 md:py-28 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section
+      id="services"
+      ref={sectionRef}
+      className="relative py-20 md:py-28 overflow-hidden"
+      style={{
+        background:
+          'linear-gradient(160deg, #f3f7f6 0%, #eef3f2 45%, #e9efee 100%)',
+      }}
+    >
 
-        {/* Section Header */}
+      <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        {/* Section Header — centered */}
         <div
-          className={`flex items-end justify-between mb-12 transition-all duration-700 ${
+          className={`flex flex-col items-center text-center mb-16 transition-all duration-700 ${
             isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
           }`}
         >
-          {/* Left: label + heading */}
-          <div>
-            <div className="flex items-center gap-2 mb-3">
-              <span className="block w-8 h-[3px] rounded-full" style={{ backgroundColor: '#E93930' }} />
-              <p className="text-sm font-bold uppercase tracking-widest" style={{ color: '#E93930' }}>
-                Service
-              </p>
-            </div>
-            <h2 className="text-3xl md:text-4xl font-bold leading-tight" style={{ color: '#0B2153' }}>
-              Delivering Value Through Our Services
-            </h2>
+          <div className="flex items-center gap-2 mb-4">
+            <span className="block w-8 h-[3px] rounded-full" style={{ backgroundColor: '#E93930' }} />
+            <p className="text-xs font-bold uppercase tracking-[0.25em]" style={{ color: '#E93930' }}>
+              Services
+            </p>
+            <span className="block w-8 h-[3px] rounded-full" style={{ backgroundColor: '#E93930' }} />
           </div>
-
-          {/* Right: View All link — desktop only */}
-          <a
-            href="/services"
-            className="hidden md:flex items-center gap-1 font-semibold text-sm whitespace-nowrap transition-colors duration-200 group"
-            style={{ color: '#0B2153' }}
-            onMouseEnter={e => (e.currentTarget.style.color = '#E93930')}
-            onMouseLeave={e => (e.currentTarget.style.color = '#0B2153')}
-          >
-            View All Services
-            <ArrowRight className="w-4 h-4 transition-transform duration-200 group-hover:translate-x-1" />
-          </a>
+          <h2 className="text-3xl md:text-4xl font-bold leading-tight max-w-xl" style={{ color: '#0B2153' }}>
+            Delivering Value Through Our Services
+          </h2>
         </div>
 
         {/* Service Cards Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {displayedServices.map((service, index) => {
+          {services.map((service, index) => {
             const Icon = service.icon;
+            const accentColor = index === 1 ? '#E93930' : '#0B2153';
             return (
               <div
                 key={index}
-                className={`bg-white rounded-2xl p-7 flex flex-col gap-4 border border-gray-100 border-t-4 shadow-md hover:shadow-xl transition-all duration-700 hover:-translate-y-1 ${
+                className={`group relative bg-white/70 backdrop-blur-sm rounded-2xl p-8 flex flex-col items-start text-left gap-4 border-t-4 border-x border-b border-slate-200/70 transition-all duration-700 hover:-translate-y-1.5 ${
                   isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
                 }`}
-                style={{ transitionDelay: `${index * 120}ms`, borderTopColor: '#0B2153' }}
+                style={{
+                  transitionDelay: `${index * 120}ms`,
+                  boxShadow: '0 2px 10px rgba(11,33,83,0.05)',
+                  borderTopColor: accentColor,
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.boxShadow = '0 16px 32px rgba(11,33,83,0.12)';
+                  e.currentTarget.style.borderTopColor = '#E93930';
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.boxShadow = '0 2px 10px rgba(11,33,83,0.05)';
+                  e.currentTarget.style.borderTopColor = accentColor;
+                }}
               >
                 {/* Icon box */}
                 <div
-                  className="w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0"
+                  className="w-14 h-14 rounded-xl flex items-center justify-center"
                   style={{ backgroundColor: '#0B2153' }}
                 >
                   <Icon className="w-6 h-6 text-white" strokeWidth={1.5} />
@@ -111,14 +117,14 @@ const ServicesSection = () => {
                 </h3>
 
                 {/* Description */}
-                <p className="text-gray-500 text-sm leading-relaxed flex-1">
+                <p className="text-gray-500 text-sm leading-relaxed">
                   {service.description}
                 </p>
 
                 {/* CTA */}
                 <a
                   href={service.path}
-                  className="inline-flex items-center gap-2 font-semibold text-sm w-fit mt-auto transition-colors duration-200 group"
+                  className="inline-flex items-center gap-2 font-semibold text-sm mt-2 transition-colors duration-200"
                   style={{ color: '#E93930' }}
                   onMouseEnter={e => (e.currentTarget.style.color = '#c0271f')}
                   onMouseLeave={e => (e.currentTarget.style.color = '#E93930')}
@@ -131,12 +137,24 @@ const ServicesSection = () => {
           })}
         </div>
 
-        {/* Mobile: View All button */}
-        <div className="md:hidden text-center mt-10">
+        {/* View All Services button */}
+        <div
+          className={`flex justify-center mt-14 transition-all duration-700 ${
+            isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
+          }`}
+        >
           <a
             href="/services"
-            className="inline-flex items-center gap-2 px-8 py-4 text-white font-bold text-sm uppercase tracking-wider rounded-full transition-all duration-300 hover:scale-105 hover:opacity-90"
-            style={{ backgroundColor: '#E93930' }}
+            className="inline-flex items-center gap-2 px-7 py-3 rounded-lg font-semibold text-sm border transition-all duration-300"
+            style={{ borderColor: '#0B2153', color: '#0B2153', backgroundColor: 'transparent' }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.backgroundColor = '#0B2153';
+              e.currentTarget.style.color = '#ffffff';
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.backgroundColor = 'transparent';
+              e.currentTarget.style.color = '#0B2153';
+            }}
           >
             View All Services
             <ArrowRight className="w-4 h-4" />

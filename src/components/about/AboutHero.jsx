@@ -35,12 +35,15 @@ const AboutHero = () => {
   return (
     <section
       className="relative min-h-[68vh] md:min-h-[75vh] flex items-center overflow-hidden"
-      style={{ backgroundColor: NAVY }}
+      style={{
+        background:
+          "linear-gradient(160deg, #0B2153 0%, #0e2861 55%, #0B2153 100%)",
+      }}
     >
       <div className="relative z-10 w-full">
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 w-full">
           <motion.div
-            className="max-w-3xl"
+            className="max-w-3xl mx-auto text-center flex flex-col items-center"
             variants={containerVariants}
             initial="hidden"
             animate="visible"
@@ -62,15 +65,10 @@ const AboutHero = () => {
             {/* Headline */}
             <motion.h1
               variants={itemVariants}
-              className="text-5xl sm:text-6xl md:text-7xl font-bold leading-[1.05] tracking-tight mb-6"
-              style={{ fontFamily: "'Space Grotesk', sans-serif" }}
+              className="text-4xl sm:text-5xl md:text-6xl lg:text-6xl font-bold leading-[1.05] tracking-tight mb-6"
+              style={{ fontFamily: "'Space Grotesk', sans-serif", color: IVORY }}
             >
-              <span className="block" style={{ color: IVORY }}>
-                Built to
-              </span>
-              <span className="block" style={{ color: RED }}>
-                Actually Work.
-              </span>
+              Built to Actually Work.
             </motion.h1>
 
             {/* Description */}
@@ -85,23 +83,19 @@ const AboutHero = () => {
             </motion.p>
 
             {/* CTAs */}
-            <motion.div variants={itemVariants} className="flex flex-wrap items-center gap-4">
+            <motion.div variants={itemVariants} className="flex flex-wrap items-center justify-center gap-4">
               <motion.button
                 onClick={handlePrimaryClick}
                 className="flex items-center gap-2 px-7 py-3.5 rounded-full font-semibold text-sm cursor-pointer"
-                style={{ backgroundColor: RED, color: IVORY }}
+                style={{ backgroundColor: IVORY, color: NAVY }}
                 whileHover={{
                   scale: 1.03,
-                  backgroundColor: "#D42E26",
-                  boxShadow: "0 8px 24px rgba(233,57,48,0.35)",
+                  boxShadow: "0 8px 24px rgba(244,245,247,0.2)",
                 }}
                 whileTap={{ scale: 0.97 }}
                 transition={{ duration: 0.2 }}
               >
                 Get Started
-                <motion.span initial={{ x: 0 }} whileHover={{ x: 3 }}>
-                  
-                </motion.span>
               </motion.button>
 
               <motion.button
@@ -112,7 +106,7 @@ const AboutHero = () => {
                   borderColor: "rgba(244,245,247,0.25)",
                   color: IVORY,
                 }}
-                whileHover={{ borderColor: RED, backgroundColor: "rgba(233,57,48,0.08)", scale: 1.03 }}
+                whileHover={{ borderColor: IVORY, backgroundColor: "rgba(244,245,247,0.08)", scale: 1.03 }}
                 whileTap={{ scale: 0.97 }}
                 transition={{ duration: 0.2 }}
               >

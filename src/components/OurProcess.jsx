@@ -1,34 +1,35 @@
-import { useEffect, useRef, useState } from 'react';
-import { Search, PenTool, Code2, Rocket } from 'lucide-react';
+import { useEffect, useRef, useState } from "react";
 
 const steps = [
   {
-    number: '01',
-    icon: Search,
-    title: 'Discovery & Strategy',
+    number: "01",
+    title: "Discovery",
     description:
-      'We analyze your business, goals, and users to define a clear project direction.',
+      "We meet to understand your business, goals, and user needs—defining the scope and vision.",
   },
   {
-    number: '02',
-    icon: PenTool,
-    title: 'Design & Prototyping',
+    number: "02",
+    title: "Design",
     description:
-      'We create intuitive, high-fidelity designs aligned with your brand and user experience.',
+      "Our team creates wireframes, prototypes, and a clear roadmap for development.",
   },
   {
-    number: '03',
-    icon: Code2,
-    title: 'Development & Testing',
+    number: "03",
+    title: "Develop",
     description:
-      'We build scalable solutions and test thoroughly to ensure performance and reliability.',
+      "We build with clean, scalable code, integrating features while testing rigorously.",
   },
   {
-    number: '04',
-    icon: Rocket,
-    title: 'Launch & Support',
+    number: "04",
+    title: "Deploy",
     description:
-      'We deploy your product and provide ongoing support to keep it running smoothly.',
+      "Your product goes live with thorough QA, optimization, and monitoring.",
+  },
+  {
+    number: "05",
+    title: "Support",
+    description:
+      "Ongoing maintenance, updates, and strategic guidance to help you grow.",
   },
 ];
 
@@ -46,7 +47,7 @@ const OurProcess = () => {
             observer.disconnect();
           }
         },
-        { threshold: 0.15 }
+        { threshold: 0.15 },
       );
       observer.observe(ref);
       return observer;
@@ -57,154 +58,111 @@ const OurProcess = () => {
   return (
     <section
       className="py-24 relative overflow-hidden"
-      style={{ fontFamily: "sans-serif", background: '#f8f9fc' }}
+      style={{
+        background:
+          "linear-gradient(160deg, #0B2153 0%, #0e2861 55%, #0B2153 100%)",
+      }}
     >
       <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700;800&display=swap');
-
         .process-card {
           opacity: 0;
-          transform: translateY(28px);
+          transform: translateY(24px);
           transition: opacity 0.55s ease, transform 0.55s ease;
         }
         .process-card.visible {
           opacity: 1;
           transform: translateY(0);
         }
-
-        .process-icon-wrap {
-          transition: background 0.25s ease, transform 0.25s ease;
-        }
-         .process-icon-wrap {
-          background: #E93930 !important;
-          transform: scale(1.08);
-        }
-         .process-icon {
-          color: white !important;
-        }
-        .process-card-inner {
-          transition: box-shadow 0.25s ease, transform 0.25s ease, border-color 0.25s ease;
-          border: 1px solid transparent;
-        }
-        .process-card-inner:hover {
-          transform: translateY(-4px);
-          box-shadow: 0 20px 48px rgba(11,33,83,0.12);
-          border-color: #E93930;
-        }
-
-        .connector-line {
-          position: absolute;
-          top: 44px;
-          left: calc(50% + 44px);
-          width: calc(100% - 88px);
-          height: 1px;
-          background: repeating-linear-gradient(
-            90deg,
-            #0B2153 0px,
-            #0B2153 6px,
-            transparent 6px,
-            transparent 14px
-          );
-          opacity: 0.2;
-        }
-
-        .step-number {
-          font-size: 3.5rem;
-          font-weight: 800;
-          line-height: 1;
-          color: #0B2153;
-          opacity: 0.06;
-          position: absolute;
-          top: 12px;
-          right: 16px;
-          pointer-events: none;
-          letter-spacing: -0.04em;
-        }
       `}</style>
 
-      {/* Background accent */}
+      {/* Subtle glow accents */}
       <div
+        className="absolute top-0 right-0 w-[420px] h-[420px] rounded-full pointer-events-none"
         style={{
-          position: 'absolute',
-          top: 0, left: 0, right: 0,
-          height: '4px',
-          background: 'linear-gradient(90deg, #0B2153 0%, #E93930 100%)',
+          background:
+            "radial-gradient(circle, rgba(56,189,248,0.08) 0%, transparent 70%)",
+        }}
+      />
+      <div
+        className="absolute bottom-0 left-0 w-[380px] h-[380px] rounded-full pointer-events-none"
+        style={{
+          background:
+            "radial-gradient(circle, rgba(255,255,255,0.05) 0%, transparent 70%)",
         }}
       />
 
-      <div className="max-w-6xl mx-auto px-6 lg:px-8">
-
+      <div className="max-w-6xl mx-auto px-6 lg:px-8 relative z-10">
         {/* Header */}
-        <div className="text-center max-w-xl mx-auto mb-16">
-          <span
-            className="inline-block text-xs font-bold tracking-widest uppercase mb-3"
-            style={{ color: '#E93930' }}
-          >
-            How We Work
-          </span>
+        <div className="text-center max-w-xl mx-auto mb-20">
+          <div className="flex items-center justify-center gap-2 mb-4">
+            <span className="block w-8 h-[3px] rounded-full bg-white/30" />
+            <span className="text-xs font-bold tracking-widest uppercase text-white/60">
+              How We Work
+            </span>
+            <span className="block w-8 h-[3px] rounded-full bg-white/30" />
+          </div>
           <h2
-            className="text-3xl md:text-4xl font-bold mb-4"
-            style={{ color: '#0B2153', letterSpacing: '-0.02em' }}
+            className="text-3xl md:text-4xl font-bold mb-4 text-white"
+            style={{ letterSpacing: "-0.02em" }}
           >
             Our Process
           </h2>
-          <p className="text-gray-500 text-base leading-relaxed">
-            A clear, structured approach from the first conversation to a successful launch, and beyond.
+          <p className="text-white/60 text-base leading-relaxed">
+            A straightforward process that keeps your goals clear, your project
+            on track, and you informed from start to launch.
           </p>
         </div>
 
-        {/* Steps grid */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 relative">
+        {/* Steps row */}
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-y-14 gap-x-4 relative">
+          {/* Connector line — desktop only, sits behind the circles */}
+          <div
+            className="hidden lg:block absolute left-0 right-0"
+            style={{
+              top: "48px",
+              height: "1px",
+              backgroundColor: "rgba(255,255,255,0.15)",
+              zIndex: 0,
+            }}
+          />
 
-          {/* Connector line — desktop only */}
-          <div className="connector-line hidden lg:block" />
-
-          {steps.map(({ number, icon: Icon, title, description, detail }, i) => (
+          {steps.map(({ number, title, description }, i) => (
             <div
               key={i}
               ref={(el) => (cardRefs.current[i] = el)}
-              className={`process-card ${visibleCards.includes(i) ? 'visible' : ''}`}
-              style={{ transitionDelay: `${i * 120}ms` }}
+              className={`process-card relative z-10 flex flex-col items-center text-center ${
+                visibleCards.includes(i) ? "visible" : ""
+              }`}
+              style={{ transitionDelay: `${i * 100}ms` }}
             >
+              {/* Step circle */}
               <div
-                className="process-card-inner relative bg-white rounded-2xl p-6 h-full flex flex-col"
-                style={{ boxShadow: '0 2px 16px rgba(11,33,83,0.07)' }}
+                className="w-24 h-24 rounded-full flex flex-col items-center justify-center mb-6 flex-shrink-0"
+                style={{
+                  backgroundColor: "#132a5e",
+                  border: "2px solid rgba(255,255,255,0.85)",
+                }}
               >
-                {/* Large bg number */}
-                <span className="step-number">{number}</span>
-
-                {/* Icon */}
-                <div
-                  className="process-icon-wrap w-12 h-12 rounded-xl flex items-center justify-center mb-5 flex-shrink-0"
-                  style={{ background: 'rgba(11,33,83,0.07)' }}
-                >
-                  <Icon
-                    size={20}
-                    strokeWidth={2}
-                    className="process-icon"
-                    style={{ color: '#0B2153', transition: 'color 0.25s ease' }}
-                  />
-                </div>
-                {/* Title */}
-                <h3
-                  className="text-base font-bold mb-3"
-                  style={{ color: '#0B2153' }}
-                >
-                  {title}
-                </h3>
-
-                {/* Description */}
-                <p className="text-sm text-gray-500 leading-relaxed flex-1">
-                  {description}
-                </p>
-
-                {/* Detail tags */}
-                <p className="detail-tag">{detail}</p>
+                <span className="text-[10px] font-bold tracking-widest text-cyan-400 mb-0.5">
+                  STEP
+                </span>
+                <span className="text-2xl font-extrabold text-white leading-none">
+                  {number}
+                </span>
               </div>
+
+              {/* Title */}
+              <h3 className="text-lg md:text-xl font-bold mb-2 text-white">
+                {title}
+              </h3>
+
+              {/* Description */}
+              <p className="text-sm leading-relaxed text-white/50 max-w-[200px]">
+                {description}
+              </p>
             </div>
           ))}
         </div>
-
       </div>
     </section>
   );

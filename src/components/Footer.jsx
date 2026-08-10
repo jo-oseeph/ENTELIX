@@ -2,109 +2,97 @@ import { Link } from "react-router-dom";
 import {
   Mail,
   Phone,
-  ChevronUp,
   Facebook,
   Instagram,
+  Linkedin,
   MapPin,
 } from "lucide-react";
-import { FaTiktok, FaWhatsapp } from "react-icons/fa";
+import { FaWhatsapp } from "react-icons/fa";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   const whatsappUrl = `https://wa.me/254719238337?text=${encodeURIComponent("Hi Entelix, I'd like to inquire about your services.")}`;
 
+  const socialLinks = [
+    { icon: Instagram, href: "https://www.instagram.com/entelixtech/" },
+    { icon: Linkedin, href: "https://www.linkedin.com/company/entelixtech" },
+    { icon: Facebook, href: "https://www.facebook.com/profile.php?id=61572147917054" },
+    { icon: FaWhatsapp, href: whatsappUrl },
+  ];
+
+  const headingClasses =
+    "text-white font-semibold mb-5 relative inline-block after:content-[''] after:block after:w-10 after:h-[2px] after:bg-white/70 after:mt-2";
+
   return (
-    <footer className="bg-[#0B2153] text-gray-300 pt-16 pb-6 relative">
-      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 md:gap-8">
+    <footer className="relative text-gray-300 pt-16 pb-6 overflow-hidden" style={{
+      background: "linear-gradient(160deg, #0B2153 0%, #0e2861 55%, #0B2153 100%)",
+    }}>
+      {/* Subtle glow accents for a cleaner, less flat navy */}
+      <div
+        className="absolute top-0 right-0 w-[380px] h-[380px] rounded-full pointer-events-none"
+        style={{ background: "radial-gradient(circle, rgba(233,57,48,0.08) 0%, transparent 70%)" }}
+      />
+      <div
+        className="absolute bottom-0 left-0 w-[340px] h-[340px] rounded-full pointer-events-none"
+        style={{ background: "radial-gradient(circle, rgba(255,255,255,0.04) 0%, transparent 70%)" }}
+      />
+
+      <div className="relative max-w-7xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 md:gap-8">
         {/* Brand + Description */}
         <div>
-          <div className="flex items-center gap-2 mb-4">
+          <div className="flex items-center gap-3 mb-5">
             <img
               src="/logo1.png"
               alt="Entelix"
-              className="w-16 h-16 object-contain"
+              className="w-16 h-16 object-contain flex-shrink-0"
             />
-            <h2 className="text-white font-semibold text-lg">Entelix</h2>
+            <h2 className="text-white font-semibold text-2xl tracking-widest">ENTELIX</h2>
           </div>
-          <p className="text-sm leading-relaxed mb-6">
+          <p className="text-sm md:text-base leading-relaxed mb-6 text-gray-300/90">
             Entelix builds modern digital solutions designed to help
-            businesses grow, streamline operations, and build stronger digital
-            presence.
+            businesses grow, streamline operations, and build a stronger
+            digital presence.
           </p>
 
-          {/* Social Links */}
-          <div className="flex gap-4 text-gray-300">
-            <a
-              href="https://www.instagram.com/entelixtech/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-[#E93930] transition-colors"
-            >
-              <Instagram size={18} />
-            </a>
-            <a
-              href="https://www.tiktok.com/@entelixtech"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-[#E93930] transition-colors"
-            >
-              <FaTiktok size={18} />
-            </a>
-            <a
-              href="https://www.facebook.com/profile.php?id=61572147917054"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-[#E93930] transition-colors"
-            >
-              <Facebook size={18} />
-            </a>
-            <a
-              href={whatsappUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-[#E93930] transition-colors"
-            >
-              <FaWhatsapp size={18} />
-            </a>
+          {/* Social Links — circular, distinct brand-tinted backgrounds */}
+          <div className="flex gap-3">
+            {socialLinks.map(({ icon: Icon, href }, i) => (
+              <a
+                key={i}
+                href={href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-9 h-9 rounded-full flex items-center justify-center text-white transition-transform duration-300 hover:-translate-y-0.5 hover:shadow-lg"
+                style={{ background: "linear-gradient(135deg, #14306b, #1e3f8f)" }}
+              >
+                <Icon size={16} />
+              </a>
+            ))}
           </div>
         </div>
 
         {/* Quick Links */}
         <div>
-          <h3 className="text-white font-semibold mb-4 relative inline-block after:content-[''] after:block after:w-12 after:h-[2px] after:bg-[#E93930] after:mt-1">
-            Quick Links
-          </h3>
+          <h3 className={headingClasses}>Quick Links</h3>
           <ul className="space-y-3 text-sm">
             <li>
-              <Link
-                to="/services"
-                className="hover:text-[#E93930] transition-colors"
-              >
+              <Link to="/services" className="hover:text-[#E93930] transition-colors">
                 Services
               </Link>
             </li>
             <li>
-              <Link
-                to="/portfolio"
-                className="hover:text-[#E93930] transition-colors"
-              >
+              <Link to="/portfolio" className="hover:text-[#E93930] transition-colors">
                 Portfolio
               </Link>
             </li>
             <li>
-              <Link
-                to="/about"
-                className="hover:text-[#E93930] transition-colors"
-              >
+              <Link to="/about" className="hover:text-[#E93930] transition-colors">
                 About Us
               </Link>
             </li>
             <li>
-              <Link
-                to="/contact"
-                className="hover:text-[#E93930] transition-colors"
-              >
+              <Link to="/contact" className="hover:text-[#E93930] transition-colors">
                 Contact
               </Link>
             </li>
@@ -113,47 +101,30 @@ export default function Footer() {
 
         {/* Our Services */}
         <div>
-          <h3 className="text-white font-semibold mb-4 relative inline-block after:content-[''] after:block after:w-12 after:h-[2px] after:bg-[#E93930] after:mt-1">
-            Our Services
-          </h3>
+          <h3 className={headingClasses}>Our Services</h3>
           <ul className="space-y-3 text-sm">
             <li>
-              <Link
-                to="/web-development"
-                className="hover:text-[#E93930] transition-colors"
-              >
+              <Link to="/web-development" className="hover:text-[#E93930] transition-colors">
                 Web Development
               </Link>
             </li>
             <li>
-              <Link
-                to="/graphic-design"
-                className="hover:text-[#E93930] transition-colors"
-              >
+              <Link to="/graphic-design" className="hover:text-[#E93930] transition-colors">
                 Graphic Design
               </Link>
             </li>
             <li>
-              <Link
-                to="/software-development"
-                className="hover:text-[#E93930] transition-colors"
-              >
+              <Link to="/software-development" className="hover:text-[#E93930] transition-colors">
                 Software Development
               </Link>
             </li>
             <li>
-              <Link
-                to="/website-management"
-                className="hover:text-[#E93930] transition-colors"
-              >
+              <Link to="/website-management" className="hover:text-[#E93930] transition-colors">
                 Website Management
               </Link>
             </li>
             <li>
-              <Link
-                to="/cloud-solutions"
-                className="hover:text-[#E93930] transition-colors"
-              >
+              <Link to="/cloud-solutions" className="hover:text-[#E93930] transition-colors">
                 Cloud Solutions
               </Link>
             </li>
@@ -162,33 +133,22 @@ export default function Footer() {
 
         {/* Contact Info */}
         <div>
-          <h3 className="text-white font-semibold mb-4 relative inline-block after:content-[''] after:block after:w-12 after:h-[2px] after:bg-[#E93930] after:mt-1">
-            Contact Info
-          </h3>
+          <h3 className={headingClasses}>Contact Info</h3>
           <ul className="space-y-3 text-sm">
             <li className="flex items-center gap-2">
-              <Phone className="text-[#E93930] flex-shrink-0" size={16} />
-              <a
-                href="tel:+254719238337"
-                className="hover:text-[#E93930] transition-colors"
-              >
+              <Phone className="text-white/70 flex-shrink-0" size={16} />
+              <a href="tel:+254719238337" className="hover:text-[#E93930] transition-colors">
                 +254 719 238 337
               </a>
             </li>
             <li className="flex items-center gap-2">
-              <Mail className="text-[#E93930] flex-shrink-0" size={16} />
-              <a
-                href="mailto:info@entelix.co.ke"
-                className="hover:text-[#E93930] transition-colors"
-              >
+              <Mail className="text-white/70 flex-shrink-0" size={16} />
+              <a href="mailto:info@entelix.co.ke" className="hover:text-[#E93930] transition-colors">
                 info@entelix.co.ke
               </a>
             </li>
             <li className="flex items-start gap-2">
-              <MapPin
-                className="text-[#E93930] flex-shrink-0 mt-0.5"
-                size={16}
-              />
+              <MapPin className="text-white/70 flex-shrink-0 mt-0.5" size={16} />
               <span>Nairobi, Kenya</span>
             </li>
           </ul>
@@ -196,16 +156,12 @@ export default function Footer() {
       </div>
 
       {/* Bottom Bar */}
-      <div className="border-t border-gray-700 mt-12 pt-6 px-6 flex flex-col md:flex-row justify-between items-center text-sm text-gray-400 gap-4">
+      <div className="relative border-t border-white/10 mt-12 pt-6 px-6 flex flex-col md:flex-row justify-between items-center text-sm text-gray-400 gap-4">
         <p>
-          © {currentYear} <span className="text-[#E93930]">Entelix</span>. All
-          Rights Reserved.
+          © {currentYear} <span className="text-[#E93930]">Entelix</span>. All Rights Reserved.
         </p>
         <div className="flex gap-6">
-          <Link
-            to="/privacy"
-            className="hover:text-[#E93930] transition-colors"
-          >
+          <Link to="/privacy" className="hover:text-[#E93930] transition-colors">
             Privacy Policy
           </Link>
           <Link to="/terms" className="hover:text-[#E93930] transition-colors">

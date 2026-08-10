@@ -5,7 +5,9 @@ import PortfolioSection from "../components/Portfolio.jsx";
 import ServicesSection from "../components/ServicesSection";
 import AboutCTASection from "../components/about/AboutCTASection.jsx";
 import OurProcess from "../components/OurProcess.jsx";
+import WhyChooseUs from "../components/about/WhyChooseUs";
 import SEO from "../components/SEO";
+import FaqSection from "../components/FaqSection.jsx";
 
 const Home = () => {
   return (
@@ -17,10 +19,12 @@ const Home = () => {
       />
 
       <HeroSection />
-       <ServicesSection />
+      <ServicesSection />
       <AboutSection />
       <PortfolioSection />
       <OurProcess />
+      <WhyChooseUs />
+      <FaqSection />
       <AboutCTASection />
     </div>
   );

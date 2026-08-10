@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./ContactSection.css";
+import { Phone, Mail, MessageCircle } from "lucide-react";
 
 const RECEIVING_EMAIL = "entelixtech@gmail.com";
 
@@ -34,38 +34,13 @@ const initialForm = {
   notes: "",
 };
 
-// Small inline icons — kept dependency-free rather than pulling in
-// an icon library for four glyphs.
-const PhoneIcon = () => (
-  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
-  </svg>
-);
-
-const MailIcon = () => (
-  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-    <rect x="2" y="4" width="20" height="16" rx="2" />
-    <path d="m22 6-10 7L2 6" />
-  </svg>
-);
-
-const ChatIcon = () => (
-  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-    <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
-  </svg>
-);
-
-const ClockIcon = () => (
-  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-    <circle cx="12" cy="12" r="10" />
-    <polyline points="12 6 12 12 16 14" />
-  </svg>
-);
+const fieldClasses =
+  "w-full px-4 py-3 rounded-lg border border-slate-200 bg-white text-[#0B2153] text-sm placeholder:text-slate-400 outline-none transition-all duration-200 focus:border-[#E93930] focus:ring-4 focus:ring-[#E93930]/10";
 
 const Input = ({ label, required, ...props }) => (
-  <div className="form-group">
+  <div className="flex flex-col">
     <input
-      className="form-control"
+      className={fieldClasses}
       placeholder={`${label}${required ? " *" : ""}`}
       required={required}
       {...props}
@@ -74,18 +49,12 @@ const Input = ({ label, required, ...props }) => (
 );
 
 const Select = ({ label, required, options, ...props }) => (
-  <div className="form-group">
-    <select
-      className="form-control"
-      required={required}
-      defaultValue=""
-      {...props}
-    >
+  <div className="flex flex-col">
+    <select className={`${fieldClasses} appearance-none`} required={required} defaultValue="" {...props}>
       <option value="" disabled hidden>
         {label}
         {required ? " *" : ""}
       </option>
-
       {options.map((option) => (
         <option key={option} value={option}>
           {option}
@@ -96,10 +65,10 @@ const Select = ({ label, required, options, ...props }) => (
 );
 
 const TextArea = ({ label, required, ...props }) => (
-  <div className="form-group">
+  <div className="flex flex-col">
     <textarea
       rows={4}
-      className="form-control"
+      className={`${fieldClasses} resize-none`}
       placeholder={`${label}${required ? " *" : ""}`}
       required={required}
       {...props}
@@ -120,15 +89,12 @@ const ContactSection = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
     setStatus("submitting");
 
     try {
       const res = await fetch(`https://formsubmit.co/ajax/${RECEIVING_EMAIL}`, {
         method: "POST",
-        headers: {
-          Accept: "application/json",
-        },
+        headers: { Accept: "application/json" },
         body: JSON.stringify({
           _subject: `New Project Inquiry - ${form.company || form.fullName}`,
           ...form,
@@ -144,138 +110,113 @@ const ContactSection = () => {
     }
   };
 
+  const contactInfo = [
+    { icon: Phone, label: "Phone", value: "+254 719 238 337", href: null },
+    { icon: Mail, label: "Email", value: "info@entelix.co.ke", href: null },
+    {
+      icon: MessageCircle,
+      label: "WhatsApp",
+      value: "0719 238 337",
+      href: "https://wa.me/254719238337?text=Hi%2C%20I%27d%20like%20to%20talk%20about%20a%20project.",
+    },
+  ];
+
   return (
-    <section className="contact-section">
-      <div className="contact-container">
-        <div className="contact-card">
-          <div className="contact-layout">
-            <div>
-              <h2 className="contact-title">Let's Build Something Great.</h2>
+    <section className="bg-white py-20 md:py-28 px-4 sm:px-6">
+      <div className="max-w-6xl mx-auto">
+        <div className="grid lg:grid-cols-[0.85fr_1.4fr] gap-10 lg:gap-14 items-start">
 
-              <p className="contact-description">
-                Whether you're launching a startup, upgrading an existing
-                platform, or building custom software, we're ready to help.
-              </p>
+          {/* LEFT — intro + contact details */}
+          <div>
+            <h2 className="text-3xl md:text-4xl font-bold leading-tight mb-4" style={{ color: "#0B2153" }}>
+              Let's Build Something Great.
+            </h2>
+            <p className="text-gray-500 leading-relaxed mb-8">
+              Whether you're launching a startup, upgrading an existing
+              platform, or building custom software, we're ready to help.
+            </p>
 
-              <div className="info-grid">
-                <div className="info-card">
-                  <p className="info-label">Phone</p>
-                  <div className="info-row">
-                    <div className="info-icon">
-                      <PhoneIcon />
+            <div className="flex flex-col gap-4">
+              {contactInfo.map(({ icon: Icon, label, value, href }) => {
+                const Wrapper = href ? "a" : "div";
+                return (
+                  <Wrapper
+                    key={label}
+                    {...(href ? { href, target: "_blank", rel: "noopener noreferrer" } : {})}
+                    className="group flex items-center gap-4 rounded-2xl p-5 border border-slate-200/70 transition-all duration-300 hover:-translate-y-1"
+                    style={{
+                      background: "linear-gradient(160deg, #f3f7f6 0%, #eef3f2 45%, #e9efee 100%)",
+                    }}
+                    onMouseEnter={(e) => {
+                      e.currentTarget.style.boxShadow = "0 16px 32px rgba(11,33,83,0.10)";
+                      e.currentTarget.style.borderColor = "rgba(233,57,48,0.3)";
+                    }}
+                    onMouseLeave={(e) => {
+                      e.currentTarget.style.boxShadow = "none";
+                      e.currentTarget.style.borderColor = "rgba(226,232,240,0.7)";
+                    }}
+                  >
+                    <div
+                      className="w-11 h-11 rounded-full flex items-center justify-center flex-shrink-0"
+                      style={{ backgroundColor: "rgba(233,57,48,0.12)" }}
+                    >
+                      <Icon className="w-5 h-5" style={{ color: "#E93930" }} strokeWidth={1.9} />
                     </div>
-                    <p className="info-value">+254 719 238 337</p>
-                  </div>
-                </div>
-
-                <div className="info-card">
-                  <p className="info-label">Email</p>
-                  <div className="info-row">
-                    <div className="info-icon">
-                      <MailIcon />
+                    <div>
+                      <p className="text-xs font-bold uppercase tracking-wider mb-0.5" style={{ color: "#0B2153" }}>
+                        {label}
+                      </p>
+                      <p className="text-sm text-gray-500">{value}</p>
                     </div>
-                    <p className="info-value">info@entelix.co.ke</p>
-                  </div>
-                </div>
+                  </Wrapper>
+                );
+              })}
+            </div>
+          </div>
 
-                <a
-                  className="info-card"
-                  href="https://wa.me/254719238337?text=Hi%2C%20I%27d%20like%20to%20talk%20about%20a%20project."
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <p className="info-label">WhatsApp</p>
-                  <div className="info-row">
-                    <div className="info-icon">
-                      <ChatIcon />
-                    </div>
-                    <p className="info-value">0719 238 337</p>
-                  </div>
-                </a>
+          {/* RIGHT — form card */}
+          <div className="bg-white border border-slate-200 rounded-3xl p-6 sm:p-8 md:p-10 shadow-xl shadow-slate-200/60">
+            <h3 className="text-xl md:text-2xl font-bold mb-2" style={{ color: "#0B2153" }}>
+              Tell Us About Your Project
+            </h3>
+            <p className="text-gray-500 text-sm mb-8 leading-relaxed">
+              Fill out the form below and we'll reach out with the next steps.
+            </p>
 
+            <form className="grid sm:grid-cols-2 gap-5" onSubmit={handleSubmit}>
+              <Input label="Your Name" required value={form.fullName} onChange={update("fullName")} />
+              <Input label="Your Email" type="email" required value={form.email} onChange={update("email")} />
+              <Input label="Your Phone Number" required value={form.phone} onChange={update("phone")} />
+              <Select label="Project Type" required options={PROJECT_TYPES} value={form.projectType} onChange={update("projectType")} />
+              <Select label="Budget" required options={BUDGETS} value={form.budget} onChange={update("budget")} />
+              <Select label="Timeline" required options={TIMELINES} value={form.timeline} onChange={update("timeline")} />
+
+              <div className="sm:col-span-2">
+                <TextArea label="Project Description" required value={form.description} onChange={update("description")} />
               </div>
-            </div>
 
-            {/* RIGHT */}
+              <div className="sm:col-span-2 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mt-1">
+                <p className="text-xs text-gray-500">
+                  {status === "success" && "Inquiry received."}
+                  {status === "error" && "Submission failed."}
+                </p>
 
-            <div>
-              <h3 className="form-title">Tell Us About Your Project</h3>
-
-              <p className="form-description">
-                Fill out the form below and we'll reach out with the next steps.
-              </p>
-
-              <form className="contact-form" onSubmit={handleSubmit}>
-                <Input
-                  label="Your Name"
-                  required
-                  value={form.fullName}
-                  onChange={update("fullName")}
-                />
-
-                <Input
-                  label=" Your Email"
-                  type="email"
-                  required
-                  value={form.email}
-                  onChange={update("email")}
-                />
-
-                <Input
-                  label=" Your Phone Number"
-                  required
-                  value={form.phone}
-                  onChange={update("phone")}
-                />
-
-                <Select
-                  label="Project Type"
-                  required
-                  options={PROJECT_TYPES}
-                  value={form.projectType}
-                  onChange={update("projectType")}
-                />
-
-                <Select
-                  label="Budget"
-                  required
-                  options={BUDGETS}
-                  value={form.budget}
-                  onChange={update("budget")}
-                />
-
-                <Select
-                  label="Timeline"
-                  required
-                  options={TIMELINES}
-                  value={form.timeline}
-                  onChange={update("timeline")}
-                />
-
-                <div className="full-width">
-                  <TextArea
-                    label="Project Description"
-                    required
-                    value={form.description}
-                    onChange={update("description")}
-                  />
-                </div>
-
-                <div className="form-footer">
-                  <p className="status">
-                    {status === "success" && "Inquiry received."}
-
-                    {status === "error" && "Submission failed."}
-                  </p>
-
-                  <button type="submit" className="submit-btn">
-                    {status === "submitting"
-                      ? "Submitting..."
-                      : "Submit Project Inquiry"}
-                  </button>
-                </div>
-              </form>
-            </div>
+                <button
+                  type="submit"
+                  disabled={status === "submitting"}
+                  className="px-7 py-3 rounded-lg font-semibold text-sm text-white transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
+                  style={{ backgroundColor: "#E93930" }}
+                  onMouseEnter={(e) => {
+                    if (status !== "submitting") e.currentTarget.style.backgroundColor = "#c92f28";
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.backgroundColor = "#E93930";
+                  }}
+                >
+                  {status === "submitting" ? "Submitting..." : "Submit Project Inquiry"}
+                </button>
+              </div>
+            </form>
           </div>
         </div>
       </div>
