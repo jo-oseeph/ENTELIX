@@ -67,7 +67,7 @@ const ServicesSection = () => {
         'Workflow systems',
         'Enterprise applications',
       ],
-      path: '/custom-software',
+      path: '/software-development',
     },
     {
       icon: Bot,

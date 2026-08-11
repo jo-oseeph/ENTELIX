@@ -9,7 +9,7 @@ const projects = [
     description: "A student platform for sharing notes and past papers to support collaborative learning.",
     image: "./images/moilearn.png",
     link: "https://moilearn.vercel.app",
-    tech: ["React", "Node.js", "MongoDB"],
+  
   },
   {
     id: 2,
@@ -18,7 +18,7 @@ const projects = [
     description: "An online fashion store with seamless browsing and secure purchasing experience.",
     image: "./images/store.png",
     link: "https://66631ddce57e8.site123.me/",
-    tech: ["React", "Express", "Tailwind"],
+    
   },
   {
     id: 3,
@@ -27,7 +27,7 @@ const projects = [
     description: "A modern spa website showcasing services with a simple and smooth booking experience.",
     image: "./images/spa.png",
     link: "https://serenspa.vercel.app/",
-    tech: ["React", "Supabase", "Tailwind"],
+    
   },
   {
     id: 4,
@@ -36,7 +36,7 @@ const projects = [
     description: "A centralized platform connecting students to rentals, food delivery, and essential campus services.",
     image: "./images/moihub.png",
     link: "https://moihub-silk.vercel.app/",
-    tech: ["React", "Node.js", "MongoDB"],
+   
   },
   {
     id: 5,
@@ -45,7 +45,7 @@ const projects = [
     description: "A real estate platform for browsing, buying, and renting properties with detailed listings.",
     image: "/realestate.png",
     link: "https://onungachristopher3.wixsite.com/emali-adur",
-    tech: ["Wix"],
+    
   },
   {
     id: 6,
@@ -54,7 +54,7 @@ const projects = [
     description: "A digital products store with secure checkout and M-Pesa integration for instant delivery.",
     image: "./images/electrify.png",
     link: "https://electrify.lovable.app/",
-    tech: ["React", "Node.js", "M-Pesa API"],
+    
   },
   {
     id: 7,
@@ -63,7 +63,7 @@ const projects = [
     description: "A ticketing system for Turkana University allowing users to report issues and admins to track and resolve them efficiently.",
     image: "./images/tuc.png",
     link: "https://helpdesk-system-smoky.vercel.app/login",
-    tech: ["React", "Express", "MongoDB"],
+    
   },
 ];
 
@@ -136,20 +136,7 @@ const ProjectCard = ({ project, index }) => {
 
           <p className="text-gray-500 text-sm leading-relaxed mb-4">
             {project.description}
-          </p>
-
-          {/* Tech tags */}
-          <div className="flex flex-wrap gap-2 mb-5">
-            {project.tech.map((tech) => (
-              <span
-                key={tech}
-                className="text-xs font-medium px-2.5 py-1 rounded-md"
-                style={{ backgroundColor: "rgba(11,33,83,0.06)", color: "#0B2153" }}
-              >
-                {tech}
-              </span>
-            ))}
-          </div>
+          </p> 
 
           <a
             href={hasLiveLink ? project.link : undefined}

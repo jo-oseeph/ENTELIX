@@ -43,7 +43,7 @@ const ServicesSection = () => {
       title: 'Custom Software',
       description:
         'We build tailored software systems that automate processes, improve efficiency, and support long-term business growth.',
-      path: '/custom-software',
+      path: '/software-development',
     },
   ];
 

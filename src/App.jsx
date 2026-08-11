@@ -5,6 +5,7 @@ import Footer from "./components/Footer";
 import PageTransition from "./components/PageTransition";
 import Home from "./pages/Home";
 import Services from "./pages/Services";
+// import DigitalMarketing from "./pages/DigitalMarketing";
 import Portfolio from "./pages/Portfolio";
 import Contact from "./pages/Contact";
 import NotFound from "./components/NotFound";
@@ -18,7 +19,6 @@ import WebsiteManagement from "./pages/WebsiteManagement";
 import Privacy from "./pages/Privacy";
 import Terms from "./pages/Terms";
 import FloatingWhatsApp from "./components/FloatingWhatsApp";
-// import ScrollToTop from "./components/ScrollToTop";
 import BackToTop from "./components/BackToTop";
 
 
@@ -40,9 +40,10 @@ function App() {
                 <Route path="/contact" element={<Contact />} />
                 <Route path="*" element={<NotFound />} />
                 <Route path="/web-development" element={<WebDevelopment />} />
+                {/* <Route path="/digital-marketing" element={<DigitalMarketing />} /> */}
                 <Route
                   path="/software-development"
-                  element={<SoftwareDevelopment />}
+                  element={<SoftwareDevelopment />} 
                 />
                 <Route path="/graphic-design" element={<GraphicDesign />} />
                 <Route path="/cloud-solutions" element={<CloudSolutions />} />
@@ -55,7 +56,6 @@ function App() {
               </Routes>
             </PageTransition>
             <FloatingWhatsApp />
-            {/* <ScrollToTop /> */}
           </ErrorBoundary>
         </main>
 
