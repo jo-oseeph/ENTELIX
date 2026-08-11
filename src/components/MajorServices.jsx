@@ -145,7 +145,7 @@ const ServicesSection = () => {
               The Full Range of What We Build
             </h2>
             <p className="text-gray-500 text-base max-w-2xl mx-auto mt-4 leading-relaxed">
-              From your first website to fully custom systems — everything is built around what your business actually needs.
+              From your first website to fully custom systems, everything is built around what your business actually needs.
             </p>
           </div>
         </div>
