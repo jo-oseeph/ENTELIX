@@ -65,7 +65,7 @@ const HeroSection = () => {
           {/* Small title, no pill */}
           <motion.p
             variants={itemVariants}
-            className="text-xs sm:text-sm font-semibold tracking-[0.3em] uppercase mb-5"
+            className="text-xs sm:text-sm font-semibold tracking-[0.3em] uppercase mt-16 mb-5"
             style={{
               color: SLATE,
               fontFamily: "'Space Grotesk', sans-serif",
@@ -84,7 +84,7 @@ const HeroSection = () => {
 
           <motion.p
             variants={itemVariants}
-            className="text-base md:text-lg font-light leading-relaxed max-w-2xl mb-8"
+            className="text-base md:text-lg font-light leading-relaxed max-w-2xl mb-4"
             style={{ color: SLATE }}
           >
             Every project here started as a problem worth solving,
