@@ -17,7 +17,7 @@ const projects = [
     category: "E-commerce Platform",
     description: "An online fashion store with seamless browsing and secure purchasing experience.",
     image: "./images/store.png",
-    link: "https://waste-frontend-two.vercel.app/",
+    link: "https://66631ddce57e8.site123.me/",
     tech: ["React", "Express", "Tailwind"],
   },
   {
