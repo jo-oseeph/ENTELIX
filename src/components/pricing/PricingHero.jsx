@@ -6,7 +6,7 @@ const PricingHero = () => {
   useEffect(() => {
     setIsVisible(true);
   }, []);
-
+const SLATE = "#8C96B8";
   return (
     <section
       className="relative flex items-center justify-center text-center overflow-hidden py-16 sm:py-20 md:py-24"
@@ -32,7 +32,10 @@ const PricingHero = () => {
           }`}
         >
     
-          <p className="text-xs font-bold uppercase tracking-[0.25em] text-white mt-12 mb-4">
+          <p className="text-xs font-bold uppercase tracking-[0.25em] text-white mt-12 mb-4"  style={{
+              color: SLATE,
+              fontFamily: "sans-serif",
+            }}>
             Investment
           </p>
 
