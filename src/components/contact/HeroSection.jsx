@@ -12,7 +12,10 @@ const HeroSection = () => {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
-      transition: { duration: 0.6, staggerChildren: 0.15 },
+      transition: {
+        duration: 0.6,
+        staggerChildren: 0.15,
+      },
     },
   };
 
@@ -21,58 +24,94 @@ const HeroSection = () => {
     visible: {
       opacity: 1,
       y: 0,
-      transition: { duration: 0.6, ease: "easeOut" },
+      transition: {
+        duration: 0.6,
+        ease: "easeOut",
+      },
     },
   };
 
   return (
     <section
-      className="relative py-24 md:py-32 flex items-center justify-center text-center overflow-hidden border-b"
-      style={{ backgroundColor: NAVY, borderColor: "rgba(244,245,247,0.06)" }}
+      className="relative min-h-[380px] sm:min-h-[400px] md:min-h-[440px] flex items-center justify-center text-center overflow-hidden border-b"
+      style={{
+        backgroundColor: NAVY,
+        borderColor: "rgba(244,245,247,0.06)",
+      }}
     >
-      {/* Animated navy glow — subtle breathing motion for a modern,
-          alive feel instead of a flat panel */}
+      {/* Center glow */}
       <motion.div
-        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[480px] h-[480px] rounded-full pointer-events-none"
+        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
+        w-[300px] h-[300px] sm:w-[380px] sm:h-[380px]
+        rounded-full pointer-events-none"
         style={{
           background: `radial-gradient(circle, ${NAVY_LIGHT} 0%, transparent 70%)`,
-          filter: "blur(70px)",
+          filter: "blur(60px)",
         }}
-        animate={{ opacity: [0.35, 0.55, 0.35], scale: [1, 1.06, 1] }}
-        transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
-      />
-      <motion.div
-        className="absolute -bottom-20 right-1/4 w-[240px] h-[240px] rounded-full pointer-events-none"
-        style={{
-          background: `radial-gradient(circle, ${RED} 0%, transparent 70%)`,
-          filter: "blur(90px)",
+        animate={{
+          opacity: [0.3, 0.5, 0.3],
+          scale: [1, 1.06, 1],
         }}
-        animate={{ opacity: [0.08, 0.15, 0.08] }}
-        transition={{ duration: 5, repeat: Infinity, ease: "easeInOut", delay: 1 }}
+        transition={{
+          duration: 6,
+          repeat: Infinity,
+          ease: "easeInOut",
+        }}
       />
 
-      <div className="relative z-10 px-6 sm:px-8 max-w-2xl mx-auto flex flex-col items-center">
+      {/* Red accent glow */}
+      <motion.div
+        className="absolute -bottom-24 left-1/2 -translate-x-1/2
+        w-[200px] h-[200px] sm:w-[240px] sm:h-[240px]
+        rounded-full pointer-events-none"
+        style={{
+          background: `radial-gradient(circle, ${RED} 0%, transparent 70%)`,
+          filter: "blur(70px)",
+        }}
+        animate={{
+          opacity: [0.06, 0.14, 0.06],
+        }}
+        transition={{
+          duration: 5,
+          repeat: Infinity,
+          ease: "easeInOut",
+          delay: 1,
+        }}
+      />
+
+      {/* Content */}
+      <div className="relative z-10 w-full max-w-4xl mx-auto px-6 sm:px-8 py-16 sm:py-20">
         <motion.div
-          className="flex flex-col items-center"
+          className="flex flex-col items-center justify-center"
           variants={containerVariants}
           initial="hidden"
           animate="visible"
         >
-
-          {/* Heading */}
-          <motion.h1
-            variants={itemVariants}
-            className="text-4xl md:text-5xl lg:text-6xl font-bold mb-5 leading-[1.12] tracking-tight"
-            style={{ fontFamily: "'Space Grotesk', sans-serif" }}
-          >
-            <span style={{ color: IVORY }}>Talk To Us </span>
-          
-          </motion.h1>
-
-          {/* Supporting copy — forced to one line at every breakpoint */}
+          {/* Small title */}
           <motion.p
             variants={itemVariants}
-            className="text-sm sm:text-base md:text-lg font-light leading-relaxed whitespace-nowrap"
+            className="text-xs sm:text-sm font-semibold uppercase tracking-[0.3em] mb-4"
+            style={{ color: SLATE }}
+          >
+            Let's Talk
+          </motion.p>
+
+          {/* Main heading */}
+          <motion.h1
+            variants={itemVariants}
+            className="max-w-3xl text-4xl sm:text-5xl md:text-6xl font-bold leading-[1.05] tracking-tight"
+            style={{
+              color: IVORY,
+              fontFamily: "'Space Grotesk', sans-serif",
+            }}
+          >
+            Have a project in mind?
+          </motion.h1>
+
+          {/* Description */}
+          <motion.p
+            variants={itemVariants}
+            className="mt-5 max-w-2xl text-base sm:text-lg leading-relaxed font-light"
             style={{ color: SLATE }}
           >
             Let's discuss how we can bring your idea to life.

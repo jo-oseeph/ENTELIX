@@ -42,7 +42,6 @@ function App() {
                 <Route path="/pricing" element={<Pricing />} />
                 <Route path="*" element={<NotFound />} />
                 <Route path="/web-development" element={<WebDevelopment />} />
-                {/* <Route path="/digital-marketing" element={<DigitalMarketing />} /> */}
                 <Route
                   path="/software-development"
                   element={<SoftwareDevelopment />} 
