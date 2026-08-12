@@ -126,7 +126,6 @@ const ContactSection = () => {
       <div className="max-w-6xl mx-auto">
         <div className="grid lg:grid-cols-[0.85fr_1.4fr] gap-10 lg:gap-14 items-start">
 
-          {/* LEFT — intro + contact details */}
           <div>
             <h2 className="text-3xl md:text-4xl font-bold leading-tight mb-4" style={{ color: "#0B2153" }}>
               Let's Build Something Great.
