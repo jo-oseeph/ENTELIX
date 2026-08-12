@@ -1,30 +1,42 @@
 import {
-  Layers,
-  Smartphone,
-  Cpu,
-  Database,
+  Building2,
+  Users,
+  Package,
+  GraduationCap,
+  Workflow,
+  Network,
 } from 'lucide-react';
 
 const services = [
   {
-    icon: Layers,
-    title: 'Custom Software Systems',
-    description: 'Tailored software built to match your business workflows and operational needs.',
+    icon: Building2,
+    title: 'Business Management Systems',
+    description: 'Centralized systems to manage day-to-day operations, records, and reporting from one place.',
   },
   {
-    icon: Smartphone,
-    title: 'Mobile Applications',
-    description: 'Scalable mobile apps designed for performance, usability, and real-world business impact.',
+    icon: Users,
+    title: 'CRM Systems',
+    description: 'Tools to manage customer relationships, track leads, and streamline your sales process.',
   },
   {
-    icon: Cpu,
-    title: 'Automation & Integrations',
-    description: 'Streamline operations with automated workflows and seamless system integrations.',
+    icon: Package,
+    title: 'Inventory Systems',
+    description: 'Systems to track stock levels, orders, and inventory movement in real time.',
   },
   {
-    icon: Database,
-    title: 'Backend & APIs',
-    description: 'Robust backend systems and APIs built for scalability, security, and performance.',
+    icon: GraduationCap,
+    title: 'School Management Systems',
+    description: 'Platforms to manage students, staff, records, and day-to-day school operations.',
+  },
+  {
+    icon: Workflow,
+    title: 'Workflow Systems',
+    description: 'Custom workflows that automate approvals, tasks, and internal processes.',
+  },
+  {
+    icon: Network,
+    title: 'Enterprise Applications',
+    description: 'Large-scale applications built to support complex, organization-wide needs.',
   },
 ];
 
@@ -45,7 +57,7 @@ const SoftwareDevServices = () => {
         </div>
 
         {/* SERVICES GRID */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map(({ icon: Icon, title, description }, index) => (
             <div
               key={index}
