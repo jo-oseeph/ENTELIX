@@ -33,8 +33,6 @@ const HeroSection = () => {
           "linear-gradient(160deg, #0B2153 0%, #0e2861 55%, #0B2153 100%)",
       }}
     >
-      {/* Animated navy glow — slow breathing motion instead of a
-          static background, no image needed */}
       <motion.div
         className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[560px] h-[560px] rounded-full pointer-events-none"
         style={{
@@ -62,13 +60,12 @@ const HeroSection = () => {
           initial="hidden"
           animate="visible"
         >
-          {/* Small title, no pill */}
           <motion.p
-            variants={itemVariants}
-            className="text-xs sm:text-sm font-semibold tracking-[0.3em] uppercase mb-5"
+           
+            className="text-xs sm:text-sm font-semibold tracking-[0.3em] uppercase mt-16 mb-5"
             style={{
               color: SLATE,
-              fontFamily: "'Space Grotesk', sans-serif",
+              fontFamily: "sans-serif",
             }}
           >
             Our Work
@@ -76,15 +73,15 @@ const HeroSection = () => {
 
           <motion.h1
             variants={itemVariants}
-            className="text-4xl sm:text-5xl md:text-6xl lg:text-6xl font-bold mb-5 leading-[1.05] tracking-tight"
-            style={{ fontFamily: "'Space Grotesk', sans-serif", color: "rgba(244, 245, 247, 0.92)" }}
+            className="text-4xl sm:text-5xl md:text-6xl lg:text-5xl font-bold mb-5 leading-[1.05] tracking-tight"
+            style={{ fontFamily: "sans-serif", color: "rgba(244, 245, 247, 0.92)" }}
           >
-            Software Built for Real-World Impact
+             Built for Real-World Impact
           </motion.h1>
 
           <motion.p
             variants={itemVariants}
-            className="text-base md:text-lg font-light leading-relaxed max-w-2xl mb-8"
+            className="text-base md:text-lg font-light leading-relaxed max-w-2xl mb-0"
             style={{ color: SLATE }}
           >
             Every project here started as a problem worth solving,

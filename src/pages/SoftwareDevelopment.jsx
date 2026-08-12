@@ -2,7 +2,6 @@ import React from "react";
 import HeroSection from "../components/softwaredev/HeroSection";
 import ServicesGrid from '../components/softwaredev/ServicesGrid';
 import SoftwareCta from "../components/softwaredev/SoftwareCta";
-// import PricingPlans from "../components/softwaredev/PricingPlans.jsx";
 import SEO from "../components/SEO";
 
 const SoftwareDevelopment = () => {
@@ -16,9 +15,7 @@ const SoftwareDevelopment = () => {
       />
       <HeroSection />
       <ServicesGrid/>
-      {/* <PricingPlans /> */}
-
-      <SoftwareCta />
+      <SoftwareCta />  
     </>
   );
 };

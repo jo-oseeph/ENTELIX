@@ -5,6 +5,7 @@ import Footer from "./components/Footer";
 import PageTransition from "./components/PageTransition";
 import Home from "./pages/Home";
 import Services from "./pages/Services";
+import Pricing from "./pages/Pricing";
 // import DigitalMarketing from "./pages/DigitalMarketing";
 import Portfolio from "./pages/Portfolio";
 import Contact from "./pages/Contact";
@@ -38,6 +39,7 @@ function App() {
                 <Route path="/services" element={<Services />} />
                 <Route path="/portfolio" element={<Portfolio />} />
                 <Route path="/contact" element={<Contact />} />
+                <Route path="/pricing" element={<Pricing />} />
                 <Route path="*" element={<NotFound />} />
                 <Route path="/web-development" element={<WebDevelopment />} />
                 {/* <Route path="/digital-marketing" element={<DigitalMarketing />} /> */}

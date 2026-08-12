@@ -51,12 +51,10 @@ const AboutHero = () => {
             {/* Pill badge */}
             <motion.span
               variants={itemVariants}
-              className="inline-block px-4 py-1.5 rounded-full text-xs font-semibold tracking-[0.2em] uppercase mb-8"
+              className=" text-xs font-semibold tracking-[0.2em] uppercase mb-8"
               style={{
-                color: IVORY,
-                border: "1px solid rgba(244,245,247,0.2)",
-                backgroundColor: "rgba(244,245,247,0.04)",
-                fontFamily: "'Space Grotesk', sans-serif",
+                color: SLATE,
+                fontFamily: "sans-serif",
               }}
             >
               About Us
