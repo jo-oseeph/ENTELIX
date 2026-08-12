@@ -5,9 +5,8 @@ import { Link } from 'react-router-dom';
 const plans = [
   {
     tier: 'basic',
-    badge: 'Basic',
-    label: 'Starter Package',
-    price: 'KES 19,999',
+    badge: 'Starter Package',
+    price: 'KES 30, 000',
     features: [
       'Simple web app or landing system',
       'Up to 5 pages',
@@ -16,15 +15,14 @@ const plans = [
       'Basic deployment support',
     ],
     // delivery: '7–14 days',
-    cta: 'Get Started',
+    cta: 'Build Presence',
     featured: false,
     popular: false,
   },
   {
     tier: 'standard',
-    badge: 'Standard',
-    label: 'Growth Package',
-    price: 'KES 64,999',
+    badge: 'Growth Package',
+    price: 'KES 60,000',
     features: [
       'Custom web application',
       'Up to 10–15 pages',
@@ -38,8 +36,7 @@ const plans = [
   },
   {
     tier: 'premium',
-    badge: 'Premium',
-    label: 'Enterprise Package',
+    badge: 'Enterprise Package',
     price: 'KES 100,000+',
     tag: 'For serious businesses',
     features: [
@@ -111,13 +108,13 @@ const PricingPlans = () => {
           }`}
         >
           <p className="text-xs font-bold tracking-widest uppercase text-red-500 mb-3">
-            Pricing Plans
+            Investment Plans
           </p>
           <h2 className="text-3xl md:text-4xl font-bold text-blue-950 mb-4 leading-tight">
-            Software Development Packages
+            Web Development Packages
           </h2>
           <p className="text-gray-500 text-base leading-relaxed">
-            Transparent pricing for every stage of your business. No hidden fees, no surprises.
+            Transparent pricing for every stage of your business. No hidden fees.
           </p>
         </div>
 
