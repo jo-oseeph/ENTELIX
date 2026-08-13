@@ -7,28 +7,32 @@ const plans = [
     tier: 'basic',
     badge: 'Starter Package',
     price: 'KES 30, 000',
+    description: 'A professional starting point for individuals, startups, and small businesses building their online presence.',
     features: [
-      'Simple web app or landing system',
-      'Up to 5 pages',
+      'Upto 5 pages',
       'Basic UI/UX design',
-      'Mobile responsive design',
-      'Basic deployment support',
+      'Mobile-responsive design',
+      'Contact/enquiry forms',
+      'Basic SEO setup',
+      'Basic deployment support'
     ],
-    // delivery: '7–14 days',
-    cta: 'Build Presence',
+  
+    cta: 'Build Your Presence',
     featured: false,
     popular: false,
   },
   {
     tier: 'standard',
-    badge: 'Growth Package',
-    price: 'KES 60,000',
+    badge: 'Business Package',
+    price: 'KES 60,000+',
+    description: 'A professional website for growing businesses and organizations that need a stronger digital presence.',
     features: [
       'Custom web application',
       'Up to 10–15 pages',
-      'Custom UI/UX design',
+      'Content management functionality',
       'API & Database integrations',
-      'Performance optimization'
+      'Performance optimization',
+      'Deployment support'
     ],
     cta: 'Get Started',
     featured: true,
@@ -39,12 +43,14 @@ const plans = [
     badge: 'Enterprise Package',
     price: 'KES 100,000+',
     tag: 'For serious businesses',
+    description: ' Advanced web experiences with custom functionality and integrations beyond a standard business website.',
     features: [
       'Fully Advanced Software Application',
       'Multiple API integrations',
       'AI integrations & automation',
       'Scalable future-ready architecture',
       'Performance & security optimization',
+      'User accounts where required'  
     ],
     cta: 'Contact Us',
     featured: true,

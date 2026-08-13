@@ -40,10 +40,12 @@ const HowPaymentWorks = () => {
             {/* Text */}
             <p className="text-gray-600 text-base md:text-lg leading-relaxed">
               Our pricing is structured around your project scope and
-              requirements. A 50% deposit is required to start any project,
-              with the remaining balance paid through agreed milestones. You
-              receive a clear quote outlining the scope, deliverables, timeline,
-              and total cost before development begins.
+              requirements. A 50% deposit is required to begin any project,
+              with the remaining balance paid through agreed milestones. Before
+              development begins, you receive a clear proposal outlining the
+              scope, deliverables, timeline, payment milestones, and total
+              investment. For larger projects, a customized milestone payment
+              schedule can be agreed based on the project scope.
             </p>
           </div>
         </div>
