@@ -3,10 +3,10 @@ import { Star, Clock, Check } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const plans = [
-  {
+  { 
     tier: 'basic',
     badge: 'Starter Package',
-    price: 'KES 30, 000',
+    price: 'KES 30,000',
     description: 'A professional starting point for individuals, startups, and small businesses building their online presence.',
     features: [
       'Upto 5 pages',
