@@ -38,15 +38,22 @@ const HowPaymentWorks = () => {
             </div>
 
             {/* Text */}
-            <p className="text-gray-600 text-base md:text-lg leading-relaxed">
-              Our pricing is structured around your project scope and
-              requirements. A 50% deposit is required to begin any project,
-              with the remaining balance paid through agreed milestones. Before
-              development begins, you receive a clear proposal outlining the
-              scope, deliverables, timeline, payment milestones, and total
-              investment. For larger projects, a customized milestone payment
-              schedule can be agreed based on the project scope.
-            </p>
+            {/* Text */}
+            <div className="text-gray-600 text-base md:text-lg leading-relaxed">
+              <p>
+                Our pricing is structured around your project scope and
+                requirements. A 50% deposit is required to begin any project,
+                with the remaining balance paid through agreed milestones.
+              </p>
+
+              <p className="mt-4">
+                Before development begins, you receive a clear proposal
+                outlining the scope, deliverables, timeline, payment milestones,
+                and total investment. For larger projects, a customized
+                milestone payment schedule can be agreed based on the project
+                scope.
+              </p>
+            </div>
           </div>
         </div>
       </div>

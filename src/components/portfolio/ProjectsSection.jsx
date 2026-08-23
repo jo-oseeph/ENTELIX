@@ -3,9 +3,18 @@ import { useEffect, useRef, useState } from "react";
 
 const projects = [
   {
+    id: 7,
+    title: "Calwiz Technologies & Supplies",
+    // category: "Support System",
+    description: "Product catalogue website for showcasing technology products and services, with an admin dashboard for managing the catalogue and direct WhatsApp enquiries.",
+    image: "./images/calwiz.png",
+    link: "https://calwiz-tech.vercel.app/",
+    
+  },
+  {
     id: 1,
     title: "Moilearn",
-    category: "Educational Platform",
+    // category: "Educational Platform",
     description: "A student platform for sharing notes and past papers to support collaborative learning.",
     image: "./images/moilearn.png",
     link: "https://moilearn.vercel.app",
@@ -14,7 +23,7 @@ const projects = [
   {
     id: 2,
     title: "Chris Online Store",
-    category: "E-commerce Platform",
+    // category: "E-commerce Platform",
     description: "An online fashion store with seamless browsing and secure purchasing experience.",
     image: "./images/store.png",
     link: "https://66631ddce57e8.site123.me/",
@@ -23,7 +32,7 @@ const projects = [
   {
     id: 3,
     title: "Serene Spa",
-    category: "Wellness Platform",
+    // category: "Wellness Platform",
     description: "A modern spa website showcasing services with a simple and smooth booking experience.",
     image: "./images/spa.png",
     link: "https://serenspa.vercel.app/",
@@ -32,7 +41,7 @@ const projects = [
   {
     id: 4,
     title: "MoiHub",
-    category: "Student Services Platform",
+    // category: "Student Services Platform",
     description: "A centralized platform connecting students to rentals, food delivery, and essential campus services.",
     image: "./images/moihub.png",
     link: "https://moihub-silk.vercel.app/",
@@ -41,7 +50,7 @@ const projects = [
   {
     id: 5,
     title: "Emali Adur Properties",
-    category: "Real Estate Platform",
+    // category: "Real Estate Platform",
     description: "A real estate platform for browsing, buying, and renting properties with detailed listings.",
     image: "/realestate.png",
     link: "https://onungachristopher3.wixsite.com/emali-adur",
@@ -50,21 +59,21 @@ const projects = [
   {
     id: 6,
     title: "Electrify",
-    category: "E-commerce Platform",
+    // category: "E-commerce Platform",
     description: "A digital products store with secure checkout and M-Pesa integration for instant delivery.",
     image: "./images/electrify.png",
     link: "https://electrify.lovable.app/",
     
   },
-  {
-    id: 7,
-    title: "TUC Ticketing System",
-    category: "Support System",
-    description: "A ticketing system for Turkana University allowing users to report issues and admins to track and resolve them efficiently.",
-    image: "./images/tuc.png",
-    link: "https://helpdesk-system-smoky.vercel.app/login",
+  // {
+  //   id: 7,
+  //   title: "TUC Ticketing System",
+  //   category: "Support System",
+  //   description: "A ticketing system for Turkana University allowing users to report issues and admins to track and resolve them efficiently.",
+  //   image: "./images/tuc.png",
+  //   link: "https://helpdesk-system-smoky.vercel.app/login",
     
-  },
+  // },
 ];
 
 const ProjectCard = ({ project, index }) => {
@@ -193,7 +202,6 @@ const ProjectsSection = () => {
     >
       <div className="max-w-7xl mx-auto">
 
-        {/* Header — centered, consistent with the rest of the site */}
         <div
           ref={headerRef}
           className={`text-center max-w-2xl mx-auto mb-16 transform transition-all duration-1000 ${
@@ -211,7 +219,7 @@ const ProjectsSection = () => {
             Recent Projects
           </h2>
           <p className="text-gray-500 text-sm md:text-base max-w-lg mx-auto mt-4 leading-relaxed">
-            A showcase of the digital solutions we've built — real products, for real businesses.
+            A showcase of the digital solutions we've built, real products, for real businesses.
           </p>
         </div>
 
