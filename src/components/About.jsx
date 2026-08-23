@@ -28,7 +28,6 @@ const AboutIntro = () => {
     <section ref={sectionRef} className="py-20 md:py-28 bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-14 lg:gap-20 items-center">
-          {/* Image LEFT — flush, no padding, no decoration */}
           <div
             className={`transition-all duration-700 delay-200 ${
               isVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-16"
@@ -44,7 +43,6 @@ const AboutIntro = () => {
             </div>
           </div>
 
-          {/* Content RIGHT — title + copy together */}
           <div
             className={`transition-all duration-700 delay-300 ${
               isVisible ? "opacity-100 translate-x-0" : "opacity-0 translate-x-16"
@@ -64,7 +62,7 @@ const AboutIntro = () => {
 
               <p className="text-gray-600 text-base md:text-lg leading-relaxed">
                 Entelix designs and builds digital systems for businesses across
-                Kenya and beyond — from lean startups to established
+                Kenya and beyond, from lean startups to established
                 enterprises. We work closely with every client to understand
                 the problem first, then build software shaped around how the
                 business actually runs. That focus on fit over flash is what
