@@ -1,3 +1,5 @@
+'use client';
+
 import { useEffect, useRef, useState } from "react";
 import { Command, Star, Rocket, Sparkles, Zap } from "lucide-react";
 
@@ -162,3 +164,4 @@ const OurServices = () => {
 };
 
 export default OurServices;
+

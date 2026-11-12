@@ -1,6 +1,8 @@
+'use client';
+
 import React from "react";
 import { ArrowRight, CheckCircle2 } from "lucide-react";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import { motion } from "framer-motion";
 
 const ServiceCard = ({ service, index, isVisible }) => {
@@ -80,7 +82,7 @@ const ServiceCard = ({ service, index, isVisible }) => {
           {service.path && (
             <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
               <Link
-                to={service.path}
+                href={service.path}
                 className="inline-flex items-center gap-2 px-6 py-3 bg-blue-950 text-white font-semibold text-sm rounded-lg hover:bg-blue-900 transition-all duration-300 group/btn shadow-md hover:shadow-lg"
               >
                 Learn More

@@ -1,0 +1,11 @@
+var R=require("../chunks/ssr/[turbopack]_runtime.js")("server/pages/Terms.js")
+R.c("server/chunks/ssr/node_modules_lucide-react_dist_esm_icons_07hk1and190z5._.js")
+R.c("server/chunks/ssr/[root-of-the-server]__04vtpj-sqgslp._.js")
+R.c("server/chunks/ssr/node_modules_next_dist_esm_build_templates_pages_1f_qd6yh1i7pr.js")
+R.c("server/chunks/ssr/node_modules_next_dist_003e2-opu9gjh._.js")
+R.c("server/chunks/ssr/[externals]__1f6rxoem8k2bi._.js")
+R.c("server/chunks/ssr/[root-of-the-server]__1a16hm-jh6bxm._.js")
+R.c("server/chunks/ssr/[root-of-the-server]__213_-ztqm1qka._.js")
+R.c("server/chunks/ssr/node_modules_next_1_o5zxs01k1z6._.js")
+R.m(69057)
+module.exports=R.m(69057).exports

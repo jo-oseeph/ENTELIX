@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import Link from "next/link";
 
 
 const SoftwareCta = () => {
@@ -12,7 +12,7 @@ const SoftwareCta = () => {
           Let’s create something great together.
         </p>
         <Link
-          to="/contact"
+          href="/contact"
           className="bg-white text-[#05255D] font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-gray-100 transition"
         >
           Contact Us Now

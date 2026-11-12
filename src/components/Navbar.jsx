@@ -1,13 +1,15 @@
+'use client';
+
 import { useState, useEffect } from "react";
-import { useLocation } from "react-router-dom";
-import { HashLink as Link } from "react-router-hash-link";
+import { usePathname } from "next/navigation";
+import Link from "next/link";
 import { Menu, X, ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  const location = useLocation();
+  const pathname = usePathname();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -20,7 +22,7 @@ const Navbar = () => {
 
   useEffect(() => {
     setIsOpen(false);
-  }, [location.pathname]);
+  }, [pathname]);
 
   const navLinks = [
     { name: "Home", href: "/" },
@@ -47,7 +49,7 @@ const Navbar = () => {
   return (
   
     <motion.nav
-      key={location.pathname}
+      key={pathname}
       initial={{ y: -100, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.55, ease: [0.22, 1, 0.36, 1] }}
@@ -83,7 +85,7 @@ const Navbar = () => {
             animate="visible"
           >
             {navLinks.map((link, idx) => {
-              const isActive = location.pathname === link.href;
+              const isActive = pathname === link.href;
               return (
                 <motion.div key={idx} variants={navItemVariants}>
                   <Link
@@ -162,7 +164,7 @@ const Navbar = () => {
             animate={isOpen ? "visible" : "hidden"}
           >
             {navLinks.map((link, idx) => {
-              const isActive = location.pathname === link.href;
+              const isActive = pathname === link.href;
               return (
                 <motion.div key={idx} variants={navItemVariants}>
                   <Link

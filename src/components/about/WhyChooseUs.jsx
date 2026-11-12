@@ -1,3 +1,5 @@
+'use client';
+
 import { useEffect, useRef, useState } from 'react';
 import { Puzzle, Zap, MessagesSquare, Headphones } from 'lucide-react';
 

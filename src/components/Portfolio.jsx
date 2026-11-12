@@ -1,5 +1,7 @@
+'use client';
+
 import { useEffect, useRef, useState } from 'react';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 import { ExternalLink, ArrowRight } from 'lucide-react';
 
 const PortfolioSection = () => {
@@ -142,7 +144,7 @@ const PortfolioSection = () => {
           }`}
         >
           <Link
-            to="/portfolio"
+            href="/portfolio"
             className="inline-flex items-center gap-2 px-7 py-3 rounded-lg font-semibold text-sm border transition-all duration-300"
             style={{ borderColor: '#0B2153', color: '#0B2153', backgroundColor: 'transparent' }}
             onMouseEnter={(e) => {

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Settings, Smartphone, ArrowUpRight } from "lucide-react";
 
 const softwareItems = [
@@ -103,7 +104,7 @@ const PricingCard = ({ icon: Icon, title, items, ctaLabel }) => (
         ))}
       </div>
 
-      <a
+      <Link
         href="/contact"
         className="group mt-8 inline-flex items-center justify-between w-full gap-3 px-6 py-4 rounded-xl font-semibold text-sm text-white transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg"
         style={{
@@ -122,7 +123,7 @@ const PricingCard = ({ icon: Icon, title, items, ctaLabel }) => (
         {ctaLabel}
 
         <ArrowUpRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
-      </a>
+      </Link>
     </div>
   </div>
 );

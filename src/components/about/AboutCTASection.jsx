@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 
 const AboutCTASection = () => {
@@ -15,7 +15,7 @@ const AboutCTASection = () => {
         </div>
 
         <Link
-          to="/contact"
+          href="/contact"
           className="group inline-flex items-center gap-2 bg-white text-[#0B2153] font-semibold py-3 px-7 rounded-full shadow-lg hover:bg-gray-100 transition-all duration-300 flex-shrink-0"
         >
           Get in Touch

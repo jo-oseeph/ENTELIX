@@ -1,0 +1,17 @@
+{
+  "/_global-error/page": "app/_global-error/page.js",
+  "/_not-found/page": "app/_not-found/page.js",
+  "/about/page": "app/about/page.js",
+  "/cloud-solutions/page": "app/cloud-solutions/page.js",
+  "/contact/page": "app/contact/page.js",
+  "/graphic-design/page": "app/graphic-design/page.js",
+  "/page": "app/page.js",
+  "/portfolio/page": "app/portfolio/page.js",
+  "/pricing/page": "app/pricing/page.js",
+  "/privacy/page": "app/privacy/page.js",
+  "/services/page": "app/services/page.js",
+  "/software-development/page": "app/software-development/page.js",
+  "/terms/page": "app/terms/page.js",
+  "/web-development/page": "app/web-development/page.js",
+  "/website-management/page": "app/website-management/page.js"
+}

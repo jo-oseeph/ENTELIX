@@ -1,0 +1,213 @@
+{
+  "version": 3,
+  "pages404": true,
+  "appType": "hybrid",
+  "caseSensitive": false,
+  "basePath": "",
+  "redirects": [
+    {
+      "source": "/:path+/",
+      "destination": "/:path+",
+      "internal": true,
+      "priority": true,
+      "statusCode": 308,
+      "regex": "^(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))/$"
+    }
+  ],
+  "headers": [],
+  "onMatchHeaders": [],
+  "rewrites": {
+    "beforeFiles": [],
+    "afterFiles": [],
+    "fallback": []
+  },
+  "dynamicRoutes": [],
+  "staticRoutes": [
+    {
+      "page": "/",
+      "regex": "^/(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/(?:/)?$"
+    },
+    {
+      "page": "/_not-found",
+      "regex": "^/_not\\-found(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/_not\\-found(?:/)?$"
+    },
+    {
+      "page": "/about",
+      "regex": "^/about(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/about(?:/)?$"
+    },
+    {
+      "page": "/AboutPage",
+      "regex": "^/AboutPage(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/AboutPage(?:/)?$"
+    },
+    {
+      "page": "/cloud-solutions",
+      "regex": "^/cloud\\-solutions(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/cloud\\-solutions(?:/)?$"
+    },
+    {
+      "page": "/CloudSolutions",
+      "regex": "^/CloudSolutions(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/CloudSolutions(?:/)?$"
+    },
+    {
+      "page": "/contact",
+      "regex": "^/contact(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/contact(?:/)?$"
+    },
+    {
+      "page": "/Contact",
+      "regex": "^/Contact(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/Contact(?:/)?$"
+    },
+    {
+      "page": "/DigitalMarketing",
+      "regex": "^/DigitalMarketing(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/DigitalMarketing(?:/)?$"
+    },
+    {
+      "page": "/graphic-design",
+      "regex": "^/graphic\\-design(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/graphic\\-design(?:/)?$"
+    },
+    {
+      "page": "/GraphicDesign",
+      "regex": "^/GraphicDesign(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/GraphicDesign(?:/)?$"
+    },
+    {
+      "page": "/Home",
+      "regex": "^/Home(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/Home(?:/)?$"
+    },
+    {
+      "page": "/portfolio",
+      "regex": "^/portfolio(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/portfolio(?:/)?$"
+    },
+    {
+      "page": "/Portfolio",
+      "regex": "^/Portfolio(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/Portfolio(?:/)?$"
+    },
+    {
+      "page": "/pricing",
+      "regex": "^/pricing(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/pricing(?:/)?$"
+    },
+    {
+      "page": "/Pricing",
+      "regex": "^/Pricing(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/Pricing(?:/)?$"
+    },
+    {
+      "page": "/privacy",
+      "regex": "^/privacy(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/privacy(?:/)?$"
+    },
+    {
+      "page": "/Privacy",
+      "regex": "^/Privacy(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/Privacy(?:/)?$"
+    },
+    {
+      "page": "/services",
+      "regex": "^/services(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/services(?:/)?$"
+    },
+    {
+      "page": "/Services",
+      "regex": "^/Services(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/Services(?:/)?$"
+    },
+    {
+      "page": "/software-development",
+      "regex": "^/software\\-development(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/software\\-development(?:/)?$"
+    },
+    {
+      "page": "/SoftwareDevelopment",
+      "regex": "^/SoftwareDevelopment(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/SoftwareDevelopment(?:/)?$"
+    },
+    {
+      "page": "/terms",
+      "regex": "^/terms(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/terms(?:/)?$"
+    },
+    {
+      "page": "/Terms",
+      "regex": "^/Terms(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/Terms(?:/)?$"
+    },
+    {
+      "page": "/web-development",
+      "regex": "^/web\\-development(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/web\\-development(?:/)?$"
+    },
+    {
+      "page": "/WebDev",
+      "regex": "^/WebDev(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/WebDev(?:/)?$"
+    },
+    {
+      "page": "/website-management",
+      "regex": "^/website\\-management(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/website\\-management(?:/)?$"
+    },
+    {
+      "page": "/WebsiteManagement",
+      "regex": "^/WebsiteManagement(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/WebsiteManagement(?:/)?$"
+    }
+  ],
+  "dataRoutes": [],
+  "rsc": {
+    "header": "rsc",
+    "varyHeader": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch",
+    "prefetchHeader": "next-router-prefetch",
+    "didPostponeHeader": "x-nextjs-postponed",
+    "contentTypeHeader": "text/x-component",
+    "suffix": ".rsc",
+    "prefetchSegmentHeader": "next-router-segment-prefetch",
+    "prefetchSegmentSuffix": ".segment.rsc",
+    "prefetchSegmentDirSuffix": ".segments",
+    "clientParamParsing": false,
+    "dynamicRSCPrerender": false
+  },
+  "rewriteHeaders": {
+    "pathHeader": "x-nextjs-rewritten-path",
+    "queryHeader": "x-nextjs-rewritten-query"
+  }
+}

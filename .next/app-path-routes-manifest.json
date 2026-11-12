@@ -1,0 +1,17 @@
+{
+  "/_global-error/page": "/_global-error",
+  "/_not-found/page": "/_not-found",
+  "/about/page": "/about",
+  "/cloud-solutions/page": "/cloud-solutions",
+  "/contact/page": "/contact",
+  "/graphic-design/page": "/graphic-design",
+  "/page": "/",
+  "/portfolio/page": "/portfolio",
+  "/pricing/page": "/pricing",
+  "/privacy/page": "/privacy",
+  "/services/page": "/services",
+  "/software-development/page": "/software-development",
+  "/terms/page": "/terms",
+  "/web-development/page": "/web-development",
+  "/website-management/page": "/website-management"
+}

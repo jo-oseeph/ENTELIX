@@ -1,3 +1,5 @@
+'use client';
+
 import { useEffect, useRef, useState } from 'react';
 import { Cloud, Database, ShieldCheck } from 'lucide-react';
 

@@ -1,3 +1,5 @@
+'use client';
+
 import React from "react";
 import SEO from "../components/SEO";
 import { Mail, Globe, Shield, Eye, Share2, Lock, Clock, UserCheck, Link, RefreshCw } from "lucide-react";

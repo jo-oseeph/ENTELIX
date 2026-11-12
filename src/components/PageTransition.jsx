@@ -1,3 +1,5 @@
+'use client';
+
 import { motion } from "framer-motion";
 
 const PageTransition = ({ children }) => {
@@ -36,3 +38,4 @@ const PageTransition = ({ children }) => {
 };
 
 export default PageTransition;
+

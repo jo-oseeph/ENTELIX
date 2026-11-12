@@ -1,6 +1,8 @@
+'use client';
+
 import { useEffect, useRef, useState } from 'react';
 import { Star, Clock, Check } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 
 const plans = [
   { 
@@ -185,7 +187,7 @@ const PricingPlans = () => {
               </ul>
               {/* CTA */}
               <Link
-                to="/contact"
+                href="/contact"
                 className={`block w-full py-3.5 rounded-xl text-sm font-bold text-center transition-all duration-200 ${btnStyles[tier]}`}
               >
                 {cta}

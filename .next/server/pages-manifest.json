@@ -1,0 +1,19 @@
+{
+  "/AboutPage": "pages/AboutPage.js",
+  "/CloudSolutions": "pages/CloudSolutions.js",
+  "/Contact": "pages/Contact.js",
+  "/DigitalMarketing": "pages/DigitalMarketing.js",
+  "/GraphicDesign": "pages/GraphicDesign.js",
+  "/Home": "pages/Home.js",
+  "/Portfolio": "pages/Portfolio.js",
+  "/Pricing": "pages/Pricing.js",
+  "/Privacy": "pages/Privacy.js",
+  "/Services": "pages/Services.js",
+  "/SoftwareDevelopment": "pages/SoftwareDevelopment.js",
+  "/Terms": "pages/Terms.js",
+  "/WebDev": "pages/WebDev.js",
+  "/WebsiteManagement": "pages/WebsiteManagement.js",
+  "/_app": "pages/_app.js",
+  "/_document": "pages/_document.js",
+  "/_error": "pages/_error.js"
+}

@@ -1,3 +1,5 @@
+'use client';
+
 import { useEffect, useRef, useState } from 'react';
 import { Code, Smartphone, Cpu, Bot, TrendingUp, Paintbrush, CheckCircle2, ArrowRight } from 'lucide-react';
 

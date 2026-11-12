@@ -1,3 +1,5 @@
+'use client';
+
 import { useEffect, useRef, useState } from "react";
 
 const teamMembers = [
@@ -82,3 +84,4 @@ const AboutTeam = () => {
 };
 
 export default AboutTeam;
+
