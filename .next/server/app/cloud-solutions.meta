@@ -1,0 +1,35 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/cloud-solutions/layout,_N_T_/cloud-solutions/page,_N_T_/cloud-solutions"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/_index",
+    "/cloud-solutions/__PAGE__"
+  ],
+  "prefetchHints": {
+    "hints": 0,
+    "slots": {
+      "children": {
+        "hints": 64,
+        "slots": {
+          "children": {
+            "hints": 160,
+            "slots": null
+          }
+        }
+      }
+    }
+  },
+  "routeCache": {
+    "key": "/route-cache/APP_PAGE/a9caedc31dd9045b885e8c37b6c870b6904e4286d4e3b5fd61a117d98c2fb3ff/$/cloud-solutions",
+    "owner": {
+      "kind": "APP_PAGE",
+      "sourceRoute": "/cloud-solutions/page"
+    },
+    "isFallback": false
+  }
+}

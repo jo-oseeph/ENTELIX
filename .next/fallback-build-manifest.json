@@ -1,46 +1,15 @@
 {
   "pages": {
-    "/_app": [
-      "static/chunks/0uq3z-mhc6z1e.js",
-      "static/chunks/2sqe5dv_2dw-6.js",
-      "static/chunks/2cbigf85h-fsn.js",
-      "static/chunks/turbopack-077hmtqrhcoji.js"
-    ],
-    "/_error": [
-      "static/chunks/2wqj4ic2nds5a.js",
-      "static/chunks/turbopack-077hmtqrhcoji.js"
-    ]
+    "/_app": []
   },
   "devFiles": [],
   "polyfillFiles": [],
   "lowPriorityFiles": [
-    "static/U5ncL4yk-wVsz1WKTTRBD/_buildManifest.js",
-    "static/U5ncL4yk-wVsz1WKTTRBD/_ssgManifest.js",
-    "static/U5ncL4yk-wVsz1WKTTRBD/_clientMiddlewareManifest.js"
+    "static/GjZ6aZAtYtEt-7I8tfRVr/_buildManifest.js",
+    "static/GjZ6aZAtYtEt-7I8tfRVr/_ssgManifest.js",
+    "static/GjZ6aZAtYtEt-7I8tfRVr/_clientMiddlewareManifest.js"
   ],
   "rootMainFiles": [],
   "rootMainFilesTree": {},
-  "pagesChunkGroupBootstrapParams": {
-    "/_app": {
-      "otherChunks": [
-        "static/chunks/0uq3z-mhc6z1e.js",
-        "static/chunks/2sqe5dv_2dw-6.js",
-        "static/chunks/2cbigf85h-fsn.js"
-      ],
-      "runtimeModuleIds": [
-        10783,
-        30984
-      ]
-    },
-    "/_error": {
-      "otherChunks": [
-        "static/chunks/2wqj4ic2nds5a.js"
-      ],
-      "runtimeModuleIds": [
-        10783,
-        80184
-      ]
-    }
-  },
-  "chunkLoadingGlobal": "TURBOPACK"
+  "pagesChunkGroupBootstrapParams": {}
 }

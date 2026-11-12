@@ -1,4 +1,4 @@
-import Terms from "@/pages/Terms";
+import Terms from "@/views/Terms";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {

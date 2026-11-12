@@ -61,7 +61,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16 md:h-20">
 
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-1.5 group cursor-pointer">
+          <Link href="/" className="flex items-center gap-1.5 group cursor-pointer">
             <img
               src="/logo.jpg"
               alt="Entelix Logo"
@@ -89,7 +89,7 @@ const Navbar = () => {
               return (
                 <motion.div key={idx} variants={navItemVariants}>
                   <Link
-                    to={link.href}
+                    href={link.href}
                     className="group relative px-5 py-2.5 transition-all duration-300"
                   >
                     <span
@@ -122,7 +122,7 @@ const Navbar = () => {
             initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0, transition: { duration: 0.5, delay: 0.35 } }}
           >
-            <Link to="/contact">
+            <Link href="/contact">
               <div
                 className="group flex items-center gap-2.5 pl-6 pr-2.5 py-2.5 rounded-full text-white text-xs font-bold uppercase tracking-widest cursor-pointer transition-all duration-300 hover:shadow-lg"
                 style={{ backgroundColor: "#E93930" }}
@@ -168,7 +168,7 @@ const Navbar = () => {
               return (
                 <motion.div key={idx} variants={navItemVariants}>
                   <Link
-                    to={link.href}
+                    href={link.href}
                     onClick={() => setIsOpen(false)}
                     className="block px-4 py-3 rounded-lg transition-all duration-300 text-sm uppercase tracking-wide font-semibold"
                     style={
@@ -185,7 +185,7 @@ const Navbar = () => {
 
             {/* Mobile CTA */}
             <div className="pt-3">
-              <Link to="/contact" onClick={() => setIsOpen(false)}>
+              <Link href="/contact" onClick={() => setIsOpen(false)}>
                 <div
                   className="flex items-center justify-center gap-2.5 px-6 py-3.5 rounded-full text-white text-xs font-bold uppercase tracking-widest"
                   style={{ backgroundColor: "#E93930" }}

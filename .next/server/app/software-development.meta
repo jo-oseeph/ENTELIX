@@ -1,0 +1,35 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/software-development/layout,_N_T_/software-development/page,_N_T_/software-development"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/_index",
+    "/software-development/__PAGE__"
+  ],
+  "prefetchHints": {
+    "hints": 0,
+    "slots": {
+      "children": {
+        "hints": 64,
+        "slots": {
+          "children": {
+            "hints": 160,
+            "slots": null
+          }
+        }
+      }
+    }
+  },
+  "routeCache": {
+    "key": "/route-cache/APP_PAGE/88062daea82e19c17100cbe21baece4ee7839868b505b92ee21a2df05dff61a3/$/software-development",
+    "owner": {
+      "kind": "APP_PAGE",
+      "sourceRoute": "/software-development/page"
+    },
+    "isFallback": false
+  }
+}

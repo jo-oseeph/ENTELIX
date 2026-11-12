@@ -1,0 +1,30 @@
+2:"$Sreact.fragment"
+3:"/_next/static/chunks/45b99re0oh1g7.js"
+4:"/_next/static/chunks/26ij_7s5iwvs4.js"
+5:I[39756,["$3","$4"],"default"]
+6:I[37457,["$3","$4"],"default"]
+b:"/_next/static/chunks/11uit5rxi3-vb.js"
+c:I[98975,["$3","$4","$b"],"default"]
+d:I[48482,["$3","$4","$b"],"default"]
+e:I[22016,["$3","$4","$b"],""]
+f:I[97367,["$3","$4"],"OutletBoundary"]
+10:"$Sreact.suspense"
+13:"ViewportBoundary"
+14:I[97367,["$3","$4"],"$13"]
+15:"MetadataBoundary"
+16:I[97367,["$3","$4"],"$15"]
+17:I[27201,["$3","$4"],"IconMark"]
+8:X
+8:C
+9:X
+a:[["children",{"s":"__PAGE__","h":160,"d":{"r":["$","$2","c",{"children":[["$","div",null,{"children":[["$","$Lc",null,{}],["$","$Ld",null,{}],["$","section",null,{"className":"py-12 md:py-16 bg-[#E93930] text-white","children":["$","div",null,{"className":"max-w-6xl mx-auto px-6 flex flex-col lg:flex-row items-center justify-between gap-6 lg:gap-10 text-center lg:text-left","children":[["$","div",null,{"children":[["$","h2",null,{"className":"text-2xl md:text-3xl font-bold mb-2 leading-tight","children":"Ready to Transform Your Business?"}],["$","p",null,{"className":"text-white/85 text-sm md:text-base max-w-xl","children":"Let's build something tailored to your needs."}]]}],["$","$Le",null,{"href":"/contact","className":"group inline-flex items-center gap-2 bg-white text-[#0B2153] font-semibold py-3 px-7 rounded-full shadow-lg hover:bg-gray-100 transition-all duration-300 flex-shrink-0","children":["Get in Touch",["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-arrow-right w-4 h-4 transition-transform duration-300 group-hover:translate-x-1","aria-hidden":"true","children":[["$","path","1ays0h",{"d":"M5 12h14"}],["$","path","xquz4c",{"d":"m12 5 7 7-7 7"}],"$undefined"]}]]}]]}]}]]}],[["$","script","script-0",{"src":"/_next/static/chunks/11uit5rxi3-vb.js","async":true}]],["$","$Lf",null,{"children":["$","$10",null,{"name":"Next.MetadataOutlet","children":"$@11"}]}]]}],"p":"$@12","v":null,"s":"$9"}}]]
+1:[["children",{"s":"services","h":64,"d":{"r":["$","$2","c",{"children":[null,["$","$L5",null,{"parallelRouterKey":"children","template":["$","$L6",null,{}]}]]}],"p":"$@7","v":"$8","s":"$9"},"c":"$Qa"}]]
+0:{"t":{"t":{"s":"","h":16,"c":"$Q1"},"h":{"r":["$","$2","h",{"children":[null,["$","$L14",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","2",{"name":"theme-color","content":"#0B59ED"}]]}],["$","$L16",null,{"children":[["$","div",null,{"hidden":true,"children":["$","$10",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"Our Services | Entelix Technologies"}],["$","meta","1",{"name":"description","content":"Explore our software engineering services: custom software development, web applications, e-commerce, mobile apps, AI integrations, and cloud solutions."}],["$","meta","2",{"name":"author","content":"Entelix Technologies"}],["$","link","3",{"rel":"manifest","href":"/site.webmanifest"}],["$","meta","4",{"name":"keywords","content":"software development agency Kenya,custom software development Nairobi,web application development,enterprise software solutions,mobile app development Kenya,cloud solutions East Africa,Entelix Technologies"}],["$","meta","5",{"name":"creator","content":"Entelix Technologies"}],["$","meta","6",{"name":"publisher","content":"Entelix Technologies"}],["$","meta","7",{"name":"robots","content":"index, follow"}],["$","meta","8",{"name":"googlebot","content":"index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"}],["$","link","9",{"rel":"canonical","href":"https://entelix.co.ke/services"}],["$","meta","10",{"property":"og:title","content":"Entelix Technologies - We Build High-Performance Digital Solutions"}],["$","meta","11",{"property":"og:description","content":"Transforming business ideas into powerful, reliable digital solutions through custom software, web applications, and modern cloud technologies."}],["$","meta","12",{"property":"og:url","content":"https://entelix.co.ke"}],["$","meta","13",{"property":"og:site_name","content":"Entelix Technologies"}],["$","meta","14",{"property":"og:locale","content":"en_KE"}],["$","meta","15",{"property":"og:image","content":"https://entelix.co.ke/og-image.jpg"}],["$","meta","16",{"property":"og:image:width","content":"1200"}],["$","meta","17",{"property":"og:image:height","content":"630"}],["$","meta","18",{"property":"og:image:alt","content":"Entelix Technologies"}],["$","meta","19",{"property":"og:type","content":"website"}],["$","meta","20",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","21",{"name":"twitter:title","content":"Entelix Technologies - We Build High-Performance Digital Solutions"}],["$","meta","22",{"name":"twitter:description","content":"Premier software development agency delivering high-performance custom software, web applications, and cloud solutions."}],["$","meta","23",{"name":"twitter:image","content":"https://entelix.co.ke/og-image.jpg"}],["$","link","24",{"rel":"icon","href":"/favicon.ico"}],["$","link","25",{"rel":"icon","href":"/favicon-16x16.png","sizes":"16x16","type":"image/png"}],["$","link","26",{"rel":"icon","href":"/favicon-32x32.png","sizes":"32x32","type":"image/png"}],["$","link","27",{"rel":"apple-touch-icon","href":"/apple-touch-icon.png","sizes":"180x180"}],["$","$L17","28",{}]]}]}],null]}],null]}],"p":"$@18","v":null,"s":"$9"}},"a":"$@19","u":"$@1a","b":"GjZ6aZAtYtEt-7I8tfRVr"}
+11:null
+1a:true
+9:300
+9:C
+19:0
+7:"$undefined"
+18:"$undefined"
+12:"$undefined"

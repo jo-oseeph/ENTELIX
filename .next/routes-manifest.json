@@ -1,7 +1,7 @@
 {
   "version": 3,
   "pages404": true,
-  "appType": "hybrid",
+  "appType": "app",
   "caseSensitive": false,
   "basePath": "",
   "redirects": [
@@ -30,6 +30,12 @@
       "namedRegex": "^/(?:/)?$"
     },
     {
+      "page": "/_global-error",
+      "regex": "^/_global\\-error(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/_global\\-error(?:/)?$"
+    },
+    {
       "page": "/_not-found",
       "regex": "^/_not\\-found(?:/)?$",
       "routeKeys": {},
@@ -42,22 +48,10 @@
       "namedRegex": "^/about(?:/)?$"
     },
     {
-      "page": "/AboutPage",
-      "regex": "^/AboutPage(?:/)?$",
-      "routeKeys": {},
-      "namedRegex": "^/AboutPage(?:/)?$"
-    },
-    {
       "page": "/cloud-solutions",
       "regex": "^/cloud\\-solutions(?:/)?$",
       "routeKeys": {},
       "namedRegex": "^/cloud\\-solutions(?:/)?$"
-    },
-    {
-      "page": "/CloudSolutions",
-      "regex": "^/CloudSolutions(?:/)?$",
-      "routeKeys": {},
-      "namedRegex": "^/CloudSolutions(?:/)?$"
     },
     {
       "page": "/contact",
@@ -66,34 +60,10 @@
       "namedRegex": "^/contact(?:/)?$"
     },
     {
-      "page": "/Contact",
-      "regex": "^/Contact(?:/)?$",
-      "routeKeys": {},
-      "namedRegex": "^/Contact(?:/)?$"
-    },
-    {
-      "page": "/DigitalMarketing",
-      "regex": "^/DigitalMarketing(?:/)?$",
-      "routeKeys": {},
-      "namedRegex": "^/DigitalMarketing(?:/)?$"
-    },
-    {
       "page": "/graphic-design",
       "regex": "^/graphic\\-design(?:/)?$",
       "routeKeys": {},
       "namedRegex": "^/graphic\\-design(?:/)?$"
-    },
-    {
-      "page": "/GraphicDesign",
-      "regex": "^/GraphicDesign(?:/)?$",
-      "routeKeys": {},
-      "namedRegex": "^/GraphicDesign(?:/)?$"
-    },
-    {
-      "page": "/Home",
-      "regex": "^/Home(?:/)?$",
-      "routeKeys": {},
-      "namedRegex": "^/Home(?:/)?$"
     },
     {
       "page": "/portfolio",
@@ -102,22 +72,10 @@
       "namedRegex": "^/portfolio(?:/)?$"
     },
     {
-      "page": "/Portfolio",
-      "regex": "^/Portfolio(?:/)?$",
-      "routeKeys": {},
-      "namedRegex": "^/Portfolio(?:/)?$"
-    },
-    {
       "page": "/pricing",
       "regex": "^/pricing(?:/)?$",
       "routeKeys": {},
       "namedRegex": "^/pricing(?:/)?$"
-    },
-    {
-      "page": "/Pricing",
-      "regex": "^/Pricing(?:/)?$",
-      "routeKeys": {},
-      "namedRegex": "^/Pricing(?:/)?$"
     },
     {
       "page": "/privacy",
@@ -126,22 +84,10 @@
       "namedRegex": "^/privacy(?:/)?$"
     },
     {
-      "page": "/Privacy",
-      "regex": "^/Privacy(?:/)?$",
-      "routeKeys": {},
-      "namedRegex": "^/Privacy(?:/)?$"
-    },
-    {
       "page": "/services",
       "regex": "^/services(?:/)?$",
       "routeKeys": {},
       "namedRegex": "^/services(?:/)?$"
-    },
-    {
-      "page": "/Services",
-      "regex": "^/Services(?:/)?$",
-      "routeKeys": {},
-      "namedRegex": "^/Services(?:/)?$"
     },
     {
       "page": "/software-development",
@@ -150,22 +96,10 @@
       "namedRegex": "^/software\\-development(?:/)?$"
     },
     {
-      "page": "/SoftwareDevelopment",
-      "regex": "^/SoftwareDevelopment(?:/)?$",
-      "routeKeys": {},
-      "namedRegex": "^/SoftwareDevelopment(?:/)?$"
-    },
-    {
       "page": "/terms",
       "regex": "^/terms(?:/)?$",
       "routeKeys": {},
       "namedRegex": "^/terms(?:/)?$"
-    },
-    {
-      "page": "/Terms",
-      "regex": "^/Terms(?:/)?$",
-      "routeKeys": {},
-      "namedRegex": "^/Terms(?:/)?$"
     },
     {
       "page": "/web-development",
@@ -174,22 +108,10 @@
       "namedRegex": "^/web\\-development(?:/)?$"
     },
     {
-      "page": "/WebDev",
-      "regex": "^/WebDev(?:/)?$",
-      "routeKeys": {},
-      "namedRegex": "^/WebDev(?:/)?$"
-    },
-    {
       "page": "/website-management",
       "regex": "^/website\\-management(?:/)?$",
       "routeKeys": {},
       "namedRegex": "^/website\\-management(?:/)?$"
-    },
-    {
-      "page": "/WebsiteManagement",
-      "regex": "^/WebsiteManagement(?:/)?$",
-      "routeKeys": {},
-      "namedRegex": "^/WebsiteManagement(?:/)?$"
     }
   ],
   "dataRoutes": [],

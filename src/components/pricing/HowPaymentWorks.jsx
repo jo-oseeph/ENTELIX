@@ -1,3 +1,5 @@
+'use client';
+
 import { Receipt } from "lucide-react";
 
 const HowPaymentWorks = () => {
@@ -62,3 +64,4 @@ const HowPaymentWorks = () => {
 };
 
 export default HowPaymentWorks;
+

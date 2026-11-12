@@ -77,22 +77,22 @@ export default function Footer() {
           <h3 className={headingClasses}>Quick Links</h3>
           <ul className="space-y-3 text-sm">
             <li>
-              <Link to="/services" className="hover:text-[#E93930] transition-colors">
+              <Link href="/services" className="hover:text-[#E93930] transition-colors">
                 Services
               </Link>
             </li>
             <li>
-              <Link to="/portfolio" className="hover:text-[#E93930] transition-colors">
+              <Link href="/portfolio" className="hover:text-[#E93930] transition-colors">
                 Portfolio
               </Link>
             </li>
             <li>
-              <Link to="/about" className="hover:text-[#E93930] transition-colors">
+              <Link href="/about" className="hover:text-[#E93930] transition-colors">
                 About Us
               </Link>
             </li>
             <li>
-              <Link to="/contact" className="hover:text-[#E93930] transition-colors">
+              <Link href="/contact" className="hover:text-[#E93930] transition-colors">
                 Contact
               </Link>
             </li>
@@ -104,27 +104,27 @@ export default function Footer() {
           <h3 className={headingClasses}>Our Services</h3>
           <ul className="space-y-3 text-sm">
             <li>
-              <Link to="/web-development" className="hover:text-[#E93930] transition-colors">
+              <Link href="/web-development" className="hover:text-[#E93930] transition-colors">
                 Web Development
               </Link>
             </li>
             <li>
-              <Link to="/graphic-design" className="hover:text-[#E93930] transition-colors">
+              <Link href="/graphic-design" className="hover:text-[#E93930] transition-colors">
                 Graphic Design
               </Link>
             </li>
             <li>
-              <Link to="/software-development" className="hover:text-[#E93930] transition-colors">
+              <Link href="/software-development" className="hover:text-[#E93930] transition-colors">
                 Software Development
               </Link>
             </li>
             <li>
-              <Link to="/website-management" className="hover:text-[#E93930] transition-colors">
+              <Link href="/website-management" className="hover:text-[#E93930] transition-colors">
                 Website Management
               </Link>
             </li>
             <li>
-              <Link to="/cloud-solutions" className="hover:text-[#E93930] transition-colors">
+              <Link href="/cloud-solutions" className="hover:text-[#E93930] transition-colors">
                 Cloud Solutions
               </Link>
             </li>
@@ -161,10 +161,10 @@ export default function Footer() {
           © {currentYear} <span className="text-[#E93930]">Entelix</span>. All Rights Reserved.
         </p>
         <div className="flex gap-6">
-          <Link to="/privacy" className="hover:text-[#E93930] transition-colors">
+          <Link href="/privacy" className="hover:text-[#E93930] transition-colors">
             Privacy Policy
           </Link>
-          <Link to="/terms" className="hover:text-[#E93930] transition-colors">
+          <Link href="/terms" className="hover:text-[#E93930] transition-colors">
             Terms of Service
           </Link>
         </div>
