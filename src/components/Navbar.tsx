@@ -52,7 +52,7 @@ export default function Navbar() {
           >
             <div className="relative w-9 h-9 md:w-10 md:h-10 rounded-xl overflow-hidden flex items-center justify-center bg-white border border-[#E5E7EB] shadow-xs group-hover:border-[#0B59ED]/40 transition-colors">
               <Image
-                src="/logo1.png"
+                src="/logi.JPEG"
                 alt="Entelix Technologies"
                 width={36}
                 height={36}
