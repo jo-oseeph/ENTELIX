@@ -1,29 +1,33 @@
-import HeroSection from "@/components/Hero";
-import ServicesSection from "@/components/ServicesSection";
-import AboutSection from "@/components/About";
-import PortfolioSection from "@/components/Portfolio";
-import OurProcess from "@/components/OurProcess";
-import WhyChooseUs from "@/components/about/WhyChooseUs";
-import FaqSection from "@/components/FaqSection";
-import AboutCTASection from "@/components/about/AboutCTASection";
+import type { Metadata } from "next";
+import Hero from "@/components/home/Hero";
+import ServicesSection from "@/components/home/ServicesSection";
+import AboutSection from "@/components/home/AboutSection";
+import WhyChooseUs from "@/components/home/WhyChooseUs";
+import OurApproach from "@/components/home/OurApproach";
+import ProductsSection from "@/components/home/ProductsSection";
+import ContactCTA from "@/components/home/ContactCTA";
+import HomeFAQ from "@/components/home/HomeFAQ";
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Entelix Technologies - We Build High-Performance Digital Solutions",
   description:
-    "We help businesses transform ideas into powerful digital experiences through custom software, web applications and modern technology solutions.",
+    "We help businesses transform ideas into powerful digital experiences through custom software, web applications, mobile apps, and modern cloud technologies.",
+  alternates: {
+    canonical: "https://entelix.co.ke",
+  },
 };
 
 export default function HomePage() {
   return (
     <>
-      <HeroSection />
+      <Hero />
       <ServicesSection />
       <AboutSection />
-      <PortfolioSection />
-      <OurProcess />
       <WhyChooseUs />
-      <FaqSection />
-      <AboutCTASection />
+      <OurApproach />
+      <ProductsSection />
+      <ContactCTA />
+      <HomeFAQ />
     </>
   );
 }
