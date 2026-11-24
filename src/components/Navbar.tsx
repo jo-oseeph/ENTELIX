@@ -80,7 +80,7 @@ export default function Navbar() {
                   href={link.href}
                   className={`px-4 py-2 rounded-full text-xs font-semibold uppercase tracking-wider transition-all duration-200 ${
                     isActive
-                      ? "bg-white text-[#0B59ED] shadow-xs"
+                      ? "bg-white text-[#0A4FE0] shadow-xs"
                       : "text-[#64748B] hover:text-[#101926] hover:bg-white/60"
                   }`}
                 >

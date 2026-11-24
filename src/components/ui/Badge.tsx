@@ -18,7 +18,7 @@ export const Badge: React.FC<BadgeProps> = ({
     "inline-flex items-center font-medium rounded-full select-none";
 
   const variantStyles = {
-    primary: "bg-[#EBF2FE] text-[#0B59ED] border border-[#0B59ED]/15",
+    primary: "bg-[#EBF2FE] text-[#0A4FE0] border border-[#0A4FE0]/15",
     neutral: "bg-[#F5F7FA] text-[#64748B] border border-[#E5E7EB]",
     navy: "bg-[#101926] text-white border border-[#101926]",
     outline: "bg-transparent text-[#101926] border border-[#E5E7EB]",
@@ -26,7 +26,7 @@ export const Badge: React.FC<BadgeProps> = ({
   };
 
   const dotColors = {
-    primary: "bg-[#0B59ED]",
+    primary: "bg-[#0A4FE0]",
     neutral: "bg-[#64748B]",
     navy: "bg-white",
     outline: "bg-[#101926]",

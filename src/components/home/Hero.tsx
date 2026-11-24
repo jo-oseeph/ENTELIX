@@ -20,7 +20,7 @@ export default function Hero() {
       />
 
       {/* Gentle ambient light glow */}
-      <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[300px] bg-[#0B59ED]/5 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[300px] bg-[#0A4FE0]/5 rounded-full blur-3xl pointer-events-none" />
 
       <Container className="relative z-10 w-full">
         <div className="grid lg:grid-cols-12 gap-10 lg:gap-12 items-center">
@@ -34,7 +34,7 @@ export default function Hero() {
             {/* Main Headline */}
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[3.5rem] font-extrabold text-[#101926] tracking-tight leading-[1.14]">
               We Build High-Performance{" "}
-              <span className="text-[#0B59ED]">Digital Solutions.</span>
+              <span className="text-[#0A4FE0]">Digital Solutions.</span>
             </h1>
 
             {/* Supporting Copy */}
@@ -47,7 +47,7 @@ export default function Hero() {
               {/* Primary CTA: Let's Talk */}
               <Link
                 href="/contact"
-                className="group relative inline-flex items-center justify-center gap-3 w-full sm:w-auto px-7 py-3.5 rounded-full bg-[#0B59ED] text-white font-semibold text-sm shadow-[0_4px_16px_rgba(11,89,237,0.25)] hover:bg-[#0948c2] hover:shadow-[0_6px_20px_rgba(11,89,237,0.35)] transition-all duration-200 active:scale-[0.98]"
+                className="group relative inline-flex items-center justify-center gap-3 w-full sm:w-auto px-7 py-3.5 rounded-full bg-[#0A4FE0] text-white font-semibold text-sm shadow-[0_4px_16px_rgba(10,79,224,0.25)] hover:bg-[#0840B8] hover:shadow-[0_6px_20px_rgba(10,79,224,0.35)] transition-all duration-200 active:scale-[0.98]"
               >
                 <span>Let&apos;s Talk</span>
                 <span className="w-6 h-6 rounded-full bg-white/20 flex items-center justify-center group-hover:translate-x-0.5 transition-transform duration-200">
@@ -60,7 +60,7 @@ export default function Hero() {
                 href="/#products"
                 className="group inline-flex items-center justify-center gap-2.5 w-full sm:w-auto px-6 py-3.5 rounded-full bg-[#F5F7FA] text-[#101926] font-semibold text-sm border border-[#E5E7EB] hover:bg-white hover:border-[#CBD5E1] hover:shadow-sm transition-all duration-200 active:scale-[0.98]"
               >
-                <Layers className="w-4 h-4 text-[#0B59ED] group-hover:scale-110 transition-transform duration-200" />
+                <Layers className="w-4 h-4 text-[#0A4FE0] group-hover:scale-110 transition-transform duration-200" />
                 <span>Explore Products</span>
               </Link>
             </div>
@@ -93,7 +93,7 @@ export default function Hero() {
                 <div className="absolute bottom-4 left-4 right-4 bg-white/95 backdrop-blur-md rounded-xl p-3.5 sm:p-4 border border-white/80 shadow-md">
                   <div className="flex items-center justify-between gap-3">
                     <div className="flex items-center gap-3 min-w-0">
-                      <div className="w-9 h-9 rounded-lg bg-[#0B59ED] text-white flex items-center justify-center font-bold text-xs shadow-xs flex-shrink-0">
+                      <div className="w-9 h-9 rounded-lg bg-[#0A4FE0] text-white flex items-center justify-center font-bold text-xs shadow-xs flex-shrink-0">
                         EX
                       </div>
                       <div className="flex flex-col min-w-0">
@@ -105,8 +105,8 @@ export default function Hero() {
                         </span>
                       </div>
                     </div>
-                    <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[11px] font-semibold bg-[#EBF2FE] text-[#0B59ED] border border-[#0B59ED]/15 flex-shrink-0">
-                      <span className="w-1.5 h-1.5 rounded-full bg-[#0B59ED] animate-pulse" />
+                    <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[11px] font-semibold bg-[#EBF2FE] text-[#0A4FE0] border border-[#0A4FE0]/15 flex-shrink-0">
+                      <span className="w-1.5 h-1.5 rounded-full bg-[#0A4FE0] animate-pulse" />
                       Live
                     </span>
                   </div>

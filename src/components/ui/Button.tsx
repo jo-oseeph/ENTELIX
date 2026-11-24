@@ -40,11 +40,11 @@ export const Button = React.forwardRef<
 
     const variantStyles = {
       primary:
-        "bg-[#0B59ED] text-white hover:bg-[#0948c2] shadow-[0_1px_2px_rgba(11,89,237,0.15)] shadow-[#0B59ED]/20 hover:shadow-md hover:shadow-[#0B59ED]/25 focus-visible:ring-2 focus-visible:ring-[#0B59ED] focus-visible:ring-offset-2",
+        "bg-[#0A4FE0] text-white hover:bg-[#0840B8] shadow-[0_1px_2px_rgba(10,79,224,0.15)] shadow-[#0A4FE0]/20 hover:shadow-md hover:shadow-[#0A4FE0]/25 focus-visible:ring-2 focus-visible:ring-[#0A4FE0] focus-visible:ring-offset-2",
       secondary:
         "bg-[#101926] text-white hover:bg-[#1A2638] focus-visible:ring-2 focus-visible:ring-[#101926] focus-visible:ring-offset-2",
       outline:
-        "bg-white border border-[#E5E7EB] text-[#101926] hover:bg-[#F5F7FA] hover:border-[#CBD5E1] focus-visible:ring-2 focus-visible:ring-[#0B59ED]",
+        "bg-white border border-[#E5E7EB] text-[#101926] hover:bg-[#F5F7FA] hover:border-[#CBD5E1] focus-visible:ring-2 focus-visible:ring-[#0A4FE0]",
       ghost:
         "bg-transparent text-[#64748B] hover:text-[#101926] hover:bg-[#F5F7FA]",
       white:
