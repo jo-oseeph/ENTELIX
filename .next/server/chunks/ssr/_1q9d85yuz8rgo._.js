@@ -1,0 +1,3 @@
+module.exports=[67453,a=>{"use strict";let b=(0,a.i(70106).f)("circle-check",[["circle",{cx:"12",cy:"12",r:"10",key:"1mglay"}],["path",{d:"m9 12 2 2 4-4",key:"dzmm74"}]]);a.s(["f",0,b],67453)},42825,a=>{"use strict";var b=a.i(87924);a.s(["f",0,({className:a="",children:c,size:d="default",...e})=>(0,b.jsx)("div",{className:`mx-auto px-4 sm:px-6 lg:px-8 w-full ${{narrow:"max-w-5xl",default:"max-w-7xl",wide:"max-w-[1400px]"}[d]} ${a}`,...e,children:c})])}];
+
+//# sourceMappingURL=_1q9d85yuz8rgo._.js.map

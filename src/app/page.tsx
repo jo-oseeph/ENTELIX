@@ -5,6 +5,7 @@ import ServicesSection from "@/components/home/ServicesSection";
 import AboutSection from "@/components/home/AboutSection";
 import WhyChooseUs from "@/components/home/WhyChooseUs";
 import OurApproach from "@/components/home/OurApproach";
+import PortfolioSection from "@/components/home/PortfolioSection";
 import ContactCTA from "@/components/home/ContactCTA";
 import HomeFAQ from "@/components/home/HomeFAQ";
 
@@ -26,6 +27,7 @@ export default function HomePage() {
       <AboutSection />
       <WhyChooseUs />
       <OurApproach />
+      <PortfolioSection />
       <ContactCTA />
       <HomeFAQ />
     </>
