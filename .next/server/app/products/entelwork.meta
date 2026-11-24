@@ -1,0 +1,40 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/products/layout,_N_T_/products/entelwork/layout,_N_T_/products/entelwork/page,_N_T_/products/entelwork"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/_index",
+    "/products/entelwork/__PAGE__"
+  ],
+  "prefetchHints": {
+    "hints": 0,
+    "slots": {
+      "children": {
+        "hints": 64,
+        "slots": {
+          "children": {
+            "hints": 96,
+            "slots": {
+              "children": {
+                "hints": 160,
+                "slots": null
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "routeCache": {
+    "key": "/route-cache/APP_PAGE/c0cf196b3503beec71215a8fb7e1b1708408d5acbb013523afef226c95a2f2c0/$/products/entelwork",
+    "owner": {
+      "kind": "APP_PAGE",
+      "sourceRoute": "/products/entelwork/page"
+    },
+    "isFallback": false
+  }
+}

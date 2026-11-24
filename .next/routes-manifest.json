@@ -84,6 +84,24 @@
       "namedRegex": "^/privacy(?:/)?$"
     },
     {
+      "page": "/products",
+      "regex": "^/products(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/products(?:/)?$"
+    },
+    {
+      "page": "/products/entelix-pos",
+      "regex": "^/products/entelix\\-pos(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/products/entelix\\-pos(?:/)?$"
+    },
+    {
+      "page": "/products/entelwork",
+      "regex": "^/products/entelwork(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/products/entelwork(?:/)?$"
+    },
+    {
       "page": "/services",
       "regex": "^/services(?:/)?$",
       "routeKeys": {},
