@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 import Hero from "@/components/home/Hero";
 import ProductsSection from "@/components/home/ProductsSection";
+import PortfolioSection from "@/components/home/PortfolioSection";
 import ServicesSection from "@/components/home/ServicesSection";
 import AboutSection from "@/components/home/AboutSection";
 import WhyChooseUs from "@/components/home/WhyChooseUs";
 import OurApproach from "@/components/home/OurApproach";
-import PortfolioSection from "@/components/home/PortfolioSection";
 import ContactCTA from "@/components/home/ContactCTA";
 import HomeFAQ from "@/components/home/HomeFAQ";
 
@@ -23,11 +23,11 @@ export default function HomePage() {
     <>
       <Hero />
       <ProductsSection />
+      <PortfolioSection />
       <ServicesSection />
       <AboutSection />
       <WhyChooseUs />
       <OurApproach />
-      <PortfolioSection />
       <ContactCTA />
       <HomeFAQ />
     </>
